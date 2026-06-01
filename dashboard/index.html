@@ -39,7 +39,6 @@ body{
   line-height:1.5;
   min-height:100vh;
 }
-/* ── Scrollbar ── */
 ::-webkit-scrollbar{width:5px;height:5px}
 ::-webkit-scrollbar-track{background:var(--surface)}
 ::-webkit-scrollbar-thumb{background:var(--surface-3);border-radius:3px}
@@ -132,7 +131,7 @@ body{
 }
 .grid-container > *{background:var(--bg)}
 
-/* ── Sidebar (Company List) ── */
+/* ── Sidebar ── */
 .sidebar{
   background:var(--surface);
   padding:0;
@@ -185,7 +184,6 @@ body{
 }
 .panel-title{font-size:14px;font-weight:600;color:var(--text)}
 .panel-title .highlight{color:var(--accent);font-weight:700}
-.panel-controls{display:flex;gap:8px}
 
 /* ── Chart Container ── */
 .chart-box{
@@ -204,6 +202,27 @@ body{
 .chart-box .chart-title .legend span{display:flex;align-items:center;gap:4px;font-size:11px}
 .chart-box .chart-title .legend .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
 .chart-wrap{position:relative;height:200px}
+.chart-wrap.sm{height:260px}
+.chart-wrap.xs{height:120px}
+
+/* ── Rank Charts Row ── */
+.rank-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-bottom:12px;
+}
+.rank-chart-box{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:16px;
+}
+.rank-chart-box .chart-title{
+  font-size:12px;font-weight:500;color:var(--text-2);
+  margin-bottom:8px;
+}
+.rank-chart-box .chart-wrap{height:260px}
 
 /* ── Table ── */
 .data-table{
@@ -233,10 +252,18 @@ body{
 .data-table .down{color:var(--red)}
 .data-table .company-cell{font-weight:500;color:var(--text)}
 
+/* ── Expanded Row Details ── */
+.expand-row td{background:var(--surface-2);padding:0}
+.expand-content{padding:12px 12px 12px 40px;font-size:12px;color:var(--text-2);display:none}
+.expand-content.show{display:block}
+.tr-expand{cursor:pointer}
+.tr-expand .expand-icon{display:inline-block;transition:transform 0.15s;font-size:10px;margin-right:6px}
+.tr-expand.open .expand-icon{transform:rotate(90deg)}
+
 /* ── Bottom Row ── */
 .bottom-row{
   display:grid;
-  grid-template-columns:1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr;
   gap:12px;
   margin-top:12px;
 }
@@ -254,6 +281,44 @@ body{
   margin-bottom:10px;
 }
 
+/* ── Recent Posts Feed ── */
+.post-feed{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:0;
+  margin-bottom:12px;
+  overflow:hidden;
+}
+.post-feed-header{
+  padding:12px 16px 8px;
+  font-size:12px;font-weight:500;color:var(--text-2);
+  border-bottom:1px solid var(--border);
+  display:flex;justify-content:space-between;
+}
+.post-item{
+  padding:12px 16px;
+  border-bottom:1px solid var(--border);
+  display:flex;
+  gap:12px;
+  transition:background 0.15s;
+}
+.post-item:last-child{border-bottom:none}
+.post-item:hover{background:var(--surface-2)}
+.post-item .post-avatar{
+  width:36px;height:36px;border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:13px;color:#fff;
+  flex-shrink:0;
+}
+.post-item .post-body{min-width:0;flex:1}
+.post-item .post-company{font-weight:600;font-size:12px;color:var(--text)}
+.post-item .post-title{font-size:12px;color:var(--text-2);margin:3px 0;line-height:1.4}
+.post-item .post-stats{display:flex;gap:14px;font-size:11px;color:var(--text-3);margin-top:4px}
+.post-item .post-stats span{display:flex;align-items:center;gap:3px}
+.post-item .post-time{font-size:10px;color:var(--text-3);white-space:nowrap}
+.post-empty{text-align:center;padding:30px;color:var(--text-3);font-size:12px}
+
 /* ── Hashtag / Topic Tags ── */
 .tag{
   display:inline-flex;
@@ -269,26 +334,16 @@ body{
 .tag-stats{display:flex;justify-content:space-between;font-size:11px;margin:6px 0}
 .tag-stats .label{color:var(--text-2)}
 .tag-stats .val{font-family:var(--mono)}
-.sentiment-bar{height:6px;border-radius:3px;background:var(--surface-3);margin:6px 0;overflow:hidden;display:flex}
-.sentiment-bar .seg{height:100%}
-.sentiment-bar .pos{background:var(--green)}
-.sentiment-bar .neu{background:var(--text-3)}
-.sentiment-bar .neg{background:var(--red)}
 
-/* ── Activity Feed ── */
-.feed-item{
-  padding:8px 0;
-  border-bottom:1px solid var(--border);
-  font-size:12px;
-}
-.feed-item:last-child{border-bottom:none}
-.feed-item .feed-company{font-weight:600;color:var(--text)}
-.feed-item .feed-time{font-size:10px;color:var(--text-3);float:right}
-.feed-item .feed-title{color:var(--text-2);margin:2px 0}
-.feed-item .feed-stats{display:flex;gap:12px;font-size:11px;color:var(--text-3)}
-.feed-item .feed-stats span{display:flex;align-items:center;gap:3px}
+/* ── Loading ── */
+.loading{text-align:center;padding:40px;color:var(--text-2);font-size:13px}
+.loading .spinner{width:24px;height:24px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 12px}
+@keyframes spin{to{transform:rotate(360deg)}}
 
 /* ── Responsive ── */
+@media(max-width:1024px){
+  .rank-row{grid-template-columns:1fr}
+}
 @media(max-width:900px){
   .grid-container{grid-template-columns:1fr}
   .bottom-row{grid-template-columns:1fr}
@@ -299,29 +354,6 @@ body{
 @media(max-width:600px){
   .stats-row{grid-template-columns:1fr}
 }
-
-/* ── Loading / Empty ── */
-.loading{text-align:center;padding:40px;color:var(--text-2);font-size:13px}
-.loading .spinner{width:24px;height:24px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 12px}
-@keyframes spin{to{transform:rotate(360deg)}}
-
-/* ── Tooltip ── */
-.tooltip{position:relative;cursor:help}
-.tooltip:hover::after{
-  content:attr(data-tip);
-  position:absolute;background:var(--surface-3);color:var(--text);
-  padding:4px 8px;border-radius:4px;font-size:11px;
-  white-space:nowrap;z-index:10;bottom:100%;left:50%;transform:translateX(-50%);
-  border:1px solid var(--border);
-}
-
-/* ── Expandable Row ── */
-.expand-row td{background:var(--surface-2);padding:0}
-.expand-content{padding:12px 12px 12px 40px;font-size:12px;color:var(--text-2);display:none}
-.expand-content.show{display:block}
-.tr-expand{cursor:pointer}
-.tr-expand .expand-icon{display:inline-block;transition:transform 0.15s;font-size:10px;margin-right:6px}
-.tr-expand.open .expand-icon{transform:rotate(90deg)}
 </style>
 </head>
 <body>
@@ -329,11 +361,11 @@ body{
 <!-- ═══ HEADER ═══ -->
 <header class="header">
   <div class="header-left">
-    <div class="logo">📊 <span>LinkedIn</span> Tracker <span class="logo-sub">APAC Asset Management</span></div>
+    <div class="logo">&#x1F4CA; <span>LinkedIn</span> Tracker <span class="logo-sub">APAC Asset Management</span></div>
   </div>
   <div class="header-right">
-    <span class="last-update" id="lastUpdate">Last update: —</span>
-    <span class="badge" id="statusBadge">● Live</span>
+    <span class="last-update" id="lastUpdate">Last update: &mdash;</span>
+    <span class="badge" id="statusBadge">&#x25CF; Live</span>
   </div>
 </header>
 
@@ -345,7 +377,6 @@ body{
       <option value="followers">Follower Growth</option>
       <option value="engagement">Engagement Rate</option>
       <option value="posts">Post Frequency</option>
-      <option value="sentiment">Sentiment Score</option>
     </select>
   </div>
   <div class="select-group">
@@ -368,21 +399,21 @@ body{
       <option value="Japan">Japan</option>
     </select>
   </div>
-  <input type="text" class="search-input" id="searchInput" placeholder="Search companies…"/>
+  <input type="text" class="search-input" id="searchInput" placeholder="Search companies&hellip;"/>
 </div>
 
 <!-- ═══ STATS ROW ═══ -->
 <div class="stats-row" id="statsRow">
   <div class="stat-card"><div class="label">Companies Tracked</div><div class="value" id="statCompanies">20</div></div>
-  <div class="stat-card"><div class="label">Total Followers</div><div class="value" id="statFollowers">—</div><div class="change up" id="statFollowerChange">▲ —</div></div>
-  <div class="stat-card"><div class="label">Avg Engagement Rate</div><div class="value" id="statEngagement">—</div><div class="change up" id="statEngagementChange">▲ —</div></div>
-  <div class="stat-card"><div class="label">Posts This Week</div><div class="value" id="statPosts">—</div></div>
-  <div class="stat-card"><div class="label">Sentiment Score</div><div class="value" id="statSentiment">—</div><div class="change up" id="statSentimentChange">▲ —</div></div>
+  <div class="stat-card"><div class="label">Total Followers</div><div class="value" id="statFollowers">&mdash;</div><div class="change up" id="statFollowerChange">&#x25B2; &mdash;</div></div>
+  <div class="stat-card"><div class="label">Avg Engagement Rate</div><div class="value" id="statEngagement">&mdash;</div><div class="change up" id="statEngagementChange">&#x25B2; &mdash;</div></div>
+  <div class="stat-card"><div class="label">Total Posts (30d)</div><div class="value" id="statPosts">&mdash;</div></div>
+  <div class="stat-card"><div class="label">Avg Likes / Post</div><div class="value" id="statAvgLikes">&mdash;</div><div class="change up" id="statAvgLikesChange">&#x25B2; &mdash;</div></div>
 </div>
 
 <!-- ═══ MAIN GRID ═══ -->
 <div class="grid-container">
-  <!-- ── Sidebar (Company List) ── -->
+  <!-- ── Sidebar ── -->
   <div class="sidebar" id="companySidebar">
     <div class="sidebar-header">
       <span>Companies</span>
@@ -393,7 +424,7 @@ body{
 
   <!-- ── Main Content ── -->
   <div class="main-content">
-    <!-- Chart -->
+    <!-- Trend Chart -->
     <div class="chart-box">
       <div class="chart-title">
         <span>Follower Growth Trend</span>
@@ -402,6 +433,31 @@ body{
       <div class="chart-wrap">
         <canvas id="mainChart"></canvas>
       </div>
+    </div>
+
+    <!-- Rank Charts Row -->
+    <div class="rank-row">
+      <div class="rank-chart-box">
+        <div class="chart-title">Follower Rank</div>
+        <div class="chart-wrap sm">
+          <canvas id="followerRankChart"></canvas>
+        </div>
+      </div>
+      <div class="rank-chart-box">
+        <div class="chart-title">Total Engagement Rank</div>
+        <div class="chart-wrap sm">
+          <canvas id="engagementRankChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Top Posts -->
+    <div class="post-feed">
+      <div class="post-feed-header">
+        <span>Recent Top Posts</span>
+        <span style="color:var(--text-3);font-size:10px;font-weight:400">Selected brands &middot; 30 days</span>
+      </div>
+      <div id="postFeed"></div>
     </div>
 
     <!-- Data Table -->
@@ -416,10 +472,10 @@ body{
             <th style="width:30px"></th>
             <th>Company</th>
             <th style="text-align:right">Followers</th>
-            <th style="text-align:right">Follower Δ</th>
+            <th style="text-align:right">Follower &Delta;</th>
             <th style="text-align:right">Eng. Rate</th>
-            <th style="text-align:right">Posts/Wk</th>
-            <th style="text-align:right">Sentiment</th>
+            <th style="text-align:right">Posts/30d</th>
+            <th style="text-align:right">Avg Likes</th>
             <th style="text-align:right">AUM</th>
           </tr>
         </thead>
@@ -431,15 +487,13 @@ body{
     <div class="bottom-row">
       <div class="bottom-panel">
         <h4>Content Type Split</h4>
-        <canvas id="contentChart" height="120"></canvas>
+        <div class="chart-wrap xs">
+          <canvas id="contentChart"></canvas>
+        </div>
       </div>
       <div class="bottom-panel">
         <h4>Top Hashtags</h4>
         <div id="hashtagsContainer"></div>
-      </div>
-      <div class="bottom-panel">
-        <h4>Sentiment by Topic</h4>
-        <div id="sentimentTopics"></div>
       </div>
     </div>
   </div>
@@ -472,13 +526,37 @@ const COMPANIES = [
   {id:'amundi',            name:'Amundi',                   market:'Global',    aum:'$2.3T',  linkedin:'linkedin.com/company/amundi_asset_management', hq:'France'},
 ];
 
-// Generate simulated data
+// Simulated data generator
 function rand(min,max){return +(min + Math.random()*(max-min)).toFixed(1)}
 function randInt(min,max){return Math.floor(min+Math.random()*(max-min+1))}
 
-const COLORS = ['#2962ff','#089981','#f23645','#ff9800','#ab47bc','#00bcd4','#ff6d00','#43a047','#e91e63','#7c4dff'];
+const COLORS = ['#2962ff','#089981','#f23645','#ff9800','#ab47bc','#00bcd4','#ff6d00','#43a047','#e91e63','#7c4dff',
+                '#1de9b6','#fdd835','#5c6bc0','#26a69a','#ec407a'];
 
 const NOW = new Date();
+const POST_TOPICS = [
+  '2025 APAC Market Outlook: Key Themes for the Year Ahead',
+  'ESG Integration in Fixed Income: A Practical Framework',
+  'China A-Share Market: Opportunities in the Recovery Cycle',
+  'Japan Equity Reform Story: Corporate Governance Changes',
+  'Private Credit in Asia Pacific: The Next Frontier',
+  'Navigating the Rate Cycle: Fixed Income Strategies for 2025',
+  'India\'s Growth Trajectory: Infrastructure and Demographics',
+  'Sustainable Investing in Emerging Markets',
+  'AI and Machine Learning in Asset Management',
+  'Hong Kong IPO Market: Signs of Recovery',
+  'Australian Superannuation: Trends and Opportunities',
+  'Singapore Family Office Growth: A Regional Perspective',
+  'Green Bonds: Market Growth and Impact Measurement',
+  'Retirement Planning in an Ageing Asia',
+  'Digital Assets: Institutional Adoption Update',
+  'Global Macro Outlook: Divergence and Dispersion',
+  'Real Estate Debt: Opportunities in a Higher Rate Environment',
+  'Active vs Passive: The APAC Perspective',
+  'Climate Risk in Portfolio Construction',
+  'Cross-Border Capital Flows in Asia',
+];
+
 function genTimeseries(days){
   const pts=[];
   for(let i=days;i>=0;i--){
@@ -491,21 +569,50 @@ function genTimeseries(days){
 const DAYS30 = genTimeseries(30);
 const DAYS7 = genTimeseries(7);
 
+// Generate company data + posts
+let allPosts = [];
+
 COMPANIES.forEach((c,i)=>{
   const base = 50000 + Math.random()*2000000;
-  // Generate follower time series
   c.followerHistory = DAYS30.map((_,j)=>{
     return Math.round(base * (1 + Math.sin(j/5)*0.05 + (Math.random()-0.5)*0.02));
   });
   c.followers = c.followerHistory[c.followerHistory.length-1];
   c.followerChange = ((c.followers - c.followerHistory[0]) / c.followerHistory[0] * 100).toFixed(1);
   c.engagement = +(rand(1.2,5.8)).toFixed(2);
-  c.postsPerWeek = randInt(2,15);
-  c.sentiment = randInt(40,95);
-  c.sentimentChange = rand(-5,8);
+  c.postsPer30 = randInt(8,45);
+  c.avgLikes = randInt(80,1200);
+  c.avgComments = randInt(5,80);
+  c.avgShares = randInt(2,40);
+  c.engagementBreakdown = {likes:c.avgLikes * c.postsPer30, comments:c.avgComments * c.postsPer30, shares:c.avgShares * c.postsPer30};
+  c.totalEngagement = c.engagementBreakdown.likes + c.engagementBreakdown.comments + c.engagementBreakdown.shares;
   c.engagementChange = rand(-0.8,1.5);
   c.color = COLORS[i % COLORS.length];
+
+  // Generate posts
+  const postCount = randInt(3,6);
+  c.posts = [];
+  for(let p=0;p<postCount;p++){
+    const daysAgo = randInt(1,28);
+    const d = new Date(NOW); d.setDate(d.getDate()-daysAgo);
+    const likes = randInt(Math.round(c.avgLikes*0.5), Math.round(c.avgLikes*2));
+    const comments = randInt(Math.round(c.avgComments*0.3), Math.round(c.avgComments*3));
+    const shares = randInt(Math.round(c.avgShares*0.3), Math.round(c.avgShares*3));
+    c.posts.push({
+      title: POST_TOPICS[randInt(0, POST_TOPICS.length-1)],
+      date: d,
+      likes, comments, shares,
+      total: likes+comments+shares,
+    });
+  }
+  // Sort posts by total engagement descending
+  c.posts.sort((a,b)=>b.total-a.total);
+  allPosts = allPosts.concat(c.posts.map(p=>({...p, companyId:c.id, companyName:c.name, companyColor:c.color})));
 });
+
+// Sort all posts globally by date descending, take top 50
+allPosts.sort((a,b)=>b.date-a.date);
+allPosts = allPosts.slice(0,50);
 
 // ════════════════════════════════════════════════════════════════
 // STATE
@@ -514,19 +621,41 @@ let selectedCompanies = COMPANIES.slice(0,8).map(c=>c.id);
 let activeCompany = COMPANIES[0].id;
 let mainChart = null;
 let contentChart = null;
+let followerRankChart = null;
+let engagementRankChart = null;
+
+// ════════════════════════════════════════════════════════════════
+// HELPERS
+// ════════════════════════════════════════════════════════════════
+function formatNum(n){
+  if(n>=1e6) return (n/1e6).toFixed(1)+'M';
+  if(n>=1e3) return (n/1e3).toFixed(1)+'K';
+  return n.toLocaleString();
+}
+
+function timeAgo(date){
+  const diff = Math.floor((NOW - date) / 1000);
+  if(diff<3600) return Math.floor(diff/60)+'m ago';
+  if(diff<86400) return Math.floor(diff/3600)+'h ago';
+  return Math.floor(diff/86400)+'d ago';
+}
+
+function getSelected(){
+  const region = document.getElementById('regionSelect').value;
+  const query = document.getElementById('searchInput').value.toLowerCase();
+  return COMPANIES.filter(c=>{
+    if(region!=='all' && c.market!==region) return false;
+    if(query && !c.name.toLowerCase().includes(query)) return false;
+    return true;
+  });
+}
 
 // ════════════════════════════════════════════════════════════════
 // RENDER
 // ════════════════════════════════════════════════════════════════
 function renderSidebar(){
-  const region = document.getElementById('regionSelect').value;
-  const query = document.getElementById('searchInput').value.toLowerCase();
+  const filtered = getSelected();
   const list = document.getElementById('companyList');
-  let filtered = COMPANIES.filter(c=>{
-    if(region!=='all' && c.market!==region) return false;
-    if(query && !c.name.toLowerCase().includes(query)) return false;
-    return true;
-  });
   document.getElementById('companyCount').textContent = filtered.length;
 
   list.innerHTML = filtered.map(c=>{
@@ -537,7 +666,7 @@ function renderSidebar(){
         <div class="check ${checked}" data-id="${c.id}" onclick="event.stopPropagation();toggleCompany('${c.id}')"></div>
         <div>
           <div class="name">${c.name}</div>
-          <div class="region">${c.market} · ${c.aum}</div>
+          <div class="region">${c.market} &middot; ${c.aum}</div>
         </div>
       </div>
       <div class="right">
@@ -547,12 +676,6 @@ function renderSidebar(){
   }).join('');
 }
 
-function formatNum(n){
-  if(n>=1e6) return (n/1e6).toFixed(1)+'M';
-  if(n>=1e3) return (n/1e3).toFixed(1)+'K';
-  return n.toLocaleString();
-}
-
 function renderStats(){
   const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id));
   document.getElementById('statCompanies').textContent = COMPANIES.length;
@@ -560,35 +683,36 @@ function renderStats(){
   document.getElementById('statFollowers').textContent = formatNum(totalF);
   const avgEng = selected.reduce((s,c)=>s+c.engagement,0)/selected.length;
   document.getElementById('statEngagement').textContent = avgEng.toFixed(2)+'%';
-  const avgSent = Math.round(selected.reduce((s,c)=>s+c.sentiment,0)/selected.length);
-  document.getElementById('statSentiment').textContent = avgSent;
-  document.getElementById('statPosts').textContent = Math.round(selected.reduce((s,c)=>s+c.postsPerWeek,0));
-  document.getElementById('statFollowerChange').textContent = '− ±0%';
-  document.getElementById('statEngagementChange').textContent = '− ±0%';
-  document.getElementById('statSentimentChange').textContent = '− ±0';
+  const totalPosts = selected.reduce((s,c)=>s+c.postsPer30,0);
+  document.getElementById('statPosts').textContent = Math.round(totalPosts);
+  const avgLikes = Math.round(selected.reduce((s,c)=>s+c.avgLikes,0)/selected.length);
+  document.getElementById('statAvgLikes').textContent = formatNum(avgLikes);
+  document.getElementById('statFollowerChange').textContent = '&minus; &plusmn;0%';
+  document.getElementById('statEngagementChange').textContent = '&minus; &plusmn;0%';
+  document.getElementById('statAvgLikesChange').textContent = '&minus; &plusmn;0';
 }
 
 function renderTable(){
   const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id));
   const tbody = document.getElementById('tableBody');
-  tbody.innerHTML = selected.map((c,i)=>`
+  tbody.innerHTML = selected.map(c=>`
     <tr class="tr-expand" onclick="toggleRow(this)">
-      <td><span class="expand-icon">▶</span></td>
+      <td><span class="expand-icon">&#x25B6;</span></td>
       <td><span class="company-cell">${c.name}</span></td>
       <td class="num">${formatNum(c.followers)}</td>
       <td class="num ${+c.followerChange>=0?'up':'down'}">${+c.followerChange>=0?'+':''}${c.followerChange}%</td>
       <td class="num">${c.engagement}%</td>
-      <td class="num">${c.postsPerWeek}</td>
-      <td class="num ${c.sentiment>=60?'up':c.sentiment>=40?'':'down'}">${c.sentiment}</td>
+      <td class="num">${c.postsPer30}</td>
+      <td class="num">${formatNum(c.avgLikes)}</td>
       <td class="num" style="color:var(--text-3)">${c.aum}</td>
     </tr>
     <tr class="expand-row">
       <td colspan="8">
         <div class="expand-content" id="expand_${c.id}">
           <strong>LinkedIn:</strong> ${c.linkedin}<br/>
-          <strong>HQ:</strong> ${c.hq} · <strong>Region:</strong> ${c.region}<br/>
+          <strong>HQ:</strong> ${c.hq} &middot; <strong>Region:</strong> ${c.market}<br/>
           <strong>Engagement Change:</strong> <span class="${c.engagementChange>=0?'up':'down'}">${c.engagementChange>=0?'+':''}${c.engagementChange}pp</span><br/>
-          <strong>Sentiment Change:</strong> <span class="${c.sentimentChange>=0?'up':'down'}">${c.sentimentChange>=0?'+':''}${c.sentimentChange}</span>
+          <strong>Avg Comments/Post:</strong> ${formatNum(c.avgComments)} &middot; <strong>Avg Shares/Post:</strong> ${formatNum(c.avgShares)}
         </div>
       </td>
     </tr>
@@ -602,6 +726,45 @@ function toggleRow(el){
     const content = expand.querySelector('.expand-content');
     if(content) content.classList.toggle('show');
   }
+}
+
+function renderPosts(){
+  const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id));
+  const selectedIds = new Set(selected.map(c=>c.id));
+  const feed = document.getElementById('postFeed');
+
+  // Get top posts from selected companies
+  const topPosts = [];
+  selected.forEach(c=>{
+    if(c.posts && c.posts.length>0){
+      c.posts.slice(0,2).forEach(p=>{
+        topPosts.push({...p, companyId:c.id, companyName:c.name, companyColor:c.color});
+      });
+    }
+  });
+  topPosts.sort((a,b)=>b.total - a.total);
+  const display = topPosts.slice(0,8);
+
+  if(display.length===0){
+    feed.innerHTML = '<div class="post-empty">Select companies to see their top posts</div>';
+    return;
+  }
+
+  feed.innerHTML = display.map(p=>`
+    <div class="post-item">
+      <div class="post-avatar" style="background:${p.companyColor}">${p.companyName.charAt(0)}</div>
+      <div class="post-body">
+        <div class="post-company">${p.companyName}</div>
+        <div class="post-title">${p.title}</div>
+        <div class="post-stats">
+          <span>&#x2764; ${formatNum(p.likes)}</span>
+          <span>&#x1F4AC; ${p.comments}</span>
+          <span>&#x1F504; ${p.shares}</span>
+        </div>
+      </div>
+      <div class="post-time">${timeAgo(p.date)}</div>
+    </div>
+  `).join('');
 }
 
 function renderBottom(){
@@ -621,9 +784,7 @@ function renderBottom(){
     options:{
       responsive:true,
       maintainAspectRatio:false,
-      plugins:{
-        legend:{display:false}
-      }
+      plugins:{legend:{display:false}}
     }
   });
 
@@ -637,62 +798,45 @@ function renderBottom(){
       `).join('')}
     </div>
   `;
-
-  // Sentiment by topic
-  const topics = [
-    {topic:'ESG / Sustainability', pos:80,neu:15,neg:5},
-    {topic:'China Market Outlook', pos:55,neu:30,neg:15},
-    {topic:'Japan Reform Story', pos:72,neu:20,neg:8},
-    {topic:'India Growth', pos:68,neu:25,neg:7},
-    {topic:'Fixed Income / Rates', pos:48,neu:35,neg:17},
-  ];
-  document.getElementById('sentimentTopics').innerHTML = topics.map(t=>`
-    <div style="margin-bottom:8px">
-      <div class="tag-stats"><span class="label">${t.topic}</span></div>
-      <div class="sentiment-bar">
-        <div class="seg pos" style="width:${t.pos}%"></div>
-        <div class="seg neu" style="width:${t.neu}%"></div>
-        <div class="seg neg" style="width:${t.neg}%"></div>
-      </div>
-      <div style="display:flex;gap:8px;font-size:10px;color:var(--text-3)">
-        <span style="color:var(--green)">● ${t.pos}%</span>
-        <span style="color:var(--text-2)">● ${t.neu}%</span>
-        <span style="color:var(--red)">● ${t.neg}%</span>
-      </div>
-    </div>
-  `).join('');
 }
 
 function renderChart(){
   const metric = document.getElementById('metricSelect').value;
+  const period = document.getElementById('periodSelect').value;
   const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id)).slice(0,6);
   const ctx = document.getElementById('mainChart');
   if(mainChart) mainChart.destroy();
 
-  // Update chart title
+  const days = period==='7d'?7:period==='90d'?90:30;
+  const dates = days===7?DAYS7:days===90?genTimeseries(90):DAYS30;
+
   const titles = {
-    followers:'Follower Growth Trend (30 days)',
-    engagement:'Engagement Rate Trend (30 days)',
-    posts:'Post Frequency Trend (30 days)',
-    sentiment:'Sentiment Score Trend (30 days)'
+    followers:'Follower Growth Trend ('+days+' days)',
+    engagement:'Engagement Rate Trend ('+days+' days)',
+    posts:'Post Frequency Trend ('+days+' days)'
   };
   document.querySelector('.chart-box .chart-title span').textContent = titles[metric];
 
-  // Update legend
   document.getElementById('chartLegend').innerHTML = selected.map(c=>
     `<span><span class="dot" style="background:${c.color}"></span>${c.name}</span>`
   ).join('');
 
   const datasets = selected.map(c=>{
     let data;
-    if(metric==='followers') data = c.followerHistory;
-    else if(metric==='engagement') data = DAYS30.map(()=> +(c.engagement + (Math.random()-0.5)*0.8).toFixed(2));
-    else if(metric==='posts') data = DAYS30.map(()=> randInt(0,3));
-    else data = DAYS30.map(()=> randInt(40,95));
+    if(metric==='followers'){
+      if(days===7) data = c.followerHistory.slice(-8);
+      else if(days===90){
+        data = genTimeseries(90).map(()=> Math.round(c.followers * (1 + (Math.random()-0.5)*0.04)));
+      } else data = c.followerHistory;
+    } else if(metric==='engagement'){
+      data = dates.map(()=> +(c.engagement + (Math.random()-0.5)*0.8).toFixed(2));
+    } else {
+      data = dates.map(()=> randInt(0,3));
+    }
 
     return {
       label:c.name,
-      data:data.map((v,i)=>({x:DAYS30[i],y:v})),
+      data:data.map((v,i)=>({x:dates[i],y:v})),
       borderColor:c.color,
       backgroundColor:c.color+'22',
       fill:false,
@@ -730,7 +874,7 @@ function renderChart(){
           border:{display:false}
         },
         y:{
-          ticks:{color:'var(--text-3)',font:{size:10},callback:v=>formatNum(v)},
+          ticks:{color:'var(--text-3)',font:{size:10},callback:v=>typeof v==='number'?formatNum(v):v},
           grid:{color:'var(--border)',display:true},
           border:{display:false}
         }
@@ -739,15 +883,141 @@ function renderChart(){
   });
 }
 
+function renderFollowerRank(){
+  const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id));
+  const sorted = [...selected].sort((a,b)=>b.followers - a.followers);
+  const ctx = document.getElementById('followerRankChart');
+  if(followerRankChart) followerRankChart.destroy();
+
+  followerRankChart = new Chart(ctx, {
+    type:'bar',
+    data:{
+      labels: sorted.map(c=>c.name),
+      datasets:[{
+        data: sorted.map(c=>c.followers),
+        backgroundColor: sorted.map(c=>c.color),
+        borderRadius:3,
+        borderSkipped:false
+      }]
+    },
+    options:{
+      indexAxis:'y',
+      responsive:true,
+      maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          backgroundColor:'var(--surface-3)',
+          titleColor:'var(--text)',
+          bodyColor:'var(--text-2)',
+          borderColor:'var(--border)',
+          borderWidth:1,
+          cornerRadius:4,
+          padding:10,
+          callbacks:{label:ctx=>formatNum(ctx.parsed.x)}
+        }
+      },
+      scales:{
+        x:{
+          ticks:{color:'var(--text-3)',font:{size:10},callback:v=>formatNum(v)},
+          grid:{color:'var(--border)',display:true},
+          border:{display:false}
+        },
+        y:{
+          ticks:{color:'var(--text-2)',font:{size:10}},
+          grid:{display:false},
+          border:{display:false}
+        }
+      }
+    }
+  });
+}
+
+function renderEngagementRank(){
+  const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id));
+  const sorted = [...selected].sort((a,b)=>b.totalEngagement - a.totalEngagement);
+  const ctx = document.getElementById('engagementRankChart');
+  if(engagementRankChart) engagementRankChart.destroy();
+
+  engagementRankChart = new Chart(ctx, {
+    type:'bar',
+    data:{
+      labels: sorted.map(c=>c.name),
+      datasets:[
+        {
+          label:'Likes',
+          data: sorted.map(c=>c.engagementBreakdown.likes),
+          backgroundColor:'#2962ff',
+          borderRadius:3
+        },
+        {
+          label:'Comments',
+          data: sorted.map(c=>c.engagementBreakdown.comments),
+          backgroundColor:'#089981',
+          borderRadius:3
+        },
+        {
+          label:'Shares',
+          data: sorted.map(c=>c.engagementBreakdown.shares),
+          backgroundColor:'#ff9800',
+          borderRadius:3
+        }
+      ]
+    },
+    options:{
+      indexAxis:'y',
+      responsive:true,
+      maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{
+          display:true,
+          position:'top',
+          labels:{
+            color:'var(--text-2)',
+            font:{size:10},
+            boxWidth:10,
+            padding:8
+          }
+        },
+        tooltip:{
+          backgroundColor:'var(--surface-3)',
+          titleColor:'var(--text)',
+          bodyColor:'var(--text-2)',
+          borderColor:'var(--border)',
+          borderWidth:1,
+          cornerRadius:4,
+          padding:10,
+          callbacks:{label:ctx=>ctx.dataset.label+': '+formatNum(ctx.parsed.x)}
+        }
+      },
+      scales:{
+        x:{
+          stacked:true,
+          ticks:{color:'var(--text-3)',font:{size:10},callback:v=>formatNum(v)},
+          grid:{color:'var(--border)',display:true},
+          border:{display:false}
+        },
+        y:{
+          stacked:true,
+          ticks:{color:'var(--text-2)',font:{size:10}},
+          grid:{display:false},
+          border:{display:false}
+        }
+      }
+    }
+  });
+}
+
+// ════════════════════════════════════════════════════════════════
+// INTERACTIONS
+// ════════════════════════════════════════════════════════════════
 function toggleCompany(id){
   const idx = selectedCompanies.indexOf(id);
   if(idx>=0) selectedCompanies.splice(idx,1);
   else selectedCompanies.push(id);
   if(selectedCompanies.length===0) selectedCompanies.push(id);
-  renderSidebar();
-  renderStats();
-  renderTable();
-  renderChart();
+  renderAll();
 }
 
 function selectCompany(id){
@@ -755,25 +1025,30 @@ function selectCompany(id){
   renderSidebar();
 }
 
+function renderAll(){
+  renderSidebar();
+  renderStats();
+  renderTable();
+  renderPosts();
+  renderChart();
+  renderFollowerRank();
+  renderEngagementRank();
+}
+
 // ════════════════════════════════════════════════════════════════
 // EVENTS
 // ════════════════════════════════════════════════════════════════
 document.getElementById('metricSelect').addEventListener('change',renderChart);
 document.getElementById('periodSelect').addEventListener('change',renderChart);
-document.getElementById('regionSelect').addEventListener('change',renderSidebar);
-document.getElementById('searchInput').addEventListener('input',renderSidebar);
-document.getElementById('searchInput').addEventListener('input',()=>{renderTable();renderStats();});
-document.getElementById('regionSelect').addEventListener('change',()=>{renderTable();renderStats();});
+document.getElementById('regionSelect').addEventListener('change',renderAll);
+document.getElementById('searchInput').addEventListener('input',renderAll);
 
 // ════════════════════════════════════════════════════════════════
 // INIT
 // ════════════════════════════════════════════════════════════════
 document.getElementById('lastUpdate').textContent = 'Last update: '+new Date().toLocaleString('en-US',{month:'short',day:'numeric',year:'numeric',hour:'2-digit',minute:'2-digit'});
 
-renderSidebar();
-renderStats();
-renderTable();
-renderChart();
+renderAll();
 renderBottom();
 </script>
 </body>
