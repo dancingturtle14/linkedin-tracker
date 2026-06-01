@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>LinkedIn Tracker — APAC Asset Management</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:14px}
+:root{
+  --bg:           #0a0b0f;
+  --surface:      #131722;
+  --surface-2:    #1e222d;
+  --surface-3:    #2a2e39;
+  --border:       #2a2e39;
+  --border-2:     #363a45;
+  --text:         #d1d4dc;
+  --text-2:       #787b86;
+  --text-3:       #50535c;
+  --accent:       #2962ff;
+  --accent-2:     #1e88e5;
+  --green:        #089981;
+  --green-bg:     rgba(8,153,129,0.12);
+  --red:          #f23645;
+  --red-bg:       rgba(242,54,69,0.12);
+  --yellow:       #ff9800;
+  --yellow-bg:    rgba(255,152,0,0.12);
+  --purple:       #ab47bc;
+  --orange:       #ff6d00;
+  --font:         'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  --mono:         'JetBrains Mono','Fira Code',monospace;
+}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font);
+  line-height:1.5;
+  min-height:100vh;
+}
+/* ── Scrollbar ── */
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:var(--surface)}
+::-webkit-scrollbar-thumb{background:var(--surface-3);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--text-3)}
+
+/* ── Header ── */
+.header{
+  background:var(--surface);
+  border-bottom:1px solid var(--border);
+  padding:12px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:12px;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+.header-left{display:flex;align-items:center;gap:16px}
+.logo{font-size:18px;font-weight:700;color:var(--text);letter-spacing:-0.3px}
+.logo span{color:var(--accent)}
+.logo-sub{font-size:11px;color:var(--text-2);font-weight:400;margin-left:8px}
+.header-right{display:flex;align-items:center;gap:12px}
+.last-update{font-size:11px;color:var(--text-2)}
+.badge{
+  display:inline-flex;align-items:center;gap:4px;
+  padding:3px 8px;border-radius:4px;font-size:11px;font-weight:500;
+  background:var(--green-bg);color:var(--green);
+}
+
+/* ── Controls Bar ── */
+.controls{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 24px;
+  background:var(--surface);
+  border-bottom:1px solid var(--border);
+  flex-wrap:wrap;
+}
+.select-group{display:flex;align-items:center;gap:6px}
+.select-group label{font-size:11px;color:var(--text-2);text-transform:uppercase;letter-spacing:0.5px}
+.select-group select{
+  background:var(--surface-2);
+  border:1px solid var(--border);
+  color:var(--text);
+  padding:5px 10px;
+  border-radius:4px;
+  font-size:12px;
+  font-family:var(--font);
+  cursor:pointer;
+}
+.select-group select:hover{border-color:var(--text-3)}
+.search-input{
+  background:var(--surface-2);
+  border:1px solid var(--border);
+  color:var(--text);
+  padding:5px 10px;
+  border-radius:4px;
+  font-size:12px;
+  width:200px;
+}
+.search-input:focus{outline:none;border-color:var(--accent)}
+
+/* ── Stat Cards ── */
+.stats-row{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  gap:12px;
+  padding:16px 24px;
+}
+.stat-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:14px 18px;
+}
+.stat-card .label{font-size:11px;color:var(--text-2);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px}
+.stat-card .value{font-size:22px;font-weight:700;font-family:var(--mono);letter-spacing:-0.5px}
+.stat-card .change{font-size:11px;margin-top:4px;font-weight:500}
+.stat-card .change.up{color:var(--green)}
+.stat-card .change.down{color:var(--red)}
+
+/* ── Main Grid ── */
+.grid-container{
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:1px;
+  background:var(--border);
+  min-height:400px;
+}
+.grid-container > *{background:var(--bg)}
+
+/* ── Sidebar (Company List) ── */
+.sidebar{
+  background:var(--surface);
+  padding:0;
+  overflow-y:auto;
+  max-height:calc(100vh - 280px);
+}
+.sidebar-header{
+  padding:10px 16px;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+  color:var(--text-2);
+  border-bottom:1px solid var(--border);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:var(--surface-2);
+}
+.sidebar-header .count{font-size:11px;color:var(--text-3)}
+.company-item{
+  padding:8px 16px;
+  border-bottom:1px solid var(--border);
+  cursor:pointer;
+  transition:background 0.15s;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.company-item:hover{background:var(--surface-2)}
+.company-item.active{background:var(--surface-3);border-left:3px solid var(--accent)}
+.company-item .name{font-size:13px;font-weight:500;color:var(--text)}
+.company-item .region{font-size:10px;color:var(--text-3);margin-top:1px}
+.company-item .followers{font-size:12px;font-family:var(--mono);color:var(--text-2)}
+.company-item .check{
+  width:16px;height:16px;border:2px solid var(--text-3);border-radius:3px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;cursor:pointer;transition:all 0.15s;
+}
+.company-item .check.checked{background:var(--accent);border-color:var(--accent)}
+.company-item .check.checked::after{content:'✓';color:#fff;font-size:10px;font-weight:700}
+.company-item .left{display:flex;align-items:center;gap:10px;min-width:0;flex:1}
+.company-item .right{display:flex;align-items:center;gap:10px}
+.company-item .aum{font-size:10px;color:var(--text-3);font-family:var(--mono)}
+
+/* ── Main Content ── */
+.main-content{padding:16px 20px;background:var(--bg)}
+.panel-header{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-bottom:14px;
+}
+.panel-title{font-size:14px;font-weight:600;color:var(--text)}
+.panel-title .highlight{color:var(--accent);font-weight:700}
+.panel-controls{display:flex;gap:8px}
+
+/* ── Chart Container ── */
+.chart-box{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:16px;
+  margin-bottom:12px;
+}
+.chart-box .chart-title{
+  font-size:12px;font-weight:500;color:var(--text-2);
+  margin-bottom:10px;
+  display:flex;justify-content:space-between;
+}
+.chart-box .chart-title .legend{display:flex;gap:12px}
+.chart-box .chart-title .legend span{display:flex;align-items:center;gap:4px;font-size:11px}
+.chart-box .chart-title .legend .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.chart-wrap{position:relative;height:200px}
+
+/* ── Table ── */
+.data-table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:12px;
+}
+.data-table th{
+  text-align:left;
+  padding:8px 12px;
+  color:var(--text-2);
+  font-weight:500;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.3px;
+  border-bottom:1px solid var(--border);
+  white-space:nowrap;
+}
+.data-table td{
+  padding:8px 12px;
+  border-bottom:1px solid var(--border);
+  white-space:nowrap;
+}
+.data-table tr:hover td{background:var(--surface-2)}
+.data-table .num{font-family:var(--mono);text-align:right}
+.data-table .up{color:var(--green)}
+.data-table .down{color:var(--red)}
+.data-table .company-cell{font-weight:500;color:var(--text)}
+
+/* ── Bottom Row ── */
+.bottom-row{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:12px;
+  margin-top:12px;
+}
+.bottom-panel{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:14px;
+}
+.bottom-panel h4{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+  color:var(--text-2);
+  margin-bottom:10px;
+}
+
+/* ── Hashtag / Topic Tags ── */
+.tag{
+  display:inline-flex;
+  padding:3px 8px;
+  border-radius:4px;
+  font-size:11px;
+  background:var(--surface-2);
+  color:var(--text-2);
+  margin:2px;
+}
+.tag.active{background:var(--accent);color:#fff}
+.tag-bar{display:flex;flex-wrap:wrap;gap:4px}
+.tag-stats{display:flex;justify-content:space-between;font-size:11px;margin:6px 0}
+.tag-stats .label{color:var(--text-2)}
+.tag-stats .val{font-family:var(--mono)}
+.sentiment-bar{height:6px;border-radius:3px;background:var(--surface-3);margin:6px 0;overflow:hidden;display:flex}
+.sentiment-bar .seg{height:100%}
+.sentiment-bar .pos{background:var(--green)}
+.sentiment-bar .neu{background:var(--text-3)}
+.sentiment-bar .neg{background:var(--red)}
+
+/* ── Activity Feed ── */
+.feed-item{
+  padding:8px 0;
+  border-bottom:1px solid var(--border);
+  font-size:12px;
+}
+.feed-item:last-child{border-bottom:none}
+.feed-item .feed-company{font-weight:600;color:var(--text)}
+.feed-item .feed-time{font-size:10px;color:var(--text-3);float:right}
+.feed-item .feed-title{color:var(--text-2);margin:2px 0}
+.feed-item .feed-stats{display:flex;gap:12px;font-size:11px;color:var(--text-3)}
+.feed-item .feed-stats span{display:flex;align-items:center;gap:3px}
+
+/* ── Responsive ── */
+@media(max-width:900px){
+  .grid-container{grid-template-columns:1fr}
+  .bottom-row{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .controls{flex-direction:column;align-items:stretch}
+  .search-input{width:100%}
+}
+@media(max-width:600px){
+  .stats-row{grid-template-columns:1fr}
+}
+
+/* ── Loading / Empty ── */
+.loading{text-align:center;padding:40px;color:var(--text-2);font-size:13px}
+.loading .spinner{width:24px;height:24px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 12px}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── Tooltip ── */
+.tooltip{position:relative;cursor:help}
+.tooltip:hover::after{
+  content:attr(data-tip);
+  position:absolute;background:var(--surface-3);color:var(--text);
+  padding:4px 8px;border-radius:4px;font-size:11px;
+  white-space:nowrap;z-index:10;bottom:100%;left:50%;transform:translateX(-50%);
+  border:1px solid var(--border);
+}
+
+/* ── Expandable Row ── */
+.expand-row td{background:var(--surface-2);padding:0}
+.expand-content{padding:12px 12px 12px 40px;font-size:12px;color:var(--text-2);display:none}
+.expand-content.show{display:block}
+.tr-expand{cursor:pointer}
+.tr-expand .expand-icon{display:inline-block;transition:transform 0.15s;font-size:10px;margin-right:6px}
+.tr-expand.open .expand-icon{transform:rotate(90deg)}
+</style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<header class="header">
+  <div class="header-left">
+    <div class="logo">📊 <span>LinkedIn</span> Tracker <span class="logo-sub">APAC Asset Management</span></div>
+  </div>
+  <div class="header-right">
+    <span class="last-update" id="lastUpdate">Last update: —</span>
+    <span class="badge" id="statusBadge">● Live</span>
+  </div>
+</header>
+
+<!-- ═══ CONTROLS ═══ -->
+<div class="controls">
+  <div class="select-group">
+    <label>Metric</label>
+    <select id="metricSelect">
+      <option value="followers">Follower Growth</option>
+      <option value="engagement">Engagement Rate</option>
+      <option value="posts">Post Frequency</option>
+      <option value="sentiment">Sentiment Score</option>
+    </select>
+  </div>
+  <div class="select-group">
+    <label>Period</label>
+    <select id="periodSelect">
+      <option value="7d">7 Days</option>
+      <option value="30d" selected>30 Days</option>
+      <option value="90d">90 Days</option>
+    </select>
+  </div>
+  <div class="select-group">
+    <label>Region</label>
+    <select id="regionSelect">
+      <option value="all">All Markets</option>
+      <option value="Global">Global</option>
+      <option value="Hong Kong">Hong Kong</option>
+      <option value="Singapore">Singapore</option>
+      <option value="Australia">Australia</option>
+      <option value="China">China</option>
+      <option value="Japan">Japan</option>
+    </select>
+  </div>
+  <input type="text" class="search-input" id="searchInput" placeholder="Search companies…"/>
+</div>
+
+<!-- ═══ STATS ROW ═══ -->
+<div class="stats-row" id="statsRow">
+  <div class="stat-card"><div class="label">Companies Tracked</div><div class="value" id="statCompanies">20</div></div>
+  <div class="stat-card"><div class="label">Total Followers</div><div class="value" id="statFollowers">—</div><div class="change up" id="statFollowerChange">▲ —</div></div>
+  <div class="stat-card"><div class="label">Avg Engagement Rate</div><div class="value" id="statEngagement">—</div><div class="change up" id="statEngagementChange">▲ —</div></div>
+  <div class="stat-card"><div class="label">Posts This Week</div><div class="value" id="statPosts">—</div></div>
+  <div class="stat-card"><div class="label">Sentiment Score</div><div class="value" id="statSentiment">—</div><div class="change up" id="statSentimentChange">▲ —</div></div>
+</div>
+
+<!-- ═══ MAIN GRID ═══ -->
+<div class="grid-container">
+  <!-- ── Sidebar (Company List) ── -->
+  <div class="sidebar" id="companySidebar">
+    <div class="sidebar-header">
+      <span>Companies</span>
+      <span class="count" id="companyCount">20</span>
+    </div>
+    <div id="companyList"></div>
+  </div>
+
+  <!-- ── Main Content ── -->
+  <div class="main-content">
+    <!-- Chart -->
+    <div class="chart-box">
+      <div class="chart-title">
+        <span>Follower Growth Trend</span>
+        <div class="legend" id="chartLegend"></div>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="mainChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Data Table -->
+    <div class="panel-header">
+      <div class="panel-title"><span class="highlight">Company</span> Performance Overview</div>
+      <div class="panel-controls"></div>
+    </div>
+    <div class="chart-box" style="padding:0;overflow-x:auto">
+      <table class="data-table" id="dataTable">
+        <thead>
+          <tr>
+            <th style="width:30px"></th>
+            <th>Company</th>
+            <th style="text-align:right">Followers</th>
+            <th style="text-align:right">Follower Δ</th>
+            <th style="text-align:right">Eng. Rate</th>
+            <th style="text-align:right">Posts/Wk</th>
+            <th style="text-align:right">Sentiment</th>
+            <th style="text-align:right">AUM</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <!-- Bottom Row -->
+    <div class="bottom-row">
+      <div class="bottom-panel">
+        <h4>Content Type Split</h4>
+        <canvas id="contentChart" height="120"></canvas>
+      </div>
+      <div class="bottom-panel">
+        <h4>Top Hashtags</h4>
+        <div id="hashtagsContainer"></div>
+      </div>
+      <div class="bottom-panel">
+        <h4>Sentiment by Topic</h4>
+        <div id="sentimentTopics"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ════════════════════════════════════════════════════════════════
+// DATA
+// ════════════════════════════════════════════════════════════════
+const COMPANIES = [
+  {id:'blackrock',         name:'BlackRock',                market:'Global',    aum:'$11.5T', linkedin:'linkedin.com/company/blackrock', hq:'USA'},
+  {id:'jpmorgan',          name:'J.P. Morgan AM',           market:'Global',    aum:'$4.0T',  linkedin:'linkedin.com/company/jpmorgan-asset-management', hq:'USA'},
+  {id:'fidelity',          name:'Fidelity Investments',     market:'Global',    aum:'$5.5T',  linkedin:'linkedin.com/company/fidelity-investments', hq:'USA'},
+  {id:'hsbc',              name:'HSBC Asset Management',    market:'Hong Kong', aum:'$600B+', linkedin:'linkedin.com/company/hsbc-asset-management', hq:'HK'},
+  {id:'eastspring',        name:'Eastspring Investments',   market:'Singapore', aum:'$200B+', linkedin:'linkedin.com/company/eastspring-investments', hq:'Singapore'},
+  {id:'macquarie',         name:'Macquarie AM',             market:'Australia', aum:'$450B+', linkedin:'linkedin.com/company/macquarie-asset-management', hq:'Australia'},
+  {id:'firstsentier',      name:'First Sentier',            market:'Australia', aum:'$150B+', linkedin:'linkedin.com/company/first-sentier-investors', hq:'Australia'},
+  {id:'ampcapital',        name:'AMP Capital',              market:'Australia', aum:'$150B+', linkedin:'linkedin.com/company/amp-capital', hq:'Australia'},
+  {id:'pingan',            name:'Ping An AM',               market:'China',     aum:'$500B+', linkedin:'linkedin.com/company/ping-an-asset-management', hq:'China'},
+  {id:'chinaamc',          name:'China AMC',                market:'China',     aum:'$250B+', linkedin:'linkedin.com/company/china-asset-management', hq:'China'},
+  {id:'efund',             name:'E Fund Management',        market:'China',     aum:'$200B+', linkedin:'linkedin.com/company/e-fund-management', hq:'China'},
+  {id:'harvest',           name:'Harvest Global',           market:'China',     aum:'$150B+', linkedin:'linkedin.com/company/harvest-global-investments', hq:'China'},
+  {id:'chinasouthern',     name:'China Southern AM',        market:'China',     aum:'$200B+', linkedin:'linkedin.com/company/china-southern-fund-management', hq:'China'},
+  {id:'nomura',            name:'Nomura AM',                market:'Japan',     aum:'$500B+', linkedin:'linkedin.com/company/nomura-asset-management', hq:'Japan'},
+  {id:'daiwa',             name:'Daiwa AM',                 market:'Japan',     aum:'$200B+', linkedin:'linkedin.com/company/daiwa-asset-management', hq:'Japan'},
+  {id:'nikko',             name:'Nikko AM',                 market:'Japan',     aum:'$200B+', linkedin:'linkedin.com/company/nikko-am', hq:'Japan'},
+  {id:'smds',              name:'Sumitomo Mitsui DS AM',    market:'Japan',     aum:'$150B+', linkedin:'linkedin.com/company/sumitomo-mitsui-ds-asset-management', hq:'Japan'},
+  {id:'mizuho',            name:'Mizuho AM',                market:'Japan',     aum:'$100B+', linkedin:'linkedin.com/company/mizuho-asset-management', hq:'Japan'},
+  {id:'schroders',         name:'Schroders',                market:'Global',    aum:'$800B+', linkedin:'linkedin.com/company/schroders', hq:'UK'},
+  {id:'amundi',            name:'Amundi',                   market:'Global',    aum:'$2.3T',  linkedin:'linkedin.com/company/amundi_asset_management', hq:'France'},
+];
+
+// Generate simulated data
+function rand(min,max){return +(min + Math.random()*(max-min)).toFixed(1)}
+function randInt(min,max){return Math.floor(min+Math.random()*(max-min+1))}
+
+const COLORS = ['#2962ff','#089981','#f23645','#ff9800','#ab47bc','#00bcd4','#ff6d00','#43a047','#e91e63','#7c4dff'];
+
+const NOW = new Date();
+function genTimeseries(days){
+  const pts=[];
+  for(let i=days;i>=0;i--){
+    const d=new Date(NOW);d.setDate(d.getDate()-i);
+    pts.push(d.toISOString().slice(0,10));
+  }
+  return pts;
+}
+
+const DAYS30 = genTimeseries(30);
+const DAYS7 = genTimeseries(7);
+
+COMPANIES.forEach((c,i)=>{
+  const base = 50000 + Math.random()*2000000;
+  // Generate follower time series
+  c.followerHistory = DAYS30.map((_,j)=>{
+    return Math.round(base * (1 + Math.sin(j/5)*0.05 + (Math.random()-0.5)*0.02));
+  });
+  c.followers = c.followerHistory[c.followerHistory.length-1];
+  c.followerChange = ((c.followers - c.followerHistory[0]) / c.followerHistory[0] * 100).toFixed(1);
+  c.engagement = +(rand(1.2,5.8)).toFixed(2);
+  c.postsPerWeek = randInt(2,15);
+  c.sentiment = randInt(40,95);
+  c.sentimentChange = rand(-5,8);
+  c.engagementChange = rand(-0.8,1.5);
+  c.color = COLORS[i % COLORS.length];
+});
+
+// ════════════════════════════════════════════════════════════════
+// STATE
+// ════════════════════════════════════════════════════════════════
+let selectedCompanies = COMPANIES.slice(0,8).map(c=>c.id);
+let activeCompany = COMPANIES[0].id;
+let mainChart = null;
+let contentChart = null;
+
+// ════════════════════════════════════════════════════════════════
+// RENDER
+// ════════════════════════════════════════════════════════════════
+function renderSidebar(){
+  const region = document.getElementById('regionSelect').value;
+  const query = document.getElementById('searchInput').value.toLowerCase();
+  const list = document.getElementById('companyList');
+  let filtered = COMPANIES.filter(c=>{
+    if(region!=='all' && c.market!==region) return false;
+    if(query && !c.name.toLowerCase().includes(query)) return false;
+    return true;
+  });
+  document.getElementById('companyCount').textContent = filtered.length;
+
+  list.innerHTML = filtered.map(c=>{
+    const checked = selectedCompanies.includes(c.id) ? 'checked' : '';
+    const active = c.id===activeCompany ? 'active' : '';
+    return `<div class="company-item ${active}" data-id="${c.id}" onclick="selectCompany('${c.id}')">
+      <div class="left">
+        <div class="check ${checked}" data-id="${c.id}" onclick="event.stopPropagation();toggleCompany('${c.id}')"></div>
+        <div>
+          <div class="name">${c.name}</div>
+          <div class="region">${c.market} · ${c.aum}</div>
+        </div>
+      </div>
+      <div class="right">
+        <span class="followers">${formatNum(c.followers)}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function formatNum(n){
+  if(n>=1e6) return (n/1e6).toFixed(1)+'M';
+  if(n>=1e3) return (n/1e3).toFixed(1)+'K';
+  return n.toLocaleString();
+}
+
+function renderStats(){
+  const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id));
+  document.getElementById('statCompanies').textContent = COMPANIES.length;
+  const totalF = selected.reduce((s,c)=>s+c.followers,0);
+  document.getElementById('statFollowers').textContent = formatNum(totalF);
+  const avgEng = selected.reduce((s,c)=>s+c.engagement,0)/selected.length;
+  document.getElementById('statEngagement').textContent = avgEng.toFixed(2)+'%';
+  const avgSent = Math.round(selected.reduce((s,c)=>s+c.sentiment,0)/selected.length);
+  document.getElementById('statSentiment').textContent = avgSent;
+  document.getElementById('statPosts').textContent = Math.round(selected.reduce((s,c)=>s+c.postsPerWeek,0));
+  document.getElementById('statFollowerChange').textContent = '− ±0%';
+  document.getElementById('statEngagementChange').textContent = '− ±0%';
+  document.getElementById('statSentimentChange').textContent = '− ±0';
+}
+
+function renderTable(){
+  const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id));
+  const tbody = document.getElementById('tableBody');
+  tbody.innerHTML = selected.map((c,i)=>`
+    <tr class="tr-expand" onclick="toggleRow(this)">
+      <td><span class="expand-icon">▶</span></td>
+      <td><span class="company-cell">${c.name}</span></td>
+      <td class="num">${formatNum(c.followers)}</td>
+      <td class="num ${+c.followerChange>=0?'up':'down'}">${+c.followerChange>=0?'+':''}${c.followerChange}%</td>
+      <td class="num">${c.engagement}%</td>
+      <td class="num">${c.postsPerWeek}</td>
+      <td class="num ${c.sentiment>=60?'up':c.sentiment>=40?'':'down'}">${c.sentiment}</td>
+      <td class="num" style="color:var(--text-3)">${c.aum}</td>
+    </tr>
+    <tr class="expand-row">
+      <td colspan="8">
+        <div class="expand-content" id="expand_${c.id}">
+          <strong>LinkedIn:</strong> ${c.linkedin}<br/>
+          <strong>HQ:</strong> ${c.hq} · <strong>Region:</strong> ${c.region}<br/>
+          <strong>Engagement Change:</strong> <span class="${c.engagementChange>=0?'up':'down'}">${c.engagementChange>=0?'+':''}${c.engagementChange}pp</span><br/>
+          <strong>Sentiment Change:</strong> <span class="${c.sentimentChange>=0?'up':'down'}">${c.sentimentChange>=0?'+':''}${c.sentimentChange}</span>
+        </div>
+      </td>
+    </tr>
+  `).join('');
+}
+
+function toggleRow(el){
+  el.classList.toggle('open');
+  const expand = el.nextElementSibling;
+  if(expand){
+    const content = expand.querySelector('.expand-content');
+    if(content) content.classList.toggle('show');
+  }
+}
+
+function renderBottom(){
+  // Content type chart
+  const ctx = document.getElementById('contentChart');
+  if(contentChart) contentChart.destroy();
+  contentChart = new Chart(ctx, {
+    type:'doughnut',
+    data:{
+      labels:['Video','Carousel','Text','Image','Document'],
+      datasets:[{
+        data:[32,28,22,12,6],
+        backgroundColor:['#2962ff','#089981','#ab47bc','#ff9800','#787b86'],
+        borderWidth:0
+      }]
+    },
+    options:{
+      responsive:true,
+      maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false}
+      }
+    }
+  });
+
+  // Hashtags
+  const tags = ['#APAC','#AssetManagement','#ESG','#FixedIncome','#PrivateMarkets','#China','#Japan','#India','#NetZero','#AI'];
+  document.getElementById('hashtagsContainer').innerHTML = `
+    <div class="tag-bar">${tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+    <div style="margin-top:8px">
+      ${tags.slice(0,5).map(t=>`
+        <div class="tag-stats"><span class="label">${t}</span><span class="val">${randInt(120,890)}</span></div>
+      `).join('')}
+    </div>
+  `;
+
+  // Sentiment by topic
+  const topics = [
+    {topic:'ESG / Sustainability', pos:80,neu:15,neg:5},
+    {topic:'China Market Outlook', pos:55,neu:30,neg:15},
+    {topic:'Japan Reform Story', pos:72,neu:20,neg:8},
+    {topic:'India Growth', pos:68,neu:25,neg:7},
+    {topic:'Fixed Income / Rates', pos:48,neu:35,neg:17},
+  ];
+  document.getElementById('sentimentTopics').innerHTML = topics.map(t=>`
+    <div style="margin-bottom:8px">
+      <div class="tag-stats"><span class="label">${t.topic}</span></div>
+      <div class="sentiment-bar">
+        <div class="seg pos" style="width:${t.pos}%"></div>
+        <div class="seg neu" style="width:${t.neu}%"></div>
+        <div class="seg neg" style="width:${t.neg}%"></div>
+      </div>
+      <div style="display:flex;gap:8px;font-size:10px;color:var(--text-3)">
+        <span style="color:var(--green)">● ${t.pos}%</span>
+        <span style="color:var(--text-2)">● ${t.neu}%</span>
+        <span style="color:var(--red)">● ${t.neg}%</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderChart(){
+  const metric = document.getElementById('metricSelect').value;
+  const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id)).slice(0,6);
+  const ctx = document.getElementById('mainChart');
+  if(mainChart) mainChart.destroy();
+
+  // Update chart title
+  const titles = {
+    followers:'Follower Growth Trend (30 days)',
+    engagement:'Engagement Rate Trend (30 days)',
+    posts:'Post Frequency Trend (30 days)',
+    sentiment:'Sentiment Score Trend (30 days)'
+  };
+  document.querySelector('.chart-box .chart-title span').textContent = titles[metric];
+
+  // Update legend
+  document.getElementById('chartLegend').innerHTML = selected.map(c=>
+    `<span><span class="dot" style="background:${c.color}"></span>${c.name}</span>`
+  ).join('');
+
+  const datasets = selected.map(c=>{
+    let data;
+    if(metric==='followers') data = c.followerHistory;
+    else if(metric==='engagement') data = DAYS30.map(()=> +(c.engagement + (Math.random()-0.5)*0.8).toFixed(2));
+    else if(metric==='posts') data = DAYS30.map(()=> randInt(0,3));
+    else data = DAYS30.map(()=> randInt(40,95));
+
+    return {
+      label:c.name,
+      data:data.map((v,i)=>({x:DAYS30[i],y:v})),
+      borderColor:c.color,
+      backgroundColor:c.color+'22',
+      fill:false,
+      tension:0.3,
+      pointRadius:0,
+      borderWidth:2
+    };
+  });
+
+  mainChart = new Chart(ctx, {
+    type:'line',
+    data:{datasets},
+    options:{
+      responsive:true,
+      maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          backgroundColor:'var(--surface-3)',
+          titleColor:'var(--text)',
+          bodyColor:'var(--text-2)',
+          borderColor:'var(--border)',
+          borderWidth:1,
+          cornerRadius:4,
+          padding:10
+        }
+      },
+      scales:{
+        x:{
+          type:'time',
+          time:{unit:'day',displayFormats:{day:'MMM d'}},
+          ticks:{color:'var(--text-3)',font:{size:10},maxTicksLimit:8},
+          grid:{color:'var(--border)',display:true},
+          border:{display:false}
+        },
+        y:{
+          ticks:{color:'var(--text-3)',font:{size:10},callback:v=>formatNum(v)},
+          grid:{color:'var(--border)',display:true},
+          border:{display:false}
+        }
+      }
+    }
+  });
+}
+
+function toggleCompany(id){
+  const idx = selectedCompanies.indexOf(id);
+  if(idx>=0) selectedCompanies.splice(idx,1);
+  else selectedCompanies.push(id);
+  if(selectedCompanies.length===0) selectedCompanies.push(id);
+  renderSidebar();
+  renderStats();
+  renderTable();
+  renderChart();
+}
+
+function selectCompany(id){
+  activeCompany = id;
+  renderSidebar();
+}
+
+// ════════════════════════════════════════════════════════════════
+// EVENTS
+// ════════════════════════════════════════════════════════════════
+document.getElementById('metricSelect').addEventListener('change',renderChart);
+document.getElementById('periodSelect').addEventListener('change',renderChart);
+document.getElementById('regionSelect').addEventListener('change',renderSidebar);
+document.getElementById('searchInput').addEventListener('input',renderSidebar);
+document.getElementById('searchInput').addEventListener('input',()=>{renderTable();renderStats();});
+document.getElementById('regionSelect').addEventListener('change',()=>{renderTable();renderStats();});
+
+// ════════════════════════════════════════════════════════════════
+// INIT
+// ════════════════════════════════════════════════════════════════
+document.getElementById('lastUpdate').textContent = 'Last update: '+new Date().toLocaleString('en-US',{month:'short',day:'numeric',year:'numeric',hour:'2-digit',minute:'2-digit'});
+
+renderSidebar();
+renderStats();
+renderTable();
+renderChart();
+renderBottom();
+</script>
+</body>
+</html>
