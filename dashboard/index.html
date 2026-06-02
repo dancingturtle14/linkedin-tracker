@@ -9,23 +9,25 @@
 <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{font-size:14px}
+html{font-size:15px}
 :root{
-  --bg:#0a0b0f;--surface:#131722;--surface-2:#1e222d;--surface-3:#2a2e39;
-  --border:#2a2e39;--border-2:#363a45;
-  --text:#d1d4dc;--text-2:#787b86;--text-3:#50535c;
+  --bg:#f5f6fa;--surface:#ffffff;--surface-2:#f0f1f5;--surface-3:#e4e6ed;
+  --border:#dee0e6;--border-2:#c8cad4;
+  --text:#1c1e2a;--text-2:#5d6070;--text-3:#8e91a0;
   --accent:#2962ff;--accent-2:#1e88e5;
-  --green:#089981;--green-bg:rgba(8,153,129,0.12);
-  --red:#f23645;--red-bg:rgba(242,54,69,0.12);
+  --green:#089981;--green-bg:rgba(8,153,129,0.08);
+  --red:#f23645;--red-bg:rgba(242,54,69,0.08);
   --yellow:#ff9800;--orange:#ff6d00;
+  --shadow:0 1px 3px rgba(0,0,0,0.06),0 1px 2px rgba(0,0,0,0.04);
+  --shadow-lg:0 2px 8px rgba(0,0,0,0.08);
   --font:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
   --mono:'JetBrains Mono','Fira Code',monospace;
 }
 body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5;min-height:100vh}
-::-webkit-scrollbar{width:5px;height:5px}
-::-webkit-scrollbar-track{background:var(--surface)}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:var(--surface-3);border-radius:3px}
-.header{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;position:sticky;top:0;z-index:100}
+.header{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;position:sticky;top:0;z-index:100;box-shadow:var(--shadow)}
 .header-left{display:flex;align-items:center;gap:16px}
 .logo{font-size:18px;font-weight:700;letter-spacing:-0.3px}
 .logo span{color:var(--accent)}
@@ -50,7 +52,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:
 .rank-bar .highlight-name{font-weight:700;color:var(--text);font-size:13px}
 
 .stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;padding:14px 24px}
-.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:12px 16px}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 18px;box-shadow:var(--shadow)}
 .stat-card .label{font-size:10px;color:var(--text-2);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px}
 .stat-card .value{font-size:20px;font-weight:700;font-family:var(--mono);letter-spacing:-0.5px}
 .stat-card .sub{font-size:10px;color:var(--text-3);margin-top:2px}
@@ -84,23 +86,22 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:
 .panel-title .highlight{color:var(--accent);font-weight:700}
 .panel-title .sub{font-size:11px;color:var(--text-3);font-weight:400;margin-left:8px}
 
-.chart-box{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px;margin-bottom:10px}
+.chart-box{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px;box-shadow:var(--shadow)}
 .chart-box .ch-title{font-size:11px;font-weight:500;color:var(--text-2);margin-bottom:8px;display:flex;justify-content:space-between}
 .chart-box .ch-title .leg{display:flex;gap:10px}
 .chart-box .ch-title .leg span{display:flex;align-items:center;gap:3px;font-size:10px}
 .chart-box .ch-title .leg .dot{width:7px;height:7px;border-radius:50%}
 .chart-wrap{position:relative;height:180px}
-.chart-wrap.md{height:240px}
 .chart-wrap.lg{height:280px}
 .chart-wrap.xs{height:100px}
 
 .rank-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:10px}
-.rank-chart{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px}
+.rank-chart{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px;box-shadow:var(--shadow)}
 .rank-chart .ch-title{font-size:11px;font-weight:500;color:var(--text-2);margin-bottom:6px}
 .rank-chart .chart-wrap{height:220px}
 
 /* Post Feed */
-.post-feed{background:var(--surface);border:1px solid var(--border);border-radius:6px;margin-bottom:10px;overflow:hidden}
+.post-feed{background:var(--surface);border:1px solid var(--border);border-radius:8px;margin-bottom:12px;overflow:hidden;box-shadow:var(--shadow)}
 .post-feed-h{padding:10px 14px 8px;font-size:11px;font-weight:500;color:var(--text-2);border-bottom:1px solid var(--border);display:flex;justify-content:space-between}
 .post-item{padding:10px 14px;border-bottom:1px solid var(--border);display:flex;gap:10px;transition:background .15s;cursor:pointer}
 .post-item:last-child{border-bottom:none}
@@ -138,7 +139,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:
 .tr-expand.open .ei{transform:rotate(90deg)}
 
 .bottom-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
-.bottom-panel{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:12px}
+.bottom-panel{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;box-shadow:var(--shadow)}
 .bottom-panel h4{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--text-2);margin-bottom:8px}
 .tag{display:inline-flex;padding:2px 7px;border-radius:4px;font-size:10px;background:var(--surface-2);color:var(--text-2);margin:2px}
 .tag-bar{display:flex;flex-wrap:wrap;gap:3px}
@@ -230,17 +231,6 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:
   </div>
 
   <div class="main-content">
-    <!-- Trend Chart -->
-    <div class="chart-box">
-      <div class="ch-title">
-        <span id="trendTitle">Follower Growth Trend (90 days)</span>
-        <div class="leg" id="chartLegend"></div>
-      </div>
-      <div class="chart-wrap md">
-        <canvas id="mainChart"></canvas>
-      </div>
-    </div>
-
     <!-- Rank Charts Row -->
     <div class="rank-row">
       <div class="rank-chart">
@@ -260,9 +250,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:
     <!-- Recent Top Posts -->
     <div class="post-feed">
       <div class="post-feed-h">
-        <span>Top LinkedIn Posts &#x1F517;</span>
-        <span style="color:var(--text-3);font-size:10px">Click a post to open on LinkedIn</span>
-      </div>
+      <span>Top LinkedIn Posts</span>
+    </div>
       <div id="postFeed"></div>
     </div>
 
@@ -306,9 +295,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:
 let COMPANY_DATA = [];
 let COMPANIES = [];
 let focusId = 'jpmorgan';
-let mainChart, followerRankChart, engagementRankChart, postFreqRankChart, contentChart;
+let followerRankChart, engagementRankChart, postFreqRankChart, contentChart;
 const COLORS = ['#2962ff','#089981','#f23645','#ff9800','#ab47bc','#00bcd4','#ff6d00','#43a047','#e91e63','#7c4dff','#1de9b6','#fdd835','#5c6bc0','#26a69a','#ec407a','#78909c','#ffab40','#ce93d8','#4dd0e1','#a5d6a7'];
-const ENG_COLORS = {likes:'#2962ff', comments:'#089981', shares:'#ff9800'};
 
 function formatNum(n){if(n>=1e6)return (n/1e6).toFixed(1)+'M';if(n>=1e3)return (n/1e3).toFixed(1)+'K';return n.toLocaleString()}
 function timeAgo(d){const n=new Date();const df=(n-d)/1000;if(df<3600)return Math.floor(df/60)+'m';if(df<86400)return Math.floor(df/3600)+'h';return Math.floor(df/86400)+'d'}
@@ -355,7 +343,7 @@ function renderSidebar(){
       <div class="left">
         <span class="rank-badge ${c.rank_followers<=3?'top3':''}">${'#'+c.rank_followers}</span>
         <div>
-          <div class="name">${c.name}</div>
+          <div class="name"><a href="${c.url}" target="_blank" style="color:inherit;text-decoration:none" onclick="event.stopPropagation()">${c.name}</a> <a href="${c.url}" target="_blank" style="color:var(--accent);font-size:9px;text-decoration:none">&#x2197;</a></div>
           <div class="region">${c.market}</div>
         </div>
       </div>
@@ -415,7 +403,7 @@ function renderTable(){
     const te = c.total_engagement ? c.total_engagement.likes + c.total_engagement.comments + c.total_engagement.shares : 0;
     return `<tr class="tr-expand ${cls}" onclick="toggleRow(this)">
       <td class="rnum ${i<3?'t3':''}">${i+1}</td>
-      <td><span class="name-cell">${c.name}</span></td>
+      <td><span class="name-cell">${c.name} <a href="${c.url}" target="_blank" style="color:var(--accent);font-size:10px;text-decoration:none">↗</a></span></td>
       <td class="num">${formatNum(c.follower_count)}</td>
       <td class="num">${(c.engagement_rate||0).toFixed(1)}%</td>
       <td class="num">${formatNum(c.avg_likes||0)}</td>
@@ -464,7 +452,6 @@ function renderPosts(){
     return;
   }
   feed.innerHTML = topPosts.map(p=>`
-    <a href="${p.post_url||'#'}" target="_blank" class="plink">
     <div class="post-item">
       <div class="pa" style="background:${p.coColor}">${p.coName.charAt(0)}</div>
       <div class="pb">
@@ -477,62 +464,11 @@ function renderPosts(){
         </div>
       </div>
       <div class="ptime">${p.date?timeAgo(new Date(p.date)):''}</div>
-    </div></a>
+    </div>
   `).join('');
 }
 
 function renderCharts(){
-  const period = document.getElementById('periodSelect').value;
-  const days = period==='90d'?90:period==='180d'?180:30;
-  // Show top 6 by followers for trend
-  const top6 = [...COMPANIES].sort((a,b)=>b.follower_count-a.follower_count).slice(0,6);
-  const f = COMPANIES.find(c=>c.id===focusId);
-  if(f && !top6.find(c=>c.id===focusId)) top6[top6.length-1] = f;
-
-  // ── Main Trend Chart ──
-  const ctx = document.getElementById('mainChart');
-  if(mainChart) mainChart.destroy();
-  document.getElementById('trendTitle').textContent = 'Follower Growth Trend ('+days+' days)';
-  document.getElementById('chartLegend').innerHTML = top6.map(c=>`<span><span class="dot" style="background:${COLORS[COMPANIES.indexOf(c)%COLORS.length]}"></span>${c.id===focusId?'<b>'+c.name+'</b>':c.name}</span>`).join('');
-
-  const datasets = top6.map(c=>{
-    const h = c.follower_history || [];
-    let data;
-    if(h.length>0){
-      const slice = h.slice(-days);
-      data = slice.map(d=>({x:d.date,y:d.count}));
-    }else{
-      data = Array.from({length:days},(_,i)=>({x:new Date(Date.now()-i*86400000).toISOString().slice(0,10),y:c.follower_count}));
-    }
-    return {
-      label:c.name, data,
-      borderColor:COLORS[COMPANIES.indexOf(c)%COLORS.length],
-      backgroundColor:COLORS[COMPANIES.indexOf(c)%COLORS.length]+'22',
-      fill:false, tension:0.3, pointRadius:0, borderWidth: c.id===focusId?3:1.5,
-      borderDash: c.id===focusId?[]:[3,3]
-    };
-  });
-  mainChart = new Chart(ctx,{
-    type:'line', data:{datasets},
-    options:{
-      responsive:true, maintainAspectRatio:false,
-      interaction:{mode:'index',intersect:false},
-      plugins:{
-        legend:{display:false},
-        tooltip:{
-          backgroundColor:'var(--surface-3)', titleColor:'var(--text)',
-          bodyColor:'var(--text-2)', borderColor:'var(--border)',
-          borderWidth:1, cornerRadius:4, padding:8,
-          callbacks:{label:ctx=>ctx.dataset.label+': '+formatNum(ctx.parsed.y)}
-        }
-      },
-      scales:{
-        x:{type:'time',time:{unit:'day',displayFormats:{day:'MMM d'}},ticks:{color:'var(--text-3)',font:{size:9},maxTicksLimit:6},grid:{color:'var(--border)'},border:{display:false}},
-        y:{ticks:{color:'var(--text-3)',font:{size:9},callback:v=>formatNum(v)},grid:{color:'var(--border)'},border:{display:false}}
-      }
-    }
-  });
-
   // ── Follower Rank ──
   const ctxF = document.getElementById('followerRankChart');
   if(followerRankChart) followerRankChart.destroy();
