@@ -1,0 +1,8770 @@
+{
+  "last_updated": "2026-06-02T00:02:51Z",
+  "total_companies": 20,
+  "companies": [
+    {
+      "id": "blackrock",
+      "name": "BlackRock",
+      "url": "https://www.linkedin.com/company/blackrock/",
+      "market": "Global",
+      "aum": "$11.5T",
+      "hq": "USA",
+      "industry": "Investment Management",
+      "follower_count": 1946824,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 2007762
+        },
+        {
+          "date": "2026-03-05",
+          "count": 2007075
+        },
+        {
+          "date": "2026-03-06",
+          "count": 2006387
+        },
+        {
+          "date": "2026-03-07",
+          "count": 2005700
+        },
+        {
+          "date": "2026-03-08",
+          "count": 2005014
+        },
+        {
+          "date": "2026-03-09",
+          "count": 2004327
+        },
+        {
+          "date": "2026-03-10",
+          "count": 2003641
+        },
+        {
+          "date": "2026-03-11",
+          "count": 2002955
+        },
+        {
+          "date": "2026-03-12",
+          "count": 2002269
+        },
+        {
+          "date": "2026-03-13",
+          "count": 2001583
+        },
+        {
+          "date": "2026-03-14",
+          "count": 2000898
+        },
+        {
+          "date": "2026-03-15",
+          "count": 2000213
+        },
+        {
+          "date": "2026-03-16",
+          "count": 1999528
+        },
+        {
+          "date": "2026-03-17",
+          "count": 1998843
+        },
+        {
+          "date": "2026-03-18",
+          "count": 1998159
+        },
+        {
+          "date": "2026-03-19",
+          "count": 1997475
+        },
+        {
+          "date": "2026-03-20",
+          "count": 1996791
+        },
+        {
+          "date": "2026-03-21",
+          "count": 1996107
+        },
+        {
+          "date": "2026-03-22",
+          "count": 1995424
+        },
+        {
+          "date": "2026-03-23",
+          "count": 1994740
+        },
+        {
+          "date": "2026-03-24",
+          "count": 1994057
+        },
+        {
+          "date": "2026-03-25",
+          "count": 1993375
+        },
+        {
+          "date": "2026-03-26",
+          "count": 1992692
+        },
+        {
+          "date": "2026-03-27",
+          "count": 1992010
+        },
+        {
+          "date": "2026-03-28",
+          "count": 1991328
+        },
+        {
+          "date": "2026-03-29",
+          "count": 1990646
+        },
+        {
+          "date": "2026-03-30",
+          "count": 1989964
+        },
+        {
+          "date": "2026-03-31",
+          "count": 1989283
+        },
+        {
+          "date": "2026-04-01",
+          "count": 1988602
+        },
+        {
+          "date": "2026-04-02",
+          "count": 1987921
+        },
+        {
+          "date": "2026-04-03",
+          "count": 1987240
+        },
+        {
+          "date": "2026-04-04",
+          "count": 1986560
+        },
+        {
+          "date": "2026-04-05",
+          "count": 1985880
+        },
+        {
+          "date": "2026-04-06",
+          "count": 1985200
+        },
+        {
+          "date": "2026-04-07",
+          "count": 1984520
+        },
+        {
+          "date": "2026-04-08",
+          "count": 1983840
+        },
+        {
+          "date": "2026-04-09",
+          "count": 1983161
+        },
+        {
+          "date": "2026-04-10",
+          "count": 1982482
+        },
+        {
+          "date": "2026-04-11",
+          "count": 1981803
+        },
+        {
+          "date": "2026-04-12",
+          "count": 1981125
+        },
+        {
+          "date": "2026-04-13",
+          "count": 1980446
+        },
+        {
+          "date": "2026-04-14",
+          "count": 1979768
+        },
+        {
+          "date": "2026-04-15",
+          "count": 1979090
+        },
+        {
+          "date": "2026-04-16",
+          "count": 1978413
+        },
+        {
+          "date": "2026-04-17",
+          "count": 1977735
+        },
+        {
+          "date": "2026-04-18",
+          "count": 1977058
+        },
+        {
+          "date": "2026-04-19",
+          "count": 1976381
+        },
+        {
+          "date": "2026-04-20",
+          "count": 1975705
+        },
+        {
+          "date": "2026-04-21",
+          "count": 1975028
+        },
+        {
+          "date": "2026-04-22",
+          "count": 1974352
+        },
+        {
+          "date": "2026-04-23",
+          "count": 1973676
+        },
+        {
+          "date": "2026-04-24",
+          "count": 1973000
+        },
+        {
+          "date": "2026-04-25",
+          "count": 1972324
+        },
+        {
+          "date": "2026-04-26",
+          "count": 1971649
+        },
+        {
+          "date": "2026-04-27",
+          "count": 1970974
+        },
+        {
+          "date": "2026-04-28",
+          "count": 1970299
+        },
+        {
+          "date": "2026-04-29",
+          "count": 1969625
+        },
+        {
+          "date": "2026-04-30",
+          "count": 1968950
+        },
+        {
+          "date": "2026-05-01",
+          "count": 1968276
+        },
+        {
+          "date": "2026-05-02",
+          "count": 1967602
+        },
+        {
+          "date": "2026-05-03",
+          "count": 1966928
+        },
+        {
+          "date": "2026-05-04",
+          "count": 1966255
+        },
+        {
+          "date": "2026-05-05",
+          "count": 1965582
+        },
+        {
+          "date": "2026-05-06",
+          "count": 1964909
+        },
+        {
+          "date": "2026-05-07",
+          "count": 1964236
+        },
+        {
+          "date": "2026-05-08",
+          "count": 1963563
+        },
+        {
+          "date": "2026-05-09",
+          "count": 1962891
+        },
+        {
+          "date": "2026-05-10",
+          "count": 1962219
+        },
+        {
+          "date": "2026-05-11",
+          "count": 1961547
+        },
+        {
+          "date": "2026-05-12",
+          "count": 1960875
+        },
+        {
+          "date": "2026-05-13",
+          "count": 1960204
+        },
+        {
+          "date": "2026-05-14",
+          "count": 1959533
+        },
+        {
+          "date": "2026-05-15",
+          "count": 1958862
+        },
+        {
+          "date": "2026-05-16",
+          "count": 1958191
+        },
+        {
+          "date": "2026-05-17",
+          "count": 1957521
+        },
+        {
+          "date": "2026-05-18",
+          "count": 1956850
+        },
+        {
+          "date": "2026-05-19",
+          "count": 1956180
+        },
+        {
+          "date": "2026-05-20",
+          "count": 1955511
+        },
+        {
+          "date": "2026-05-21",
+          "count": 1954841
+        },
+        {
+          "date": "2026-05-22",
+          "count": 1954172
+        },
+        {
+          "date": "2026-05-23",
+          "count": 1953503
+        },
+        {
+          "date": "2026-05-24",
+          "count": 1952834
+        },
+        {
+          "date": "2026-05-25",
+          "count": 1952165
+        },
+        {
+          "date": "2026-05-26",
+          "count": 1951497
+        },
+        {
+          "date": "2026-05-27",
+          "count": 1950828
+        },
+        {
+          "date": "2026-05-28",
+          "count": 1950160
+        },
+        {
+          "date": "2026-05-29",
+          "count": 1949493
+        },
+        {
+          "date": "2026-05-30",
+          "count": 1948825
+        },
+        {
+          "date": "2026-05-31",
+          "count": 1948158
+        },
+        {
+          "date": "2026-06-01",
+          "count": 1947491
+        },
+        {
+          "date": "2026-06-02",
+          "count": 1946824
+        }
+      ],
+      "engagement_rate": 3.19,
+      "posts_per_30": 12,
+      "avg_likes": 868,
+      "avg_comments": 53,
+      "avg_shares": 40,
+      "total_engagement": {
+        "likes": 10416,
+        "comments": 636,
+        "shares": 480
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:771715006494/",
+          "title": "AI in Asset Management: Portfolio Construction",
+          "date": "2026-05-17",
+          "likes": 409,
+          "comments": 58,
+          "shares": 19
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:926717687195/",
+          "title": "Climate Risk: Machine Learning Applications",
+          "date": "2026-05-05",
+          "likes": 337,
+          "comments": 27,
+          "shares": 27
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:361853862209/",
+          "title": "Real Estate Debt: Opportunities in the Recovery Cycle",
+          "date": "2026-05-10",
+          "likes": 322,
+          "comments": 27,
+          "shares": 33
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:271724879230/",
+          "title": "2025 APAC Market Outlook: Machine Learning Applications",
+          "date": "2026-05-19",
+          "likes": 242,
+          "comments": 31,
+          "shares": 11
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:772179222859/",
+          "title": "Active vs Passive: Key Themes for the Year Ahead",
+          "date": "2026-05-09",
+          "likes": 242,
+          "comments": 18,
+          "shares": 34
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:527607602152/",
+          "title": "Hong Kong IPO Market: The APAC Perspective",
+          "date": "2026-05-13",
+          "likes": 235,
+          "comments": 32,
+          "shares": 15
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:134937646136/",
+          "title": "Hong Kong IPO Market: Emerging Market Perspectives",
+          "date": "2026-05-05",
+          "likes": 52,
+          "comments": 8,
+          "shares": 3
+        }
+      ],
+      "rank_followers": 1,
+      "rank_engagement": 16,
+      "rank_posts": 18
+    },
+    {
+      "id": "fidelity",
+      "name": "Fidelity Investments",
+      "url": "https://www.linkedin.com/company/fidelity-investments/",
+      "market": "Global",
+      "aum": "$5.5T",
+      "hq": "USA",
+      "industry": "Financial Services",
+      "follower_count": 1483280,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 1642047
+        },
+        {
+          "date": "2026-03-05",
+          "count": 1640193
+        },
+        {
+          "date": "2026-03-06",
+          "count": 1638341
+        },
+        {
+          "date": "2026-03-07",
+          "count": 1636491
+        },
+        {
+          "date": "2026-03-08",
+          "count": 1634643
+        },
+        {
+          "date": "2026-03-09",
+          "count": 1632797
+        },
+        {
+          "date": "2026-03-10",
+          "count": 1630953
+        },
+        {
+          "date": "2026-03-11",
+          "count": 1629111
+        },
+        {
+          "date": "2026-03-12",
+          "count": 1627272
+        },
+        {
+          "date": "2026-03-13",
+          "count": 1625434
+        },
+        {
+          "date": "2026-03-14",
+          "count": 1623599
+        },
+        {
+          "date": "2026-03-15",
+          "count": 1621765
+        },
+        {
+          "date": "2026-03-16",
+          "count": 1619934
+        },
+        {
+          "date": "2026-03-17",
+          "count": 1618105
+        },
+        {
+          "date": "2026-03-18",
+          "count": 1616277
+        },
+        {
+          "date": "2026-03-19",
+          "count": 1614452
+        },
+        {
+          "date": "2026-03-20",
+          "count": 1612629
+        },
+        {
+          "date": "2026-03-21",
+          "count": 1610808
+        },
+        {
+          "date": "2026-03-22",
+          "count": 1608989
+        },
+        {
+          "date": "2026-03-23",
+          "count": 1607172
+        },
+        {
+          "date": "2026-03-24",
+          "count": 1605357
+        },
+        {
+          "date": "2026-03-25",
+          "count": 1603545
+        },
+        {
+          "date": "2026-03-26",
+          "count": 1601734
+        },
+        {
+          "date": "2026-03-27",
+          "count": 1599925
+        },
+        {
+          "date": "2026-03-28",
+          "count": 1598118
+        },
+        {
+          "date": "2026-03-29",
+          "count": 1596314
+        },
+        {
+          "date": "2026-03-30",
+          "count": 1594511
+        },
+        {
+          "date": "2026-03-31",
+          "count": 1592711
+        },
+        {
+          "date": "2026-04-01",
+          "count": 1590912
+        },
+        {
+          "date": "2026-04-02",
+          "count": 1589116
+        },
+        {
+          "date": "2026-04-03",
+          "count": 1587321
+        },
+        {
+          "date": "2026-04-04",
+          "count": 1585529
+        },
+        {
+          "date": "2026-04-05",
+          "count": 1583738
+        },
+        {
+          "date": "2026-04-06",
+          "count": 1581950
+        },
+        {
+          "date": "2026-04-07",
+          "count": 1580164
+        },
+        {
+          "date": "2026-04-08",
+          "count": 1578379
+        },
+        {
+          "date": "2026-04-09",
+          "count": 1576597
+        },
+        {
+          "date": "2026-04-10",
+          "count": 1574816
+        },
+        {
+          "date": "2026-04-11",
+          "count": 1573038
+        },
+        {
+          "date": "2026-04-12",
+          "count": 1571262
+        },
+        {
+          "date": "2026-04-13",
+          "count": 1569487
+        },
+        {
+          "date": "2026-04-14",
+          "count": 1567715
+        },
+        {
+          "date": "2026-04-15",
+          "count": 1565945
+        },
+        {
+          "date": "2026-04-16",
+          "count": 1564177
+        },
+        {
+          "date": "2026-04-17",
+          "count": 1562410
+        },
+        {
+          "date": "2026-04-18",
+          "count": 1560646
+        },
+        {
+          "date": "2026-04-19",
+          "count": 1558884
+        },
+        {
+          "date": "2026-04-20",
+          "count": 1557123
+        },
+        {
+          "date": "2026-04-21",
+          "count": 1555365
+        },
+        {
+          "date": "2026-04-22",
+          "count": 1553609
+        },
+        {
+          "date": "2026-04-23",
+          "count": 1551854
+        },
+        {
+          "date": "2026-04-24",
+          "count": 1550102
+        },
+        {
+          "date": "2026-04-25",
+          "count": 1548351
+        },
+        {
+          "date": "2026-04-26",
+          "count": 1546603
+        },
+        {
+          "date": "2026-04-27",
+          "count": 1544856
+        },
+        {
+          "date": "2026-04-28",
+          "count": 1543112
+        },
+        {
+          "date": "2026-04-29",
+          "count": 1541369
+        },
+        {
+          "date": "2026-04-30",
+          "count": 1539629
+        },
+        {
+          "date": "2026-05-01",
+          "count": 1537890
+        },
+        {
+          "date": "2026-05-02",
+          "count": 1536154
+        },
+        {
+          "date": "2026-05-03",
+          "count": 1534419
+        },
+        {
+          "date": "2026-05-04",
+          "count": 1532686
+        },
+        {
+          "date": "2026-05-05",
+          "count": 1530956
+        },
+        {
+          "date": "2026-05-06",
+          "count": 1529227
+        },
+        {
+          "date": "2026-05-07",
+          "count": 1527500
+        },
+        {
+          "date": "2026-05-08",
+          "count": 1525775
+        },
+        {
+          "date": "2026-05-09",
+          "count": 1524052
+        },
+        {
+          "date": "2026-05-10",
+          "count": 1522331
+        },
+        {
+          "date": "2026-05-11",
+          "count": 1520612
+        },
+        {
+          "date": "2026-05-12",
+          "count": 1518895
+        },
+        {
+          "date": "2026-05-13",
+          "count": 1517180
+        },
+        {
+          "date": "2026-05-14",
+          "count": 1515466
+        },
+        {
+          "date": "2026-05-15",
+          "count": 1513755
+        },
+        {
+          "date": "2026-05-16",
+          "count": 1512046
+        },
+        {
+          "date": "2026-05-17",
+          "count": 1510338
+        },
+        {
+          "date": "2026-05-18",
+          "count": 1508633
+        },
+        {
+          "date": "2026-05-19",
+          "count": 1506929
+        },
+        {
+          "date": "2026-05-20",
+          "count": 1505228
+        },
+        {
+          "date": "2026-05-21",
+          "count": 1503528
+        },
+        {
+          "date": "2026-05-22",
+          "count": 1501830
+        },
+        {
+          "date": "2026-05-23",
+          "count": 1500134
+        },
+        {
+          "date": "2026-05-24",
+          "count": 1498440
+        },
+        {
+          "date": "2026-05-25",
+          "count": 1496748
+        },
+        {
+          "date": "2026-05-26",
+          "count": 1495058
+        },
+        {
+          "date": "2026-05-27",
+          "count": 1493370
+        },
+        {
+          "date": "2026-05-28",
+          "count": 1491683
+        },
+        {
+          "date": "2026-05-29",
+          "count": 1489999
+        },
+        {
+          "date": "2026-05-30",
+          "count": 1488316
+        },
+        {
+          "date": "2026-05-31",
+          "count": 1486636
+        },
+        {
+          "date": "2026-06-01",
+          "count": 1484957
+        },
+        {
+          "date": "2026-06-02",
+          "count": 1483280
+        }
+      ],
+      "engagement_rate": 4.16,
+      "posts_per_30": 29,
+      "avg_likes": 722,
+      "avg_comments": 20,
+      "avg_shares": 21,
+      "total_engagement": {
+        "likes": 20938,
+        "comments": 580,
+        "shares": 609
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:462290847588/",
+          "title": "Green Bonds Growth: Strategies for 2025",
+          "date": "2026-05-12",
+          "likes": 271,
+          "comments": 33,
+          "shares": 32
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:311256244713/",
+          "title": "China A-Share Market: Signs of Recovery",
+          "date": "2026-05-28",
+          "likes": 240,
+          "comments": 35,
+          "shares": 11
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:848185473806/",
+          "title": "Global Macro Outlook: Infrastructure and Demographics",
+          "date": "2026-05-19",
+          "likes": 223,
+          "comments": 44,
+          "shares": 27
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:15477831484/",
+          "title": "Hong Kong IPO Market: Infrastructure and Demographics",
+          "date": "2026-05-24",
+          "likes": 215,
+          "comments": 30,
+          "shares": 14
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:406143413814/",
+          "title": "Digital Asset Adoption: Opportunities in the Recovery Cycle",
+          "date": "2026-05-18",
+          "likes": 199,
+          "comments": 32,
+          "shares": 12
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:543089779535/",
+          "title": "Retirement in Ageing Asia: Trends and Opportunities",
+          "date": "2026-05-24",
+          "likes": 198,
+          "comments": 27,
+          "shares": 11
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:395578971343/",
+          "title": "Green Bonds Growth: Higher Rate Environment",
+          "date": "2026-05-11",
+          "likes": 168,
+          "comments": 29,
+          "shares": 8
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:122079990694/",
+          "title": "Sustainable Investing: Signs of Recovery",
+          "date": "2026-05-09",
+          "likes": 132,
+          "comments": 11,
+          "shares": 5
+        }
+      ],
+      "rank_followers": 2,
+      "rank_engagement": 8,
+      "rank_posts": 10
+    },
+    {
+      "id": "jpmorgan",
+      "name": "J.P. Morgan AM",
+      "url": "https://www.linkedin.com/company/jpmorgan-asset-management/",
+      "market": "Global",
+      "aum": "$4.0T",
+      "hq": "USA",
+      "industry": "Investment Management",
+      "follower_count": 829007,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 873474
+        },
+        {
+          "date": "2026-03-05",
+          "count": 872967
+        },
+        {
+          "date": "2026-03-06",
+          "count": 872460
+        },
+        {
+          "date": "2026-03-07",
+          "count": 871954
+        },
+        {
+          "date": "2026-03-08",
+          "count": 871448
+        },
+        {
+          "date": "2026-03-09",
+          "count": 870942
+        },
+        {
+          "date": "2026-03-10",
+          "count": 870436
+        },
+        {
+          "date": "2026-03-11",
+          "count": 869931
+        },
+        {
+          "date": "2026-03-12",
+          "count": 869426
+        },
+        {
+          "date": "2026-03-13",
+          "count": 868922
+        },
+        {
+          "date": "2026-03-14",
+          "count": 868417
+        },
+        {
+          "date": "2026-03-15",
+          "count": 867913
+        },
+        {
+          "date": "2026-03-16",
+          "count": 867410
+        },
+        {
+          "date": "2026-03-17",
+          "count": 866906
+        },
+        {
+          "date": "2026-03-18",
+          "count": 866403
+        },
+        {
+          "date": "2026-03-19",
+          "count": 865900
+        },
+        {
+          "date": "2026-03-20",
+          "count": 865398
+        },
+        {
+          "date": "2026-03-21",
+          "count": 864895
+        },
+        {
+          "date": "2026-03-22",
+          "count": 864393
+        },
+        {
+          "date": "2026-03-23",
+          "count": 863892
+        },
+        {
+          "date": "2026-03-24",
+          "count": 863390
+        },
+        {
+          "date": "2026-03-25",
+          "count": 862889
+        },
+        {
+          "date": "2026-03-26",
+          "count": 862388
+        },
+        {
+          "date": "2026-03-27",
+          "count": 861888
+        },
+        {
+          "date": "2026-03-28",
+          "count": 861388
+        },
+        {
+          "date": "2026-03-29",
+          "count": 860888
+        },
+        {
+          "date": "2026-03-30",
+          "count": 860388
+        },
+        {
+          "date": "2026-03-31",
+          "count": 859889
+        },
+        {
+          "date": "2026-04-01",
+          "count": 859390
+        },
+        {
+          "date": "2026-04-02",
+          "count": 858891
+        },
+        {
+          "date": "2026-04-03",
+          "count": 858392
+        },
+        {
+          "date": "2026-04-04",
+          "count": 857894
+        },
+        {
+          "date": "2026-04-05",
+          "count": 857396
+        },
+        {
+          "date": "2026-04-06",
+          "count": 856899
+        },
+        {
+          "date": "2026-04-07",
+          "count": 856401
+        },
+        {
+          "date": "2026-04-08",
+          "count": 855904
+        },
+        {
+          "date": "2026-04-09",
+          "count": 855408
+        },
+        {
+          "date": "2026-04-10",
+          "count": 854911
+        },
+        {
+          "date": "2026-04-11",
+          "count": 854415
+        },
+        {
+          "date": "2026-04-12",
+          "count": 853919
+        },
+        {
+          "date": "2026-04-13",
+          "count": 853424
+        },
+        {
+          "date": "2026-04-14",
+          "count": 852928
+        },
+        {
+          "date": "2026-04-15",
+          "count": 852433
+        },
+        {
+          "date": "2026-04-16",
+          "count": 851938
+        },
+        {
+          "date": "2026-04-17",
+          "count": 851444
+        },
+        {
+          "date": "2026-04-18",
+          "count": 850950
+        },
+        {
+          "date": "2026-04-19",
+          "count": 850456
+        },
+        {
+          "date": "2026-04-20",
+          "count": 849962
+        },
+        {
+          "date": "2026-04-21",
+          "count": 849469
+        },
+        {
+          "date": "2026-04-22",
+          "count": 848976
+        },
+        {
+          "date": "2026-04-23",
+          "count": 848483
+        },
+        {
+          "date": "2026-04-24",
+          "count": 847991
+        },
+        {
+          "date": "2026-04-25",
+          "count": 847499
+        },
+        {
+          "date": "2026-04-26",
+          "count": 847007
+        },
+        {
+          "date": "2026-04-27",
+          "count": 846515
+        },
+        {
+          "date": "2026-04-28",
+          "count": 846024
+        },
+        {
+          "date": "2026-04-29",
+          "count": 845533
+        },
+        {
+          "date": "2026-04-30",
+          "count": 845042
+        },
+        {
+          "date": "2026-05-01",
+          "count": 844552
+        },
+        {
+          "date": "2026-05-02",
+          "count": 844062
+        },
+        {
+          "date": "2026-05-03",
+          "count": 843572
+        },
+        {
+          "date": "2026-05-04",
+          "count": 843082
+        },
+        {
+          "date": "2026-05-05",
+          "count": 842593
+        },
+        {
+          "date": "2026-05-06",
+          "count": 842104
+        },
+        {
+          "date": "2026-05-07",
+          "count": 841615
+        },
+        {
+          "date": "2026-05-08",
+          "count": 841127
+        },
+        {
+          "date": "2026-05-09",
+          "count": 840639
+        },
+        {
+          "date": "2026-05-10",
+          "count": 840151
+        },
+        {
+          "date": "2026-05-11",
+          "count": 839663
+        },
+        {
+          "date": "2026-05-12",
+          "count": 839176
+        },
+        {
+          "date": "2026-05-13",
+          "count": 838689
+        },
+        {
+          "date": "2026-05-14",
+          "count": 838202
+        },
+        {
+          "date": "2026-05-15",
+          "count": 837715
+        },
+        {
+          "date": "2026-05-16",
+          "count": 837229
+        },
+        {
+          "date": "2026-05-17",
+          "count": 836743
+        },
+        {
+          "date": "2026-05-18",
+          "count": 836258
+        },
+        {
+          "date": "2026-05-19",
+          "count": 835772
+        },
+        {
+          "date": "2026-05-20",
+          "count": 835287
+        },
+        {
+          "date": "2026-05-21",
+          "count": 834802
+        },
+        {
+          "date": "2026-05-22",
+          "count": 834318
+        },
+        {
+          "date": "2026-05-23",
+          "count": 833834
+        },
+        {
+          "date": "2026-05-24",
+          "count": 833350
+        },
+        {
+          "date": "2026-05-25",
+          "count": 832866
+        },
+        {
+          "date": "2026-05-26",
+          "count": 832383
+        },
+        {
+          "date": "2026-05-27",
+          "count": 831900
+        },
+        {
+          "date": "2026-05-28",
+          "count": 831417
+        },
+        {
+          "date": "2026-05-29",
+          "count": 830934
+        },
+        {
+          "date": "2026-05-30",
+          "count": 830452
+        },
+        {
+          "date": "2026-05-31",
+          "count": 829970
+        },
+        {
+          "date": "2026-06-01",
+          "count": 829488
+        },
+        {
+          "date": "2026-06-02",
+          "count": 829007
+        }
+      ],
+      "engagement_rate": 4.95,
+      "posts_per_30": 33,
+      "avg_likes": 325,
+      "avg_comments": 77,
+      "avg_shares": 17,
+      "total_engagement": {
+        "likes": 10725,
+        "comments": 2541,
+        "shares": 561
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:772179222859/",
+          "title": "Active vs Passive: Key Themes for the Year Ahead",
+          "date": "2026-05-14",
+          "likes": 314,
+          "comments": 31,
+          "shares": 30
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:624289010681/",
+          "title": "Digital Asset Adoption: Infrastructure and Demographics",
+          "date": "2026-05-24",
+          "likes": 286,
+          "comments": 50,
+          "shares": 37
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:60251111140/",
+          "title": "Climate Risk: Infrastructure and Demographics",
+          "date": "2026-05-31",
+          "likes": 206,
+          "comments": 44,
+          "shares": 28
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:415497804058/",
+          "title": "Sustainable Investing: A Regional Perspective",
+          "date": "2026-05-05",
+          "likes": 125,
+          "comments": 26,
+          "shares": 15
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:318743356167/",
+          "title": "India Growth Trajectory: Trends and Opportunities",
+          "date": "2026-05-25",
+          "likes": 115,
+          "comments": 11,
+          "shares": 13
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:279458991735/",
+          "title": "Private Credit in Asia Pacific: Machine Learning Applications",
+          "date": "2026-05-05",
+          "likes": 90,
+          "comments": 14,
+          "shares": 4
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:60912796774/",
+          "title": "ESG Integration in Fixed Income: Institutional Update",
+          "date": "2026-05-14",
+          "likes": 64,
+          "comments": 10,
+          "shares": 6
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:166062326202/",
+          "title": "Australian Super Trends: Opportunities in the Recovery Cycle",
+          "date": "2026-05-19",
+          "likes": 39,
+          "comments": 8,
+          "shares": 5
+        }
+      ],
+      "rank_followers": 3,
+      "rank_engagement": 15,
+      "rank_posts": 5
+    },
+    {
+      "id": "schroders",
+      "name": "Schroders",
+      "url": "https://www.linkedin.com/company/schroders/",
+      "market": "Global",
+      "aum": "$800B+",
+      "hq": "UK",
+      "industry": "Asset Management",
+      "follower_count": 532037,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 580078
+        },
+        {
+          "date": "2026-03-05",
+          "count": 579522
+        },
+        {
+          "date": "2026-03-06",
+          "count": 578965
+        },
+        {
+          "date": "2026-03-07",
+          "count": 578409
+        },
+        {
+          "date": "2026-03-08",
+          "count": 577854
+        },
+        {
+          "date": "2026-03-09",
+          "count": 577299
+        },
+        {
+          "date": "2026-03-10",
+          "count": 576745
+        },
+        {
+          "date": "2026-03-11",
+          "count": 576191
+        },
+        {
+          "date": "2026-03-12",
+          "count": 575638
+        },
+        {
+          "date": "2026-03-13",
+          "count": 575085
+        },
+        {
+          "date": "2026-03-14",
+          "count": 574533
+        },
+        {
+          "date": "2026-03-15",
+          "count": 573982
+        },
+        {
+          "date": "2026-03-16",
+          "count": 573430
+        },
+        {
+          "date": "2026-03-17",
+          "count": 572880
+        },
+        {
+          "date": "2026-03-18",
+          "count": 572330
+        },
+        {
+          "date": "2026-03-19",
+          "count": 571780
+        },
+        {
+          "date": "2026-03-20",
+          "count": 571231
+        },
+        {
+          "date": "2026-03-21",
+          "count": 570683
+        },
+        {
+          "date": "2026-03-22",
+          "count": 570135
+        },
+        {
+          "date": "2026-03-23",
+          "count": 569588
+        },
+        {
+          "date": "2026-03-24",
+          "count": 569041
+        },
+        {
+          "date": "2026-03-25",
+          "count": 568494
+        },
+        {
+          "date": "2026-03-26",
+          "count": 567949
+        },
+        {
+          "date": "2026-03-27",
+          "count": 567403
+        },
+        {
+          "date": "2026-03-28",
+          "count": 566859
+        },
+        {
+          "date": "2026-03-29",
+          "count": 566314
+        },
+        {
+          "date": "2026-03-30",
+          "count": 565771
+        },
+        {
+          "date": "2026-03-31",
+          "count": 565227
+        },
+        {
+          "date": "2026-04-01",
+          "count": 564685
+        },
+        {
+          "date": "2026-04-02",
+          "count": 564143
+        },
+        {
+          "date": "2026-04-03",
+          "count": 563601
+        },
+        {
+          "date": "2026-04-04",
+          "count": 563060
+        },
+        {
+          "date": "2026-04-05",
+          "count": 562519
+        },
+        {
+          "date": "2026-04-06",
+          "count": 561979
+        },
+        {
+          "date": "2026-04-07",
+          "count": 561440
+        },
+        {
+          "date": "2026-04-08",
+          "count": 560901
+        },
+        {
+          "date": "2026-04-09",
+          "count": 560362
+        },
+        {
+          "date": "2026-04-10",
+          "count": 559824
+        },
+        {
+          "date": "2026-04-11",
+          "count": 559287
+        },
+        {
+          "date": "2026-04-12",
+          "count": 558750
+        },
+        {
+          "date": "2026-04-13",
+          "count": 558213
+        },
+        {
+          "date": "2026-04-14",
+          "count": 557677
+        },
+        {
+          "date": "2026-04-15",
+          "count": 557142
+        },
+        {
+          "date": "2026-04-16",
+          "count": 556607
+        },
+        {
+          "date": "2026-04-17",
+          "count": 556073
+        },
+        {
+          "date": "2026-04-18",
+          "count": 555539
+        },
+        {
+          "date": "2026-04-19",
+          "count": 555005
+        },
+        {
+          "date": "2026-04-20",
+          "count": 554472
+        },
+        {
+          "date": "2026-04-21",
+          "count": 553940
+        },
+        {
+          "date": "2026-04-22",
+          "count": 553408
+        },
+        {
+          "date": "2026-04-23",
+          "count": 552877
+        },
+        {
+          "date": "2026-04-24",
+          "count": 552346
+        },
+        {
+          "date": "2026-04-25",
+          "count": 551816
+        },
+        {
+          "date": "2026-04-26",
+          "count": 551286
+        },
+        {
+          "date": "2026-04-27",
+          "count": 550757
+        },
+        {
+          "date": "2026-04-28",
+          "count": 550228
+        },
+        {
+          "date": "2026-04-29",
+          "count": 549700
+        },
+        {
+          "date": "2026-04-30",
+          "count": 549172
+        },
+        {
+          "date": "2026-05-01",
+          "count": 548645
+        },
+        {
+          "date": "2026-05-02",
+          "count": 548118
+        },
+        {
+          "date": "2026-05-03",
+          "count": 547592
+        },
+        {
+          "date": "2026-05-04",
+          "count": 547066
+        },
+        {
+          "date": "2026-05-05",
+          "count": 546541
+        },
+        {
+          "date": "2026-05-06",
+          "count": 546016
+        },
+        {
+          "date": "2026-05-07",
+          "count": 545492
+        },
+        {
+          "date": "2026-05-08",
+          "count": 544968
+        },
+        {
+          "date": "2026-05-09",
+          "count": 544445
+        },
+        {
+          "date": "2026-05-10",
+          "count": 543922
+        },
+        {
+          "date": "2026-05-11",
+          "count": 543400
+        },
+        {
+          "date": "2026-05-12",
+          "count": 542878
+        },
+        {
+          "date": "2026-05-13",
+          "count": 542357
+        },
+        {
+          "date": "2026-05-14",
+          "count": 541836
+        },
+        {
+          "date": "2026-05-15",
+          "count": 541316
+        },
+        {
+          "date": "2026-05-16",
+          "count": 540796
+        },
+        {
+          "date": "2026-05-17",
+          "count": 540277
+        },
+        {
+          "date": "2026-05-18",
+          "count": 539758
+        },
+        {
+          "date": "2026-05-19",
+          "count": 539240
+        },
+        {
+          "date": "2026-05-20",
+          "count": 538722
+        },
+        {
+          "date": "2026-05-21",
+          "count": 538205
+        },
+        {
+          "date": "2026-05-22",
+          "count": 537688
+        },
+        {
+          "date": "2026-05-23",
+          "count": 537172
+        },
+        {
+          "date": "2026-05-24",
+          "count": 536656
+        },
+        {
+          "date": "2026-05-25",
+          "count": 536141
+        },
+        {
+          "date": "2026-05-26",
+          "count": 535626
+        },
+        {
+          "date": "2026-05-27",
+          "count": 535112
+        },
+        {
+          "date": "2026-05-28",
+          "count": 534598
+        },
+        {
+          "date": "2026-05-29",
+          "count": 534085
+        },
+        {
+          "date": "2026-05-30",
+          "count": 533572
+        },
+        {
+          "date": "2026-05-31",
+          "count": 533060
+        },
+        {
+          "date": "2026-06-01",
+          "count": 532548
+        },
+        {
+          "date": "2026-06-02",
+          "count": 532037
+        }
+      ],
+      "engagement_rate": 2.9,
+      "posts_per_30": 35,
+      "avg_likes": 419,
+      "avg_comments": 22,
+      "avg_shares": 15,
+      "total_engagement": {
+        "likes": 14665,
+        "comments": 770,
+        "shares": 525
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:56077432021/",
+          "title": "Japan Equity Reform Story: The Next Frontier",
+          "date": "2026-05-12",
+          "likes": 346,
+          "comments": 62,
+          "shares": 43
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:377188239495/",
+          "title": "Hong Kong IPO Market: Signs of Recovery",
+          "date": "2026-05-11",
+          "likes": 229,
+          "comments": 47,
+          "shares": 34
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:491907305815/",
+          "title": "ESG Integration in Fixed Income: New Opportunities",
+          "date": "2026-05-08",
+          "likes": 168,
+          "comments": 25,
+          "shares": 10
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:235456686363/",
+          "title": "Private Credit in Asia Pacific: The Next Frontier",
+          "date": "2026-05-06",
+          "likes": 113,
+          "comments": 15,
+          "shares": 8
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:395578971343/",
+          "title": "Green Bonds Growth: Higher Rate Environment",
+          "date": "2026-05-07",
+          "likes": 91,
+          "comments": 9,
+          "shares": 7
+        }
+      ],
+      "rank_followers": 4,
+      "rank_engagement": 13,
+      "rank_posts": 3
+    },
+    {
+      "id": "hsbc",
+      "name": "HSBC Asset Management",
+      "url": "https://www.linkedin.com/company/hsbc-asset-management/",
+      "market": "Hong Kong",
+      "aum": "$600B+",
+      "hq": "HK",
+      "industry": "Asset Management",
+      "follower_count": 406746,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 470675
+        },
+        {
+          "date": "2026-03-05",
+          "count": 469913
+        },
+        {
+          "date": "2026-03-06",
+          "count": 469151
+        },
+        {
+          "date": "2026-03-07",
+          "count": 468391
+        },
+        {
+          "date": "2026-03-08",
+          "count": 467632
+        },
+        {
+          "date": "2026-03-09",
+          "count": 466874
+        },
+        {
+          "date": "2026-03-10",
+          "count": 466117
+        },
+        {
+          "date": "2026-03-11",
+          "count": 465362
+        },
+        {
+          "date": "2026-03-12",
+          "count": 464607
+        },
+        {
+          "date": "2026-03-13",
+          "count": 463854
+        },
+        {
+          "date": "2026-03-14",
+          "count": 463103
+        },
+        {
+          "date": "2026-03-15",
+          "count": 462352
+        },
+        {
+          "date": "2026-03-16",
+          "count": 461603
+        },
+        {
+          "date": "2026-03-17",
+          "count": 460855
+        },
+        {
+          "date": "2026-03-18",
+          "count": 460108
+        },
+        {
+          "date": "2026-03-19",
+          "count": 459362
+        },
+        {
+          "date": "2026-03-20",
+          "count": 458618
+        },
+        {
+          "date": "2026-03-21",
+          "count": 457874
+        },
+        {
+          "date": "2026-03-22",
+          "count": 457132
+        },
+        {
+          "date": "2026-03-23",
+          "count": 456391
+        },
+        {
+          "date": "2026-03-24",
+          "count": 455652
+        },
+        {
+          "date": "2026-03-25",
+          "count": 454913
+        },
+        {
+          "date": "2026-03-26",
+          "count": 454176
+        },
+        {
+          "date": "2026-03-27",
+          "count": 453440
+        },
+        {
+          "date": "2026-03-28",
+          "count": 452705
+        },
+        {
+          "date": "2026-03-29",
+          "count": 451971
+        },
+        {
+          "date": "2026-03-30",
+          "count": 451239
+        },
+        {
+          "date": "2026-03-31",
+          "count": 450508
+        },
+        {
+          "date": "2026-04-01",
+          "count": 449777
+        },
+        {
+          "date": "2026-04-02",
+          "count": 449048
+        },
+        {
+          "date": "2026-04-03",
+          "count": 448321
+        },
+        {
+          "date": "2026-04-04",
+          "count": 447594
+        },
+        {
+          "date": "2026-04-05",
+          "count": 446869
+        },
+        {
+          "date": "2026-04-06",
+          "count": 446144
+        },
+        {
+          "date": "2026-04-07",
+          "count": 445421
+        },
+        {
+          "date": "2026-04-08",
+          "count": 444700
+        },
+        {
+          "date": "2026-04-09",
+          "count": 443979
+        },
+        {
+          "date": "2026-04-10",
+          "count": 443259
+        },
+        {
+          "date": "2026-04-11",
+          "count": 442541
+        },
+        {
+          "date": "2026-04-12",
+          "count": 441824
+        },
+        {
+          "date": "2026-04-13",
+          "count": 441108
+        },
+        {
+          "date": "2026-04-14",
+          "count": 440393
+        },
+        {
+          "date": "2026-04-15",
+          "count": 439679
+        },
+        {
+          "date": "2026-04-16",
+          "count": 438966
+        },
+        {
+          "date": "2026-04-17",
+          "count": 438255
+        },
+        {
+          "date": "2026-04-18",
+          "count": 437545
+        },
+        {
+          "date": "2026-04-19",
+          "count": 436836
+        },
+        {
+          "date": "2026-04-20",
+          "count": 436128
+        },
+        {
+          "date": "2026-04-21",
+          "count": 435421
+        },
+        {
+          "date": "2026-04-22",
+          "count": 434715
+        },
+        {
+          "date": "2026-04-23",
+          "count": 434011
+        },
+        {
+          "date": "2026-04-24",
+          "count": 433307
+        },
+        {
+          "date": "2026-04-25",
+          "count": 432605
+        },
+        {
+          "date": "2026-04-26",
+          "count": 431904
+        },
+        {
+          "date": "2026-04-27",
+          "count": 431204
+        },
+        {
+          "date": "2026-04-28",
+          "count": 430505
+        },
+        {
+          "date": "2026-04-29",
+          "count": 429807
+        },
+        {
+          "date": "2026-04-30",
+          "count": 429111
+        },
+        {
+          "date": "2026-05-01",
+          "count": 428415
+        },
+        {
+          "date": "2026-05-02",
+          "count": 427721
+        },
+        {
+          "date": "2026-05-03",
+          "count": 427028
+        },
+        {
+          "date": "2026-05-04",
+          "count": 426336
+        },
+        {
+          "date": "2026-05-05",
+          "count": 425645
+        },
+        {
+          "date": "2026-05-06",
+          "count": 424955
+        },
+        {
+          "date": "2026-05-07",
+          "count": 424266
+        },
+        {
+          "date": "2026-05-08",
+          "count": 423579
+        },
+        {
+          "date": "2026-05-09",
+          "count": 422892
+        },
+        {
+          "date": "2026-05-10",
+          "count": 422207
+        },
+        {
+          "date": "2026-05-11",
+          "count": 421522
+        },
+        {
+          "date": "2026-05-12",
+          "count": 420839
+        },
+        {
+          "date": "2026-05-13",
+          "count": 420157
+        },
+        {
+          "date": "2026-05-14",
+          "count": 419476
+        },
+        {
+          "date": "2026-05-15",
+          "count": 418796
+        },
+        {
+          "date": "2026-05-16",
+          "count": 418118
+        },
+        {
+          "date": "2026-05-17",
+          "count": 417440
+        },
+        {
+          "date": "2026-05-18",
+          "count": 416763
+        },
+        {
+          "date": "2026-05-19",
+          "count": 416088
+        },
+        {
+          "date": "2026-05-20",
+          "count": 415414
+        },
+        {
+          "date": "2026-05-21",
+          "count": 414740
+        },
+        {
+          "date": "2026-05-22",
+          "count": 414068
+        },
+        {
+          "date": "2026-05-23",
+          "count": 413397
+        },
+        {
+          "date": "2026-05-24",
+          "count": 412727
+        },
+        {
+          "date": "2026-05-25",
+          "count": 412058
+        },
+        {
+          "date": "2026-05-26",
+          "count": 411391
+        },
+        {
+          "date": "2026-05-27",
+          "count": 410724
+        },
+        {
+          "date": "2026-05-28",
+          "count": 410058
+        },
+        {
+          "date": "2026-05-29",
+          "count": 409394
+        },
+        {
+          "date": "2026-05-30",
+          "count": 408730
+        },
+        {
+          "date": "2026-05-31",
+          "count": 408068
+        },
+        {
+          "date": "2026-06-01",
+          "count": 407406
+        },
+        {
+          "date": "2026-06-02",
+          "count": 406746
+        }
+      ],
+      "engagement_rate": 1.77,
+      "posts_per_30": 10,
+      "avg_likes": 143,
+      "avg_comments": 36,
+      "avg_shares": 14,
+      "total_engagement": {
+        "likes": 1430,
+        "comments": 360,
+        "shares": 140
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7852356746/",
+          "title": "AI in Asset Management: A Regional Perspective",
+          "date": "2026-05-19",
+          "likes": 101,
+          "comments": 20,
+          "shares": 11
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:840660103838/",
+          "title": "Private Credit in Asia Pacific: Emerging Market Perspectives",
+          "date": "2026-05-14",
+          "likes": 82,
+          "comments": 7,
+          "shares": 11
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:536675186269/",
+          "title": "Navigating the Rate Cycle: Signs of Recovery",
+          "date": "2026-05-09",
+          "likes": 78,
+          "comments": 15,
+          "shares": 7
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:139675656152/",
+          "title": "Green Bonds Growth: Infrastructure and Demographics",
+          "date": "2026-05-21",
+          "likes": 66,
+          "comments": 12,
+          "shares": 4
+        }
+      ],
+      "rank_followers": 5,
+      "rank_engagement": 20,
+      "rank_posts": 20
+    },
+    {
+      "id": "macquarie",
+      "name": "Macquarie AM",
+      "url": "https://www.linkedin.com/company/macquarie-asset-management/",
+      "market": "Australia",
+      "aum": "$450B+",
+      "hq": "Australia",
+      "industry": "Asset Management",
+      "follower_count": 291229,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 306447
+        },
+        {
+          "date": "2026-03-05",
+          "count": 306274
+        },
+        {
+          "date": "2026-03-06",
+          "count": 306100
+        },
+        {
+          "date": "2026-03-07",
+          "count": 305927
+        },
+        {
+          "date": "2026-03-08",
+          "count": 305754
+        },
+        {
+          "date": "2026-03-09",
+          "count": 305581
+        },
+        {
+          "date": "2026-03-10",
+          "count": 305408
+        },
+        {
+          "date": "2026-03-11",
+          "count": 305235
+        },
+        {
+          "date": "2026-03-12",
+          "count": 305063
+        },
+        {
+          "date": "2026-03-13",
+          "count": 304890
+        },
+        {
+          "date": "2026-03-14",
+          "count": 304718
+        },
+        {
+          "date": "2026-03-15",
+          "count": 304545
+        },
+        {
+          "date": "2026-03-16",
+          "count": 304373
+        },
+        {
+          "date": "2026-03-17",
+          "count": 304201
+        },
+        {
+          "date": "2026-03-18",
+          "count": 304029
+        },
+        {
+          "date": "2026-03-19",
+          "count": 303857
+        },
+        {
+          "date": "2026-03-20",
+          "count": 303685
+        },
+        {
+          "date": "2026-03-21",
+          "count": 303513
+        },
+        {
+          "date": "2026-03-22",
+          "count": 303341
+        },
+        {
+          "date": "2026-03-23",
+          "count": 303169
+        },
+        {
+          "date": "2026-03-24",
+          "count": 302998
+        },
+        {
+          "date": "2026-03-25",
+          "count": 302827
+        },
+        {
+          "date": "2026-03-26",
+          "count": 302655
+        },
+        {
+          "date": "2026-03-27",
+          "count": 302484
+        },
+        {
+          "date": "2026-03-28",
+          "count": 302313
+        },
+        {
+          "date": "2026-03-29",
+          "count": 302142
+        },
+        {
+          "date": "2026-03-30",
+          "count": 301971
+        },
+        {
+          "date": "2026-03-31",
+          "count": 301800
+        },
+        {
+          "date": "2026-04-01",
+          "count": 301629
+        },
+        {
+          "date": "2026-04-02",
+          "count": 301459
+        },
+        {
+          "date": "2026-04-03",
+          "count": 301288
+        },
+        {
+          "date": "2026-04-04",
+          "count": 301118
+        },
+        {
+          "date": "2026-04-05",
+          "count": 300947
+        },
+        {
+          "date": "2026-04-06",
+          "count": 300777
+        },
+        {
+          "date": "2026-04-07",
+          "count": 300607
+        },
+        {
+          "date": "2026-04-08",
+          "count": 300437
+        },
+        {
+          "date": "2026-04-09",
+          "count": 300267
+        },
+        {
+          "date": "2026-04-10",
+          "count": 300097
+        },
+        {
+          "date": "2026-04-11",
+          "count": 299927
+        },
+        {
+          "date": "2026-04-12",
+          "count": 299757
+        },
+        {
+          "date": "2026-04-13",
+          "count": 299588
+        },
+        {
+          "date": "2026-04-14",
+          "count": 299418
+        },
+        {
+          "date": "2026-04-15",
+          "count": 299249
+        },
+        {
+          "date": "2026-04-16",
+          "count": 299079
+        },
+        {
+          "date": "2026-04-17",
+          "count": 298910
+        },
+        {
+          "date": "2026-04-18",
+          "count": 298741
+        },
+        {
+          "date": "2026-04-19",
+          "count": 298572
+        },
+        {
+          "date": "2026-04-20",
+          "count": 298403
+        },
+        {
+          "date": "2026-04-21",
+          "count": 298234
+        },
+        {
+          "date": "2026-04-22",
+          "count": 298066
+        },
+        {
+          "date": "2026-04-23",
+          "count": 297897
+        },
+        {
+          "date": "2026-04-24",
+          "count": 297728
+        },
+        {
+          "date": "2026-04-25",
+          "count": 297560
+        },
+        {
+          "date": "2026-04-26",
+          "count": 297392
+        },
+        {
+          "date": "2026-04-27",
+          "count": 297223
+        },
+        {
+          "date": "2026-04-28",
+          "count": 297055
+        },
+        {
+          "date": "2026-04-29",
+          "count": 296887
+        },
+        {
+          "date": "2026-04-30",
+          "count": 296719
+        },
+        {
+          "date": "2026-05-01",
+          "count": 296551
+        },
+        {
+          "date": "2026-05-02",
+          "count": 296383
+        },
+        {
+          "date": "2026-05-03",
+          "count": 296216
+        },
+        {
+          "date": "2026-05-04",
+          "count": 296048
+        },
+        {
+          "date": "2026-05-05",
+          "count": 295881
+        },
+        {
+          "date": "2026-05-06",
+          "count": 295713
+        },
+        {
+          "date": "2026-05-07",
+          "count": 295546
+        },
+        {
+          "date": "2026-05-08",
+          "count": 295379
+        },
+        {
+          "date": "2026-05-09",
+          "count": 295212
+        },
+        {
+          "date": "2026-05-10",
+          "count": 295045
+        },
+        {
+          "date": "2026-05-11",
+          "count": 294878
+        },
+        {
+          "date": "2026-05-12",
+          "count": 294711
+        },
+        {
+          "date": "2026-05-13",
+          "count": 294544
+        },
+        {
+          "date": "2026-05-14",
+          "count": 294377
+        },
+        {
+          "date": "2026-05-15",
+          "count": 294211
+        },
+        {
+          "date": "2026-05-16",
+          "count": 294044
+        },
+        {
+          "date": "2026-05-17",
+          "count": 293878
+        },
+        {
+          "date": "2026-05-18",
+          "count": 293712
+        },
+        {
+          "date": "2026-05-19",
+          "count": 293546
+        },
+        {
+          "date": "2026-05-20",
+          "count": 293380
+        },
+        {
+          "date": "2026-05-21",
+          "count": 293214
+        },
+        {
+          "date": "2026-05-22",
+          "count": 293048
+        },
+        {
+          "date": "2026-05-23",
+          "count": 292882
+        },
+        {
+          "date": "2026-05-24",
+          "count": 292716
+        },
+        {
+          "date": "2026-05-25",
+          "count": 292551
+        },
+        {
+          "date": "2026-05-26",
+          "count": 292385
+        },
+        {
+          "date": "2026-05-27",
+          "count": 292220
+        },
+        {
+          "date": "2026-05-28",
+          "count": 292054
+        },
+        {
+          "date": "2026-05-29",
+          "count": 291889
+        },
+        {
+          "date": "2026-05-30",
+          "count": 291724
+        },
+        {
+          "date": "2026-05-31",
+          "count": 291559
+        },
+        {
+          "date": "2026-06-01",
+          "count": 291394
+        },
+        {
+          "date": "2026-06-02",
+          "count": 291229
+        }
+      ],
+      "engagement_rate": 2.4,
+      "posts_per_30": 15,
+      "avg_likes": 1025,
+      "avg_comments": 20,
+      "avg_shares": 11,
+      "total_engagement": {
+        "likes": 15375,
+        "comments": 300,
+        "shares": 165
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:457351129368/",
+          "title": "Active vs Passive: Machine Learning Applications",
+          "date": "2026-05-08",
+          "likes": 282,
+          "comments": 58,
+          "shares": 42
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:527607602152/",
+          "title": "Hong Kong IPO Market: The APAC Perspective",
+          "date": "2026-05-11",
+          "likes": 275,
+          "comments": 55,
+          "shares": 41
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:437605685248/",
+          "title": "Real Estate Debt: The Next Frontier",
+          "date": "2026-05-15",
+          "likes": 204,
+          "comments": 23,
+          "shares": 19
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:671558031541/",
+          "title": "Green Bonds Growth: Divergence and Dispersion",
+          "date": "2026-05-16",
+          "likes": 175,
+          "comments": 32,
+          "shares": 10
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:735092201877/",
+          "title": "Private Credit in Asia Pacific: Opportunities in the Recovery Cycle",
+          "date": "2026-05-05",
+          "likes": 151,
+          "comments": 26,
+          "shares": 10
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:590207085639/",
+          "title": "Global Macro Outlook: Portfolio Construction",
+          "date": "2026-05-26",
+          "likes": 86,
+          "comments": 18,
+          "shares": 8
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:956384642862/",
+          "title": "Sustainable Investing: Challenges and Solutions",
+          "date": "2026-05-21",
+          "likes": 49,
+          "comments": 7,
+          "shares": 7
+        }
+      ],
+      "rank_followers": 6,
+      "rank_engagement": 14,
+      "rank_posts": 17
+    },
+    {
+      "id": "amundi",
+      "name": "Amundi",
+      "url": "https://www.linkedin.com/company/amundi_asset_management/",
+      "market": "Global",
+      "aum": "$2.3T",
+      "hq": "France",
+      "industry": "Asset Management",
+      "follower_count": 267405,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 277914
+        },
+        {
+          "date": "2026-03-05",
+          "count": 277795
+        },
+        {
+          "date": "2026-03-06",
+          "count": 277676
+        },
+        {
+          "date": "2026-03-07",
+          "count": 277557
+        },
+        {
+          "date": "2026-03-08",
+          "count": 277438
+        },
+        {
+          "date": "2026-03-09",
+          "count": 277319
+        },
+        {
+          "date": "2026-03-10",
+          "count": 277200
+        },
+        {
+          "date": "2026-03-11",
+          "count": 277082
+        },
+        {
+          "date": "2026-03-12",
+          "count": 276963
+        },
+        {
+          "date": "2026-03-13",
+          "count": 276844
+        },
+        {
+          "date": "2026-03-14",
+          "count": 276726
+        },
+        {
+          "date": "2026-03-15",
+          "count": 276607
+        },
+        {
+          "date": "2026-03-16",
+          "count": 276489
+        },
+        {
+          "date": "2026-03-17",
+          "count": 276371
+        },
+        {
+          "date": "2026-03-18",
+          "count": 276252
+        },
+        {
+          "date": "2026-03-19",
+          "count": 276134
+        },
+        {
+          "date": "2026-03-20",
+          "count": 276016
+        },
+        {
+          "date": "2026-03-21",
+          "count": 275897
+        },
+        {
+          "date": "2026-03-22",
+          "count": 275779
+        },
+        {
+          "date": "2026-03-23",
+          "count": 275661
+        },
+        {
+          "date": "2026-03-24",
+          "count": 275543
+        },
+        {
+          "date": "2026-03-25",
+          "count": 275425
+        },
+        {
+          "date": "2026-03-26",
+          "count": 275307
+        },
+        {
+          "date": "2026-03-27",
+          "count": 275189
+        },
+        {
+          "date": "2026-03-28",
+          "count": 275072
+        },
+        {
+          "date": "2026-03-29",
+          "count": 274954
+        },
+        {
+          "date": "2026-03-30",
+          "count": 274836
+        },
+        {
+          "date": "2026-03-31",
+          "count": 274718
+        },
+        {
+          "date": "2026-04-01",
+          "count": 274601
+        },
+        {
+          "date": "2026-04-02",
+          "count": 274483
+        },
+        {
+          "date": "2026-04-03",
+          "count": 274366
+        },
+        {
+          "date": "2026-04-04",
+          "count": 274248
+        },
+        {
+          "date": "2026-04-05",
+          "count": 274131
+        },
+        {
+          "date": "2026-04-06",
+          "count": 274013
+        },
+        {
+          "date": "2026-04-07",
+          "count": 273896
+        },
+        {
+          "date": "2026-04-08",
+          "count": 273779
+        },
+        {
+          "date": "2026-04-09",
+          "count": 273661
+        },
+        {
+          "date": "2026-04-10",
+          "count": 273544
+        },
+        {
+          "date": "2026-04-11",
+          "count": 273427
+        },
+        {
+          "date": "2026-04-12",
+          "count": 273310
+        },
+        {
+          "date": "2026-04-13",
+          "count": 273193
+        },
+        {
+          "date": "2026-04-14",
+          "count": 273076
+        },
+        {
+          "date": "2026-04-15",
+          "count": 272959
+        },
+        {
+          "date": "2026-04-16",
+          "count": 272842
+        },
+        {
+          "date": "2026-04-17",
+          "count": 272725
+        },
+        {
+          "date": "2026-04-18",
+          "count": 272609
+        },
+        {
+          "date": "2026-04-19",
+          "count": 272492
+        },
+        {
+          "date": "2026-04-20",
+          "count": 272375
+        },
+        {
+          "date": "2026-04-21",
+          "count": 272259
+        },
+        {
+          "date": "2026-04-22",
+          "count": 272142
+        },
+        {
+          "date": "2026-04-23",
+          "count": 272025
+        },
+        {
+          "date": "2026-04-24",
+          "count": 271909
+        },
+        {
+          "date": "2026-04-25",
+          "count": 271793
+        },
+        {
+          "date": "2026-04-26",
+          "count": 271676
+        },
+        {
+          "date": "2026-04-27",
+          "count": 271560
+        },
+        {
+          "date": "2026-04-28",
+          "count": 271444
+        },
+        {
+          "date": "2026-04-29",
+          "count": 271327
+        },
+        {
+          "date": "2026-04-30",
+          "count": 271211
+        },
+        {
+          "date": "2026-05-01",
+          "count": 271095
+        },
+        {
+          "date": "2026-05-02",
+          "count": 270979
+        },
+        {
+          "date": "2026-05-03",
+          "count": 270863
+        },
+        {
+          "date": "2026-05-04",
+          "count": 270747
+        },
+        {
+          "date": "2026-05-05",
+          "count": 270631
+        },
+        {
+          "date": "2026-05-06",
+          "count": 270515
+        },
+        {
+          "date": "2026-05-07",
+          "count": 270399
+        },
+        {
+          "date": "2026-05-08",
+          "count": 270284
+        },
+        {
+          "date": "2026-05-09",
+          "count": 270168
+        },
+        {
+          "date": "2026-05-10",
+          "count": 270052
+        },
+        {
+          "date": "2026-05-11",
+          "count": 269936
+        },
+        {
+          "date": "2026-05-12",
+          "count": 269821
+        },
+        {
+          "date": "2026-05-13",
+          "count": 269705
+        },
+        {
+          "date": "2026-05-14",
+          "count": 269590
+        },
+        {
+          "date": "2026-05-15",
+          "count": 269474
+        },
+        {
+          "date": "2026-05-16",
+          "count": 269359
+        },
+        {
+          "date": "2026-05-17",
+          "count": 269244
+        },
+        {
+          "date": "2026-05-18",
+          "count": 269128
+        },
+        {
+          "date": "2026-05-19",
+          "count": 269013
+        },
+        {
+          "date": "2026-05-20",
+          "count": 268898
+        },
+        {
+          "date": "2026-05-21",
+          "count": 268783
+        },
+        {
+          "date": "2026-05-22",
+          "count": 268668
+        },
+        {
+          "date": "2026-05-23",
+          "count": 268553
+        },
+        {
+          "date": "2026-05-24",
+          "count": 268438
+        },
+        {
+          "date": "2026-05-25",
+          "count": 268323
+        },
+        {
+          "date": "2026-05-26",
+          "count": 268208
+        },
+        {
+          "date": "2026-05-27",
+          "count": 268093
+        },
+        {
+          "date": "2026-05-28",
+          "count": 267978
+        },
+        {
+          "date": "2026-05-29",
+          "count": 267863
+        },
+        {
+          "date": "2026-05-30",
+          "count": 267749
+        },
+        {
+          "date": "2026-05-31",
+          "count": 267634
+        },
+        {
+          "date": "2026-06-01",
+          "count": 267520
+        },
+        {
+          "date": "2026-06-02",
+          "count": 267405
+        }
+      ],
+      "engagement_rate": 1.99,
+      "posts_per_30": 32,
+      "avg_likes": 799,
+      "avg_comments": 59,
+      "avg_shares": 22,
+      "total_engagement": {
+        "likes": 25568,
+        "comments": 1888,
+        "shares": 704
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:761476740116/",
+          "title": "Retirement in Ageing Asia: A Regional Perspective",
+          "date": "2026-05-15",
+          "likes": 254,
+          "comments": 42,
+          "shares": 32
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:650905927141/",
+          "title": "ESG Integration in Fixed Income: Emerging Market Perspectives",
+          "date": "2026-05-24",
+          "likes": 211,
+          "comments": 22,
+          "shares": 23
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:772179222859/",
+          "title": "Active vs Passive: Key Themes for the Year Ahead",
+          "date": "2026-05-31",
+          "likes": 195,
+          "comments": 15,
+          "shares": 21
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:785699191811/",
+          "title": "AI in Asset Management: Opportunities in the Recovery Cycle",
+          "date": "2026-05-26",
+          "likes": 131,
+          "comments": 19,
+          "shares": 13
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:300936404937/",
+          "title": "2025 APAC Market Outlook: Signs of Recovery",
+          "date": "2026-05-09",
+          "likes": 113,
+          "comments": 16,
+          "shares": 13
+        }
+      ],
+      "rank_followers": 7,
+      "rank_engagement": 5,
+      "rank_posts": 6
+    },
+    {
+      "id": "nomura",
+      "name": "Nomura AM",
+      "url": "https://www.linkedin.com/company/nomura-asset-management/",
+      "market": "Japan",
+      "aum": "$500B+",
+      "hq": "Japan",
+      "industry": "Asset Management",
+      "follower_count": 206020,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 235770
+        },
+        {
+          "date": "2026-03-05",
+          "count": 235417
+        },
+        {
+          "date": "2026-03-06",
+          "count": 235064
+        },
+        {
+          "date": "2026-03-07",
+          "count": 234712
+        },
+        {
+          "date": "2026-03-08",
+          "count": 234361
+        },
+        {
+          "date": "2026-03-09",
+          "count": 234010
+        },
+        {
+          "date": "2026-03-10",
+          "count": 233659
+        },
+        {
+          "date": "2026-03-11",
+          "count": 233309
+        },
+        {
+          "date": "2026-03-12",
+          "count": 232960
+        },
+        {
+          "date": "2026-03-13",
+          "count": 232611
+        },
+        {
+          "date": "2026-03-14",
+          "count": 232263
+        },
+        {
+          "date": "2026-03-15",
+          "count": 231915
+        },
+        {
+          "date": "2026-03-16",
+          "count": 231567
+        },
+        {
+          "date": "2026-03-17",
+          "count": 231221
+        },
+        {
+          "date": "2026-03-18",
+          "count": 230874
+        },
+        {
+          "date": "2026-03-19",
+          "count": 230529
+        },
+        {
+          "date": "2026-03-20",
+          "count": 230183
+        },
+        {
+          "date": "2026-03-21",
+          "count": 229839
+        },
+        {
+          "date": "2026-03-22",
+          "count": 229495
+        },
+        {
+          "date": "2026-03-23",
+          "count": 229151
+        },
+        {
+          "date": "2026-03-24",
+          "count": 228808
+        },
+        {
+          "date": "2026-03-25",
+          "count": 228465
+        },
+        {
+          "date": "2026-03-26",
+          "count": 228123
+        },
+        {
+          "date": "2026-03-27",
+          "count": 227781
+        },
+        {
+          "date": "2026-03-28",
+          "count": 227440
+        },
+        {
+          "date": "2026-03-29",
+          "count": 227100
+        },
+        {
+          "date": "2026-03-30",
+          "count": 226759
+        },
+        {
+          "date": "2026-03-31",
+          "count": 226420
+        },
+        {
+          "date": "2026-04-01",
+          "count": 226081
+        },
+        {
+          "date": "2026-04-02",
+          "count": 225742
+        },
+        {
+          "date": "2026-04-03",
+          "count": 225404
+        },
+        {
+          "date": "2026-04-04",
+          "count": 225067
+        },
+        {
+          "date": "2026-04-05",
+          "count": 224730
+        },
+        {
+          "date": "2026-04-06",
+          "count": 224393
+        },
+        {
+          "date": "2026-04-07",
+          "count": 224057
+        },
+        {
+          "date": "2026-04-08",
+          "count": 223721
+        },
+        {
+          "date": "2026-04-09",
+          "count": 223386
+        },
+        {
+          "date": "2026-04-10",
+          "count": 223052
+        },
+        {
+          "date": "2026-04-11",
+          "count": 222718
+        },
+        {
+          "date": "2026-04-12",
+          "count": 222384
+        },
+        {
+          "date": "2026-04-13",
+          "count": 222051
+        },
+        {
+          "date": "2026-04-14",
+          "count": 221719
+        },
+        {
+          "date": "2026-04-15",
+          "count": 221387
+        },
+        {
+          "date": "2026-04-16",
+          "count": 221055
+        },
+        {
+          "date": "2026-04-17",
+          "count": 220724
+        },
+        {
+          "date": "2026-04-18",
+          "count": 220393
+        },
+        {
+          "date": "2026-04-19",
+          "count": 220063
+        },
+        {
+          "date": "2026-04-20",
+          "count": 219734
+        },
+        {
+          "date": "2026-04-21",
+          "count": 219405
+        },
+        {
+          "date": "2026-04-22",
+          "count": 219076
+        },
+        {
+          "date": "2026-04-23",
+          "count": 218748
+        },
+        {
+          "date": "2026-04-24",
+          "count": 218421
+        },
+        {
+          "date": "2026-04-25",
+          "count": 218093
+        },
+        {
+          "date": "2026-04-26",
+          "count": 217767
+        },
+        {
+          "date": "2026-04-27",
+          "count": 217441
+        },
+        {
+          "date": "2026-04-28",
+          "count": 217115
+        },
+        {
+          "date": "2026-04-29",
+          "count": 216790
+        },
+        {
+          "date": "2026-04-30",
+          "count": 216465
+        },
+        {
+          "date": "2026-05-01",
+          "count": 216141
+        },
+        {
+          "date": "2026-05-02",
+          "count": 215817
+        },
+        {
+          "date": "2026-05-03",
+          "count": 215494
+        },
+        {
+          "date": "2026-05-04",
+          "count": 215172
+        },
+        {
+          "date": "2026-05-05",
+          "count": 214849
+        },
+        {
+          "date": "2026-05-06",
+          "count": 214528
+        },
+        {
+          "date": "2026-05-07",
+          "count": 214206
+        },
+        {
+          "date": "2026-05-08",
+          "count": 213885
+        },
+        {
+          "date": "2026-05-09",
+          "count": 213565
+        },
+        {
+          "date": "2026-05-10",
+          "count": 213245
+        },
+        {
+          "date": "2026-05-11",
+          "count": 212926
+        },
+        {
+          "date": "2026-05-12",
+          "count": 212607
+        },
+        {
+          "date": "2026-05-13",
+          "count": 212289
+        },
+        {
+          "date": "2026-05-14",
+          "count": 211971
+        },
+        {
+          "date": "2026-05-15",
+          "count": 211653
+        },
+        {
+          "date": "2026-05-16",
+          "count": 211336
+        },
+        {
+          "date": "2026-05-17",
+          "count": 211020
+        },
+        {
+          "date": "2026-05-18",
+          "count": 210704
+        },
+        {
+          "date": "2026-05-19",
+          "count": 210388
+        },
+        {
+          "date": "2026-05-20",
+          "count": 210073
+        },
+        {
+          "date": "2026-05-21",
+          "count": 209759
+        },
+        {
+          "date": "2026-05-22",
+          "count": 209445
+        },
+        {
+          "date": "2026-05-23",
+          "count": 209131
+        },
+        {
+          "date": "2026-05-24",
+          "count": 208818
+        },
+        {
+          "date": "2026-05-25",
+          "count": 208505
+        },
+        {
+          "date": "2026-05-26",
+          "count": 208193
+        },
+        {
+          "date": "2026-05-27",
+          "count": 207881
+        },
+        {
+          "date": "2026-05-28",
+          "count": 207570
+        },
+        {
+          "date": "2026-05-29",
+          "count": 207259
+        },
+        {
+          "date": "2026-05-30",
+          "count": 206948
+        },
+        {
+          "date": "2026-05-31",
+          "count": 206638
+        },
+        {
+          "date": "2026-06-01",
+          "count": 206329
+        },
+        {
+          "date": "2026-06-02",
+          "count": 206020
+        }
+      ],
+      "engagement_rate": 2.84,
+      "posts_per_30": 37,
+      "avg_likes": 1192,
+      "avg_comments": 72,
+      "avg_shares": 33,
+      "total_engagement": {
+        "likes": 44104,
+        "comments": 2664,
+        "shares": 1221
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:599951474656/",
+          "title": "India Growth Trajectory: Strategies for 2025",
+          "date": "2026-05-09",
+          "likes": 295,
+          "comments": 51,
+          "shares": 32
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:166062326202/",
+          "title": "Australian Super Trends: Opportunities in the Recovery Cycle",
+          "date": "2026-05-17",
+          "likes": 196,
+          "comments": 17,
+          "shares": 10
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:34649392681/",
+          "title": "Sustainable Investing: Key Themes for the Year Ahead",
+          "date": "2026-05-23",
+          "likes": 127,
+          "comments": 17,
+          "shares": 9
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:879939201924/",
+          "title": "Active vs Passive: Divergence and Dispersion",
+          "date": "2026-05-06",
+          "likes": 123,
+          "comments": 12,
+          "shares": 8
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:711153155053/",
+          "title": "AI in Asset Management: Strategies for 2025",
+          "date": "2026-05-19",
+          "likes": 45,
+          "comments": 7,
+          "shares": 4
+        }
+      ],
+      "rank_followers": 8,
+      "rank_engagement": 1,
+      "rank_posts": 2
+    },
+    {
+      "id": "ampcapital",
+      "name": "AMP Capital",
+      "url": "https://www.linkedin.com/company/amp-capital/",
+      "market": "Australia",
+      "aum": "$150B+",
+      "hq": "Australia",
+      "industry": "Asset Management",
+      "follower_count": 189131,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 205483
+        },
+        {
+          "date": "2026-03-05",
+          "count": 205294
+        },
+        {
+          "date": "2026-03-06",
+          "count": 205105
+        },
+        {
+          "date": "2026-03-07",
+          "count": 204916
+        },
+        {
+          "date": "2026-03-08",
+          "count": 204727
+        },
+        {
+          "date": "2026-03-09",
+          "count": 204539
+        },
+        {
+          "date": "2026-03-10",
+          "count": 204351
+        },
+        {
+          "date": "2026-03-11",
+          "count": 204162
+        },
+        {
+          "date": "2026-03-12",
+          "count": 203974
+        },
+        {
+          "date": "2026-03-13",
+          "count": 203786
+        },
+        {
+          "date": "2026-03-14",
+          "count": 203599
+        },
+        {
+          "date": "2026-03-15",
+          "count": 203411
+        },
+        {
+          "date": "2026-03-16",
+          "count": 203224
+        },
+        {
+          "date": "2026-03-17",
+          "count": 203037
+        },
+        {
+          "date": "2026-03-18",
+          "count": 202850
+        },
+        {
+          "date": "2026-03-19",
+          "count": 202663
+        },
+        {
+          "date": "2026-03-20",
+          "count": 202476
+        },
+        {
+          "date": "2026-03-21",
+          "count": 202290
+        },
+        {
+          "date": "2026-03-22",
+          "count": 202104
+        },
+        {
+          "date": "2026-03-23",
+          "count": 201917
+        },
+        {
+          "date": "2026-03-24",
+          "count": 201731
+        },
+        {
+          "date": "2026-03-25",
+          "count": 201546
+        },
+        {
+          "date": "2026-03-26",
+          "count": 201360
+        },
+        {
+          "date": "2026-03-27",
+          "count": 201175
+        },
+        {
+          "date": "2026-03-28",
+          "count": 200989
+        },
+        {
+          "date": "2026-03-29",
+          "count": 200804
+        },
+        {
+          "date": "2026-03-30",
+          "count": 200619
+        },
+        {
+          "date": "2026-03-31",
+          "count": 200435
+        },
+        {
+          "date": "2026-04-01",
+          "count": 200250
+        },
+        {
+          "date": "2026-04-02",
+          "count": 200066
+        },
+        {
+          "date": "2026-04-03",
+          "count": 199881
+        },
+        {
+          "date": "2026-04-04",
+          "count": 199697
+        },
+        {
+          "date": "2026-04-05",
+          "count": 199513
+        },
+        {
+          "date": "2026-04-06",
+          "count": 199330
+        },
+        {
+          "date": "2026-04-07",
+          "count": 199146
+        },
+        {
+          "date": "2026-04-08",
+          "count": 198963
+        },
+        {
+          "date": "2026-04-09",
+          "count": 198779
+        },
+        {
+          "date": "2026-04-10",
+          "count": 198596
+        },
+        {
+          "date": "2026-04-11",
+          "count": 198413
+        },
+        {
+          "date": "2026-04-12",
+          "count": 198231
+        },
+        {
+          "date": "2026-04-13",
+          "count": 198048
+        },
+        {
+          "date": "2026-04-14",
+          "count": 197866
+        },
+        {
+          "date": "2026-04-15",
+          "count": 197683
+        },
+        {
+          "date": "2026-04-16",
+          "count": 197501
+        },
+        {
+          "date": "2026-04-17",
+          "count": 197319
+        },
+        {
+          "date": "2026-04-18",
+          "count": 197138
+        },
+        {
+          "date": "2026-04-19",
+          "count": 196956
+        },
+        {
+          "date": "2026-04-20",
+          "count": 196775
+        },
+        {
+          "date": "2026-04-21",
+          "count": 196594
+        },
+        {
+          "date": "2026-04-22",
+          "count": 196412
+        },
+        {
+          "date": "2026-04-23",
+          "count": 196232
+        },
+        {
+          "date": "2026-04-24",
+          "count": 196051
+        },
+        {
+          "date": "2026-04-25",
+          "count": 195870
+        },
+        {
+          "date": "2026-04-26",
+          "count": 195690
+        },
+        {
+          "date": "2026-04-27",
+          "count": 195510
+        },
+        {
+          "date": "2026-04-28",
+          "count": 195330
+        },
+        {
+          "date": "2026-04-29",
+          "count": 195150
+        },
+        {
+          "date": "2026-04-30",
+          "count": 194970
+        },
+        {
+          "date": "2026-05-01",
+          "count": 194790
+        },
+        {
+          "date": "2026-05-02",
+          "count": 194611
+        },
+        {
+          "date": "2026-05-03",
+          "count": 194432
+        },
+        {
+          "date": "2026-05-04",
+          "count": 194253
+        },
+        {
+          "date": "2026-05-05",
+          "count": 194074
+        },
+        {
+          "date": "2026-05-06",
+          "count": 193895
+        },
+        {
+          "date": "2026-05-07",
+          "count": 193717
+        },
+        {
+          "date": "2026-05-08",
+          "count": 193538
+        },
+        {
+          "date": "2026-05-09",
+          "count": 193360
+        },
+        {
+          "date": "2026-05-10",
+          "count": 193182
+        },
+        {
+          "date": "2026-05-11",
+          "count": 193004
+        },
+        {
+          "date": "2026-05-12",
+          "count": 192826
+        },
+        {
+          "date": "2026-05-13",
+          "count": 192649
+        },
+        {
+          "date": "2026-05-14",
+          "count": 192471
+        },
+        {
+          "date": "2026-05-15",
+          "count": 192294
+        },
+        {
+          "date": "2026-05-16",
+          "count": 192117
+        },
+        {
+          "date": "2026-05-17",
+          "count": 191940
+        },
+        {
+          "date": "2026-05-18",
+          "count": 191763
+        },
+        {
+          "date": "2026-05-19",
+          "count": 191586
+        },
+        {
+          "date": "2026-05-20",
+          "count": 191410
+        },
+        {
+          "date": "2026-05-21",
+          "count": 191234
+        },
+        {
+          "date": "2026-05-22",
+          "count": 191058
+        },
+        {
+          "date": "2026-05-23",
+          "count": 190882
+        },
+        {
+          "date": "2026-05-24",
+          "count": 190706
+        },
+        {
+          "date": "2026-05-25",
+          "count": 190530
+        },
+        {
+          "date": "2026-05-26",
+          "count": 190355
+        },
+        {
+          "date": "2026-05-27",
+          "count": 190179
+        },
+        {
+          "date": "2026-05-28",
+          "count": 190004
+        },
+        {
+          "date": "2026-05-29",
+          "count": 189829
+        },
+        {
+          "date": "2026-05-30",
+          "count": 189655
+        },
+        {
+          "date": "2026-05-31",
+          "count": 189480
+        },
+        {
+          "date": "2026-06-01",
+          "count": 189305
+        },
+        {
+          "date": "2026-06-02",
+          "count": 189131
+        }
+      ],
+      "engagement_rate": 1.94,
+      "posts_per_30": 40,
+      "avg_likes": 533,
+      "avg_comments": 10,
+      "avg_shares": 35,
+      "total_engagement": {
+        "likes": 21320,
+        "comments": 400,
+        "shares": 1400
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:294702217463/",
+          "title": "Cross-Border Capital Flows: Portfolio Construction",
+          "date": "2026-05-14",
+          "likes": 282,
+          "comments": 62,
+          "shares": 28
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:677184925543/",
+          "title": "Green Bonds Growth: Challenges and Solutions",
+          "date": "2026-05-19",
+          "likes": 264,
+          "comments": 39,
+          "shares": 32
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:759525226437/",
+          "title": "2025 APAC Market Outlook: A Practical Framework",
+          "date": "2026-05-19",
+          "likes": 239,
+          "comments": 27,
+          "shares": 11
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:60251111140/",
+          "title": "Climate Risk: Infrastructure and Demographics",
+          "date": "2026-05-13",
+          "likes": 192,
+          "comments": 20,
+          "shares": 15
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:497164885318/",
+          "title": "Active vs Passive: Institutional Update",
+          "date": "2026-05-19",
+          "likes": 169,
+          "comments": 32,
+          "shares": 24
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:727595184379/",
+          "title": "Global Macro Outlook: Opportunities in the Recovery Cycle",
+          "date": "2026-05-11",
+          "likes": 62,
+          "comments": 6,
+          "shares": 4
+        }
+      ],
+      "rank_followers": 9,
+      "rank_engagement": 7,
+      "rank_posts": 1
+    },
+    {
+      "id": "eastspring",
+      "name": "Eastspring Investments",
+      "url": "https://www.linkedin.com/company/eastspring-investments/",
+      "market": "Singapore",
+      "aum": "$200B+",
+      "hq": "Singapore",
+      "industry": "Asset Management",
+      "follower_count": 154941,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 181273
+        },
+        {
+          "date": "2026-03-05",
+          "count": 180957
+        },
+        {
+          "date": "2026-03-06",
+          "count": 180641
+        },
+        {
+          "date": "2026-03-07",
+          "count": 180327
+        },
+        {
+          "date": "2026-03-08",
+          "count": 180013
+        },
+        {
+          "date": "2026-03-09",
+          "count": 179699
+        },
+        {
+          "date": "2026-03-10",
+          "count": 179386
+        },
+        {
+          "date": "2026-03-11",
+          "count": 179073
+        },
+        {
+          "date": "2026-03-12",
+          "count": 178761
+        },
+        {
+          "date": "2026-03-13",
+          "count": 178450
+        },
+        {
+          "date": "2026-03-14",
+          "count": 178139
+        },
+        {
+          "date": "2026-03-15",
+          "count": 177828
+        },
+        {
+          "date": "2026-03-16",
+          "count": 177518
+        },
+        {
+          "date": "2026-03-17",
+          "count": 177209
+        },
+        {
+          "date": "2026-03-18",
+          "count": 176900
+        },
+        {
+          "date": "2026-03-19",
+          "count": 176592
+        },
+        {
+          "date": "2026-03-20",
+          "count": 176284
+        },
+        {
+          "date": "2026-03-21",
+          "count": 175977
+        },
+        {
+          "date": "2026-03-22",
+          "count": 175671
+        },
+        {
+          "date": "2026-03-23",
+          "count": 175365
+        },
+        {
+          "date": "2026-03-24",
+          "count": 175059
+        },
+        {
+          "date": "2026-03-25",
+          "count": 174754
+        },
+        {
+          "date": "2026-03-26",
+          "count": 174449
+        },
+        {
+          "date": "2026-03-27",
+          "count": 174145
+        },
+        {
+          "date": "2026-03-28",
+          "count": 173842
+        },
+        {
+          "date": "2026-03-29",
+          "count": 173539
+        },
+        {
+          "date": "2026-03-30",
+          "count": 173237
+        },
+        {
+          "date": "2026-03-31",
+          "count": 172935
+        },
+        {
+          "date": "2026-04-01",
+          "count": 172634
+        },
+        {
+          "date": "2026-04-02",
+          "count": 172333
+        },
+        {
+          "date": "2026-04-03",
+          "count": 172032
+        },
+        {
+          "date": "2026-04-04",
+          "count": 171733
+        },
+        {
+          "date": "2026-04-05",
+          "count": 171433
+        },
+        {
+          "date": "2026-04-06",
+          "count": 171135
+        },
+        {
+          "date": "2026-04-07",
+          "count": 170837
+        },
+        {
+          "date": "2026-04-08",
+          "count": 170539
+        },
+        {
+          "date": "2026-04-09",
+          "count": 170242
+        },
+        {
+          "date": "2026-04-10",
+          "count": 169945
+        },
+        {
+          "date": "2026-04-11",
+          "count": 169649
+        },
+        {
+          "date": "2026-04-12",
+          "count": 169353
+        },
+        {
+          "date": "2026-04-13",
+          "count": 169058
+        },
+        {
+          "date": "2026-04-14",
+          "count": 168764
+        },
+        {
+          "date": "2026-04-15",
+          "count": 168470
+        },
+        {
+          "date": "2026-04-16",
+          "count": 168176
+        },
+        {
+          "date": "2026-04-17",
+          "count": 167883
+        },
+        {
+          "date": "2026-04-18",
+          "count": 167590
+        },
+        {
+          "date": "2026-04-19",
+          "count": 167298
+        },
+        {
+          "date": "2026-04-20",
+          "count": 167007
+        },
+        {
+          "date": "2026-04-21",
+          "count": 166716
+        },
+        {
+          "date": "2026-04-22",
+          "count": 166425
+        },
+        {
+          "date": "2026-04-23",
+          "count": 166135
+        },
+        {
+          "date": "2026-04-24",
+          "count": 165846
+        },
+        {
+          "date": "2026-04-25",
+          "count": 165557
+        },
+        {
+          "date": "2026-04-26",
+          "count": 165269
+        },
+        {
+          "date": "2026-04-27",
+          "count": 164981
+        },
+        {
+          "date": "2026-04-28",
+          "count": 164693
+        },
+        {
+          "date": "2026-04-29",
+          "count": 164406
+        },
+        {
+          "date": "2026-04-30",
+          "count": 164120
+        },
+        {
+          "date": "2026-05-01",
+          "count": 163834
+        },
+        {
+          "date": "2026-05-02",
+          "count": 163548
+        },
+        {
+          "date": "2026-05-03",
+          "count": 163263
+        },
+        {
+          "date": "2026-05-04",
+          "count": 162979
+        },
+        {
+          "date": "2026-05-05",
+          "count": 162695
+        },
+        {
+          "date": "2026-05-06",
+          "count": 162411
+        },
+        {
+          "date": "2026-05-07",
+          "count": 162128
+        },
+        {
+          "date": "2026-05-08",
+          "count": 161846
+        },
+        {
+          "date": "2026-05-09",
+          "count": 161564
+        },
+        {
+          "date": "2026-05-10",
+          "count": 161282
+        },
+        {
+          "date": "2026-05-11",
+          "count": 161001
+        },
+        {
+          "date": "2026-05-12",
+          "count": 160721
+        },
+        {
+          "date": "2026-05-13",
+          "count": 160441
+        },
+        {
+          "date": "2026-05-14",
+          "count": 160161
+        },
+        {
+          "date": "2026-05-15",
+          "count": 159882
+        },
+        {
+          "date": "2026-05-16",
+          "count": 159603
+        },
+        {
+          "date": "2026-05-17",
+          "count": 159325
+        },
+        {
+          "date": "2026-05-18",
+          "count": 159048
+        },
+        {
+          "date": "2026-05-19",
+          "count": 158771
+        },
+        {
+          "date": "2026-05-20",
+          "count": 158494
+        },
+        {
+          "date": "2026-05-21",
+          "count": 158218
+        },
+        {
+          "date": "2026-05-22",
+          "count": 157942
+        },
+        {
+          "date": "2026-05-23",
+          "count": 157667
+        },
+        {
+          "date": "2026-05-24",
+          "count": 157392
+        },
+        {
+          "date": "2026-05-25",
+          "count": 157118
+        },
+        {
+          "date": "2026-05-26",
+          "count": 156844
+        },
+        {
+          "date": "2026-05-27",
+          "count": 156571
+        },
+        {
+          "date": "2026-05-28",
+          "count": 156298
+        },
+        {
+          "date": "2026-05-29",
+          "count": 156026
+        },
+        {
+          "date": "2026-05-30",
+          "count": 155754
+        },
+        {
+          "date": "2026-05-31",
+          "count": 155482
+        },
+        {
+          "date": "2026-06-01",
+          "count": 155211
+        },
+        {
+          "date": "2026-06-02",
+          "count": 154941
+        }
+      ],
+      "engagement_rate": 4.99,
+      "posts_per_30": 26,
+      "avg_likes": 1041,
+      "avg_comments": 66,
+      "avg_shares": 30,
+      "total_engagement": {
+        "likes": 27066,
+        "comments": 1716,
+        "shares": 780
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:599650609898/",
+          "title": "ESG Integration in Fixed Income: Machine Learning Applications",
+          "date": "2026-05-28",
+          "likes": 353,
+          "comments": 65,
+          "shares": 29
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:605250019652/",
+          "title": "Japan Equity Reform Story: Portfolio Construction",
+          "date": "2026-05-26",
+          "likes": 310,
+          "comments": 48,
+          "shares": 32
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:905656214905/",
+          "title": "Active vs Passive: Market Growth and Impact",
+          "date": "2026-05-09",
+          "likes": 232,
+          "comments": 22,
+          "shares": 20
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:911288191486/",
+          "title": "Hong Kong IPO Market: New Opportunities",
+          "date": "2026-05-20",
+          "likes": 226,
+          "comments": 54,
+          "shares": 14
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:270298437362/",
+          "title": "India Growth Trajectory: Infrastructure and Demographics",
+          "date": "2026-05-09",
+          "likes": 142,
+          "comments": 12,
+          "shares": 8
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:714752293007/",
+          "title": "Cross-Border Capital Flows: A Practical Framework",
+          "date": "2026-05-31",
+          "likes": 81,
+          "comments": 13,
+          "shares": 7
+        }
+      ],
+      "rank_followers": 10,
+      "rank_engagement": 3,
+      "rank_posts": 11
+    },
+    {
+      "id": "firstsentier",
+      "name": "First Sentier",
+      "url": "https://www.linkedin.com/company/first-sentier-investors/",
+      "market": "Australia",
+      "aum": "$150B+",
+      "hq": "Australia",
+      "industry": "Investment Management",
+      "follower_count": 99246,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 108162
+        },
+        {
+          "date": "2026-03-05",
+          "count": 108059
+        },
+        {
+          "date": "2026-03-06",
+          "count": 107955
+        },
+        {
+          "date": "2026-03-07",
+          "count": 107852
+        },
+        {
+          "date": "2026-03-08",
+          "count": 107749
+        },
+        {
+          "date": "2026-03-09",
+          "count": 107646
+        },
+        {
+          "date": "2026-03-10",
+          "count": 107543
+        },
+        {
+          "date": "2026-03-11",
+          "count": 107441
+        },
+        {
+          "date": "2026-03-12",
+          "count": 107338
+        },
+        {
+          "date": "2026-03-13",
+          "count": 107236
+        },
+        {
+          "date": "2026-03-14",
+          "count": 107133
+        },
+        {
+          "date": "2026-03-15",
+          "count": 107031
+        },
+        {
+          "date": "2026-03-16",
+          "count": 106928
+        },
+        {
+          "date": "2026-03-17",
+          "count": 106826
+        },
+        {
+          "date": "2026-03-18",
+          "count": 106724
+        },
+        {
+          "date": "2026-03-19",
+          "count": 106622
+        },
+        {
+          "date": "2026-03-20",
+          "count": 106520
+        },
+        {
+          "date": "2026-03-21",
+          "count": 106419
+        },
+        {
+          "date": "2026-03-22",
+          "count": 106317
+        },
+        {
+          "date": "2026-03-23",
+          "count": 106215
+        },
+        {
+          "date": "2026-03-24",
+          "count": 106114
+        },
+        {
+          "date": "2026-03-25",
+          "count": 106013
+        },
+        {
+          "date": "2026-03-26",
+          "count": 105911
+        },
+        {
+          "date": "2026-03-27",
+          "count": 105810
+        },
+        {
+          "date": "2026-03-28",
+          "count": 105709
+        },
+        {
+          "date": "2026-03-29",
+          "count": 105608
+        },
+        {
+          "date": "2026-03-30",
+          "count": 105507
+        },
+        {
+          "date": "2026-03-31",
+          "count": 105406
+        },
+        {
+          "date": "2026-04-01",
+          "count": 105306
+        },
+        {
+          "date": "2026-04-02",
+          "count": 105205
+        },
+        {
+          "date": "2026-04-03",
+          "count": 105104
+        },
+        {
+          "date": "2026-04-04",
+          "count": 105004
+        },
+        {
+          "date": "2026-04-05",
+          "count": 104904
+        },
+        {
+          "date": "2026-04-06",
+          "count": 104803
+        },
+        {
+          "date": "2026-04-07",
+          "count": 104703
+        },
+        {
+          "date": "2026-04-08",
+          "count": 104603
+        },
+        {
+          "date": "2026-04-09",
+          "count": 104503
+        },
+        {
+          "date": "2026-04-10",
+          "count": 104403
+        },
+        {
+          "date": "2026-04-11",
+          "count": 104304
+        },
+        {
+          "date": "2026-04-12",
+          "count": 104204
+        },
+        {
+          "date": "2026-04-13",
+          "count": 104105
+        },
+        {
+          "date": "2026-04-14",
+          "count": 104005
+        },
+        {
+          "date": "2026-04-15",
+          "count": 103906
+        },
+        {
+          "date": "2026-04-16",
+          "count": 103806
+        },
+        {
+          "date": "2026-04-17",
+          "count": 103707
+        },
+        {
+          "date": "2026-04-18",
+          "count": 103608
+        },
+        {
+          "date": "2026-04-19",
+          "count": 103509
+        },
+        {
+          "date": "2026-04-20",
+          "count": 103410
+        },
+        {
+          "date": "2026-04-21",
+          "count": 103311
+        },
+        {
+          "date": "2026-04-22",
+          "count": 103213
+        },
+        {
+          "date": "2026-04-23",
+          "count": 103114
+        },
+        {
+          "date": "2026-04-24",
+          "count": 103016
+        },
+        {
+          "date": "2026-04-25",
+          "count": 102917
+        },
+        {
+          "date": "2026-04-26",
+          "count": 102819
+        },
+        {
+          "date": "2026-04-27",
+          "count": 102721
+        },
+        {
+          "date": "2026-04-28",
+          "count": 102623
+        },
+        {
+          "date": "2026-04-29",
+          "count": 102524
+        },
+        {
+          "date": "2026-04-30",
+          "count": 102427
+        },
+        {
+          "date": "2026-05-01",
+          "count": 102329
+        },
+        {
+          "date": "2026-05-02",
+          "count": 102231
+        },
+        {
+          "date": "2026-05-03",
+          "count": 102133
+        },
+        {
+          "date": "2026-05-04",
+          "count": 102036
+        },
+        {
+          "date": "2026-05-05",
+          "count": 101938
+        },
+        {
+          "date": "2026-05-06",
+          "count": 101841
+        },
+        {
+          "date": "2026-05-07",
+          "count": 101743
+        },
+        {
+          "date": "2026-05-08",
+          "count": 101646
+        },
+        {
+          "date": "2026-05-09",
+          "count": 101549
+        },
+        {
+          "date": "2026-05-10",
+          "count": 101452
+        },
+        {
+          "date": "2026-05-11",
+          "count": 101355
+        },
+        {
+          "date": "2026-05-12",
+          "count": 101258
+        },
+        {
+          "date": "2026-05-13",
+          "count": 101162
+        },
+        {
+          "date": "2026-05-14",
+          "count": 101065
+        },
+        {
+          "date": "2026-05-15",
+          "count": 100968
+        },
+        {
+          "date": "2026-05-16",
+          "count": 100872
+        },
+        {
+          "date": "2026-05-17",
+          "count": 100776
+        },
+        {
+          "date": "2026-05-18",
+          "count": 100679
+        },
+        {
+          "date": "2026-05-19",
+          "count": 100583
+        },
+        {
+          "date": "2026-05-20",
+          "count": 100487
+        },
+        {
+          "date": "2026-05-21",
+          "count": 100391
+        },
+        {
+          "date": "2026-05-22",
+          "count": 100295
+        },
+        {
+          "date": "2026-05-23",
+          "count": 100199
+        },
+        {
+          "date": "2026-05-24",
+          "count": 100103
+        },
+        {
+          "date": "2026-05-25",
+          "count": 100008
+        },
+        {
+          "date": "2026-05-26",
+          "count": 99912
+        },
+        {
+          "date": "2026-05-27",
+          "count": 99817
+        },
+        {
+          "date": "2026-05-28",
+          "count": 99721
+        },
+        {
+          "date": "2026-05-29",
+          "count": 99626
+        },
+        {
+          "date": "2026-05-30",
+          "count": 99531
+        },
+        {
+          "date": "2026-05-31",
+          "count": 99436
+        },
+        {
+          "date": "2026-06-01",
+          "count": 99341
+        },
+        {
+          "date": "2026-06-02",
+          "count": 99246
+        }
+      ],
+      "engagement_rate": 4.7,
+      "posts_per_30": 30,
+      "avg_likes": 528,
+      "avg_comments": 29,
+      "avg_shares": 18,
+      "total_engagement": {
+        "likes": 15840,
+        "comments": 870,
+        "shares": 540
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:840660103838/",
+          "title": "Private Credit in Asia Pacific: Emerging Market Perspectives",
+          "date": "2026-05-31",
+          "likes": 377,
+          "comments": 58,
+          "shares": 28
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:236480827781/",
+          "title": "Real Estate Debt: Signs of Recovery",
+          "date": "2026-05-07",
+          "likes": 353,
+          "comments": 56,
+          "shares": 27
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:420708760740/",
+          "title": "Singapore Family Office: The APAC Perspective",
+          "date": "2026-05-16",
+          "likes": 253,
+          "comments": 41,
+          "shares": 15
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:311256244713/",
+          "title": "China A-Share Market: Signs of Recovery",
+          "date": "2026-05-29",
+          "likes": 171,
+          "comments": 15,
+          "shares": 9
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:264172113051/",
+          "title": "Japan Equity Reform Story: A Practical Framework",
+          "date": "2026-05-13",
+          "likes": 166,
+          "comments": 11,
+          "shares": 12
+        }
+      ],
+      "rank_followers": 11,
+      "rank_engagement": 10,
+      "rank_posts": 7
+    },
+    {
+      "id": "daiwa",
+      "name": "Daiwa AM",
+      "url": "https://www.linkedin.com/company/daiwa-asset-management/",
+      "market": "Japan",
+      "aum": "$200B+",
+      "hq": "Japan",
+      "industry": "Asset Management",
+      "follower_count": 95400,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 102642
+        },
+        {
+          "date": "2026-03-05",
+          "count": 102559
+        },
+        {
+          "date": "2026-03-06",
+          "count": 102475
+        },
+        {
+          "date": "2026-03-07",
+          "count": 102392
+        },
+        {
+          "date": "2026-03-08",
+          "count": 102309
+        },
+        {
+          "date": "2026-03-09",
+          "count": 102226
+        },
+        {
+          "date": "2026-03-10",
+          "count": 102142
+        },
+        {
+          "date": "2026-03-11",
+          "count": 102059
+        },
+        {
+          "date": "2026-03-12",
+          "count": 101977
+        },
+        {
+          "date": "2026-03-13",
+          "count": 101894
+        },
+        {
+          "date": "2026-03-14",
+          "count": 101811
+        },
+        {
+          "date": "2026-03-15",
+          "count": 101728
+        },
+        {
+          "date": "2026-03-16",
+          "count": 101645
+        },
+        {
+          "date": "2026-03-17",
+          "count": 101563
+        },
+        {
+          "date": "2026-03-18",
+          "count": 101480
+        },
+        {
+          "date": "2026-03-19",
+          "count": 101398
+        },
+        {
+          "date": "2026-03-20",
+          "count": 101315
+        },
+        {
+          "date": "2026-03-21",
+          "count": 101233
+        },
+        {
+          "date": "2026-03-22",
+          "count": 101151
+        },
+        {
+          "date": "2026-03-23",
+          "count": 101069
+        },
+        {
+          "date": "2026-03-24",
+          "count": 100987
+        },
+        {
+          "date": "2026-03-25",
+          "count": 100904
+        },
+        {
+          "date": "2026-03-26",
+          "count": 100822
+        },
+        {
+          "date": "2026-03-27",
+          "count": 100741
+        },
+        {
+          "date": "2026-03-28",
+          "count": 100659
+        },
+        {
+          "date": "2026-03-29",
+          "count": 100577
+        },
+        {
+          "date": "2026-03-30",
+          "count": 100495
+        },
+        {
+          "date": "2026-03-31",
+          "count": 100413
+        },
+        {
+          "date": "2026-04-01",
+          "count": 100332
+        },
+        {
+          "date": "2026-04-02",
+          "count": 100250
+        },
+        {
+          "date": "2026-04-03",
+          "count": 100169
+        },
+        {
+          "date": "2026-04-04",
+          "count": 100087
+        },
+        {
+          "date": "2026-04-05",
+          "count": 100006
+        },
+        {
+          "date": "2026-04-06",
+          "count": 99925
+        },
+        {
+          "date": "2026-04-07",
+          "count": 99844
+        },
+        {
+          "date": "2026-04-08",
+          "count": 99762
+        },
+        {
+          "date": "2026-04-09",
+          "count": 99681
+        },
+        {
+          "date": "2026-04-10",
+          "count": 99600
+        },
+        {
+          "date": "2026-04-11",
+          "count": 99519
+        },
+        {
+          "date": "2026-04-12",
+          "count": 99439
+        },
+        {
+          "date": "2026-04-13",
+          "count": 99358
+        },
+        {
+          "date": "2026-04-14",
+          "count": 99277
+        },
+        {
+          "date": "2026-04-15",
+          "count": 99196
+        },
+        {
+          "date": "2026-04-16",
+          "count": 99116
+        },
+        {
+          "date": "2026-04-17",
+          "count": 99035
+        },
+        {
+          "date": "2026-04-18",
+          "count": 98955
+        },
+        {
+          "date": "2026-04-19",
+          "count": 98874
+        },
+        {
+          "date": "2026-04-20",
+          "count": 98794
+        },
+        {
+          "date": "2026-04-21",
+          "count": 98714
+        },
+        {
+          "date": "2026-04-22",
+          "count": 98633
+        },
+        {
+          "date": "2026-04-23",
+          "count": 98553
+        },
+        {
+          "date": "2026-04-24",
+          "count": 98473
+        },
+        {
+          "date": "2026-04-25",
+          "count": 98393
+        },
+        {
+          "date": "2026-04-26",
+          "count": 98313
+        },
+        {
+          "date": "2026-04-27",
+          "count": 98233
+        },
+        {
+          "date": "2026-04-28",
+          "count": 98154
+        },
+        {
+          "date": "2026-04-29",
+          "count": 98074
+        },
+        {
+          "date": "2026-04-30",
+          "count": 97994
+        },
+        {
+          "date": "2026-05-01",
+          "count": 97914
+        },
+        {
+          "date": "2026-05-02",
+          "count": 97835
+        },
+        {
+          "date": "2026-05-03",
+          "count": 97755
+        },
+        {
+          "date": "2026-05-04",
+          "count": 97676
+        },
+        {
+          "date": "2026-05-05",
+          "count": 97597
+        },
+        {
+          "date": "2026-05-06",
+          "count": 97517
+        },
+        {
+          "date": "2026-05-07",
+          "count": 97438
+        },
+        {
+          "date": "2026-05-08",
+          "count": 97359
+        },
+        {
+          "date": "2026-05-09",
+          "count": 97280
+        },
+        {
+          "date": "2026-05-10",
+          "count": 97201
+        },
+        {
+          "date": "2026-05-11",
+          "count": 97122
+        },
+        {
+          "date": "2026-05-12",
+          "count": 97043
+        },
+        {
+          "date": "2026-05-13",
+          "count": 96964
+        },
+        {
+          "date": "2026-05-14",
+          "count": 96885
+        },
+        {
+          "date": "2026-05-15",
+          "count": 96806
+        },
+        {
+          "date": "2026-05-16",
+          "count": 96728
+        },
+        {
+          "date": "2026-05-17",
+          "count": 96649
+        },
+        {
+          "date": "2026-05-18",
+          "count": 96570
+        },
+        {
+          "date": "2026-05-19",
+          "count": 96492
+        },
+        {
+          "date": "2026-05-20",
+          "count": 96414
+        },
+        {
+          "date": "2026-05-21",
+          "count": 96335
+        },
+        {
+          "date": "2026-05-22",
+          "count": 96257
+        },
+        {
+          "date": "2026-05-23",
+          "count": 96179
+        },
+        {
+          "date": "2026-05-24",
+          "count": 96101
+        },
+        {
+          "date": "2026-05-25",
+          "count": 96022
+        },
+        {
+          "date": "2026-05-26",
+          "count": 95944
+        },
+        {
+          "date": "2026-05-27",
+          "count": 95866
+        },
+        {
+          "date": "2026-05-28",
+          "count": 95789
+        },
+        {
+          "date": "2026-05-29",
+          "count": 95711
+        },
+        {
+          "date": "2026-05-30",
+          "count": 95633
+        },
+        {
+          "date": "2026-05-31",
+          "count": 95555
+        },
+        {
+          "date": "2026-06-01",
+          "count": 95478
+        },
+        {
+          "date": "2026-06-02",
+          "count": 95400
+        }
+      ],
+      "engagement_rate": 4.19,
+      "posts_per_30": 35,
+      "avg_likes": 1169,
+      "avg_comments": 53,
+      "avg_shares": 16,
+      "total_engagement": {
+        "likes": 40915,
+        "comments": 1855,
+        "shares": 560
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:48548789535/",
+          "title": "Retirement in Ageing Asia: Institutional Update",
+          "date": "2026-06-01",
+          "likes": 369,
+          "comments": 61,
+          "shares": 21
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:512238312498/",
+          "title": "ESG Integration in Fixed Income: Market Growth and Impact",
+          "date": "2026-05-26",
+          "likes": 180,
+          "comments": 20,
+          "shares": 25
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:543542860269/",
+          "title": "Private Credit in Asia Pacific: The APAC Perspective",
+          "date": "2026-06-01",
+          "likes": 130,
+          "comments": 28,
+          "shares": 14
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:701111899716/",
+          "title": "Singapore Family Office: The Next Frontier",
+          "date": "2026-05-19",
+          "likes": 124,
+          "comments": 26,
+          "shares": 16
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:545499697933/",
+          "title": "Japan Equity Reform Story: Institutional Update",
+          "date": "2026-05-31",
+          "likes": 48,
+          "comments": 8,
+          "shares": 6
+        }
+      ],
+      "rank_followers": 12,
+      "rank_engagement": 2,
+      "rank_posts": 4
+    },
+    {
+      "id": "pingan",
+      "name": "Ping An AM",
+      "url": "https://www.linkedin.com/company/ping-an-asset-management/",
+      "market": "China",
+      "aum": "$500B+",
+      "hq": "China",
+      "industry": "Asset Management",
+      "follower_count": 79132,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 94052
+        },
+        {
+          "date": "2026-03-05",
+          "count": 93872
+        },
+        {
+          "date": "2026-03-06",
+          "count": 93692
+        },
+        {
+          "date": "2026-03-07",
+          "count": 93512
+        },
+        {
+          "date": "2026-03-08",
+          "count": 93333
+        },
+        {
+          "date": "2026-03-09",
+          "count": 93154
+        },
+        {
+          "date": "2026-03-10",
+          "count": 92975
+        },
+        {
+          "date": "2026-03-11",
+          "count": 92797
+        },
+        {
+          "date": "2026-03-12",
+          "count": 92619
+        },
+        {
+          "date": "2026-03-13",
+          "count": 92442
+        },
+        {
+          "date": "2026-03-14",
+          "count": 92264
+        },
+        {
+          "date": "2026-03-15",
+          "count": 92088
+        },
+        {
+          "date": "2026-03-16",
+          "count": 91911
+        },
+        {
+          "date": "2026-03-17",
+          "count": 91735
+        },
+        {
+          "date": "2026-03-18",
+          "count": 91559
+        },
+        {
+          "date": "2026-03-19",
+          "count": 91383
+        },
+        {
+          "date": "2026-03-20",
+          "count": 91208
+        },
+        {
+          "date": "2026-03-21",
+          "count": 91033
+        },
+        {
+          "date": "2026-03-22",
+          "count": 90859
+        },
+        {
+          "date": "2026-03-23",
+          "count": 90684
+        },
+        {
+          "date": "2026-03-24",
+          "count": 90510
+        },
+        {
+          "date": "2026-03-25",
+          "count": 90337
+        },
+        {
+          "date": "2026-03-26",
+          "count": 90164
+        },
+        {
+          "date": "2026-03-27",
+          "count": 89991
+        },
+        {
+          "date": "2026-03-28",
+          "count": 89818
+        },
+        {
+          "date": "2026-03-29",
+          "count": 89646
+        },
+        {
+          "date": "2026-03-30",
+          "count": 89474
+        },
+        {
+          "date": "2026-03-31",
+          "count": 89303
+        },
+        {
+          "date": "2026-04-01",
+          "count": 89131
+        },
+        {
+          "date": "2026-04-02",
+          "count": 88961
+        },
+        {
+          "date": "2026-04-03",
+          "count": 88790
+        },
+        {
+          "date": "2026-04-04",
+          "count": 88620
+        },
+        {
+          "date": "2026-04-05",
+          "count": 88450
+        },
+        {
+          "date": "2026-04-06",
+          "count": 88280
+        },
+        {
+          "date": "2026-04-07",
+          "count": 88111
+        },
+        {
+          "date": "2026-04-08",
+          "count": 87942
+        },
+        {
+          "date": "2026-04-09",
+          "count": 87773
+        },
+        {
+          "date": "2026-04-10",
+          "count": 87605
+        },
+        {
+          "date": "2026-04-11",
+          "count": 87437
+        },
+        {
+          "date": "2026-04-12",
+          "count": 87269
+        },
+        {
+          "date": "2026-04-13",
+          "count": 87102
+        },
+        {
+          "date": "2026-04-14",
+          "count": 86935
+        },
+        {
+          "date": "2026-04-15",
+          "count": 86768
+        },
+        {
+          "date": "2026-04-16",
+          "count": 86602
+        },
+        {
+          "date": "2026-04-17",
+          "count": 86436
+        },
+        {
+          "date": "2026-04-18",
+          "count": 86270
+        },
+        {
+          "date": "2026-04-19",
+          "count": 86105
+        },
+        {
+          "date": "2026-04-20",
+          "count": 85940
+        },
+        {
+          "date": "2026-04-21",
+          "count": 85775
+        },
+        {
+          "date": "2026-04-22",
+          "count": 85610
+        },
+        {
+          "date": "2026-04-23",
+          "count": 85446
+        },
+        {
+          "date": "2026-04-24",
+          "count": 85282
+        },
+        {
+          "date": "2026-04-25",
+          "count": 85119
+        },
+        {
+          "date": "2026-04-26",
+          "count": 84956
+        },
+        {
+          "date": "2026-04-27",
+          "count": 84793
+        },
+        {
+          "date": "2026-04-28",
+          "count": 84630
+        },
+        {
+          "date": "2026-04-29",
+          "count": 84468
+        },
+        {
+          "date": "2026-04-30",
+          "count": 84306
+        },
+        {
+          "date": "2026-05-01",
+          "count": 84144
+        },
+        {
+          "date": "2026-05-02",
+          "count": 83983
+        },
+        {
+          "date": "2026-05-03",
+          "count": 83822
+        },
+        {
+          "date": "2026-05-04",
+          "count": 83661
+        },
+        {
+          "date": "2026-05-05",
+          "count": 83501
+        },
+        {
+          "date": "2026-05-06",
+          "count": 83341
+        },
+        {
+          "date": "2026-05-07",
+          "count": 83181
+        },
+        {
+          "date": "2026-05-08",
+          "count": 83021
+        },
+        {
+          "date": "2026-05-09",
+          "count": 82862
+        },
+        {
+          "date": "2026-05-10",
+          "count": 82703
+        },
+        {
+          "date": "2026-05-11",
+          "count": 82545
+        },
+        {
+          "date": "2026-05-12",
+          "count": 82387
+        },
+        {
+          "date": "2026-05-13",
+          "count": 82229
+        },
+        {
+          "date": "2026-05-14",
+          "count": 82071
+        },
+        {
+          "date": "2026-05-15",
+          "count": 81914
+        },
+        {
+          "date": "2026-05-16",
+          "count": 81756
+        },
+        {
+          "date": "2026-05-17",
+          "count": 81600
+        },
+        {
+          "date": "2026-05-18",
+          "count": 81443
+        },
+        {
+          "date": "2026-05-19",
+          "count": 81287
+        },
+        {
+          "date": "2026-05-20",
+          "count": 81131
+        },
+        {
+          "date": "2026-05-21",
+          "count": 80976
+        },
+        {
+          "date": "2026-05-22",
+          "count": 80820
+        },
+        {
+          "date": "2026-05-23",
+          "count": 80665
+        },
+        {
+          "date": "2026-05-24",
+          "count": 80511
+        },
+        {
+          "date": "2026-05-25",
+          "count": 80356
+        },
+        {
+          "date": "2026-05-26",
+          "count": 80202
+        },
+        {
+          "date": "2026-05-27",
+          "count": 80049
+        },
+        {
+          "date": "2026-05-28",
+          "count": 79895
+        },
+        {
+          "date": "2026-05-29",
+          "count": 79742
+        },
+        {
+          "date": "2026-05-30",
+          "count": 79589
+        },
+        {
+          "date": "2026-05-31",
+          "count": 79436
+        },
+        {
+          "date": "2026-06-01",
+          "count": 79284
+        },
+        {
+          "date": "2026-06-02",
+          "count": 79132
+        }
+      ],
+      "engagement_rate": 4.17,
+      "posts_per_30": 30,
+      "avg_likes": 227,
+      "avg_comments": 55,
+      "avg_shares": 4,
+      "total_engagement": {
+        "likes": 6810,
+        "comments": 1650,
+        "shares": 120
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:95399932686/",
+          "title": "Singapore Family Office: A Regional Perspective",
+          "date": "2026-05-09",
+          "likes": 354,
+          "comments": 48,
+          "shares": 17
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:727595184379/",
+          "title": "Global Macro Outlook: Opportunities in the Recovery Cycle",
+          "date": "2026-06-02",
+          "likes": 333,
+          "comments": 46,
+          "shares": 29
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:100727304142/",
+          "title": "Navigating the Rate Cycle: Opportunities in the Recovery Cycle",
+          "date": "2026-05-09",
+          "likes": 236,
+          "comments": 32,
+          "shares": 14
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:760012083993/",
+          "title": "Active vs Passive: Opportunities in the Recovery Cycle",
+          "date": "2026-05-21",
+          "likes": 206,
+          "comments": 31,
+          "shares": 11
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:279458991735/",
+          "title": "Private Credit in Asia Pacific: Machine Learning Applications",
+          "date": "2026-05-30",
+          "likes": 97,
+          "comments": 10,
+          "shares": 13
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:503318379884/",
+          "title": "Retirement in Ageing Asia: Signs of Recovery",
+          "date": "2026-05-13",
+          "likes": 76,
+          "comments": 16,
+          "shares": 5
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:329047319238/",
+          "title": "Global Macro Outlook: A Regional Perspective",
+          "date": "2026-05-14",
+          "likes": 67,
+          "comments": 6,
+          "shares": 6
+        }
+      ],
+      "rank_followers": 13,
+      "rank_engagement": 18,
+      "rank_posts": 8
+    },
+    {
+      "id": "nikko",
+      "name": "Nikko AM",
+      "url": "https://www.linkedin.com/company/nikko-am/",
+      "market": "Japan",
+      "aum": "$200B+",
+      "hq": "Japan",
+      "industry": "Asset Management",
+      "follower_count": 76461,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 86072
+        },
+        {
+          "date": "2026-03-05",
+          "count": 85959
+        },
+        {
+          "date": "2026-03-06",
+          "count": 85846
+        },
+        {
+          "date": "2026-03-07",
+          "count": 85733
+        },
+        {
+          "date": "2026-03-08",
+          "count": 85620
+        },
+        {
+          "date": "2026-03-09",
+          "count": 85508
+        },
+        {
+          "date": "2026-03-10",
+          "count": 85395
+        },
+        {
+          "date": "2026-03-11",
+          "count": 85283
+        },
+        {
+          "date": "2026-03-12",
+          "count": 85171
+        },
+        {
+          "date": "2026-03-13",
+          "count": 85059
+        },
+        {
+          "date": "2026-03-14",
+          "count": 84947
+        },
+        {
+          "date": "2026-03-15",
+          "count": 84835
+        },
+        {
+          "date": "2026-03-16",
+          "count": 84724
+        },
+        {
+          "date": "2026-03-17",
+          "count": 84612
+        },
+        {
+          "date": "2026-03-18",
+          "count": 84501
+        },
+        {
+          "date": "2026-03-19",
+          "count": 84390
+        },
+        {
+          "date": "2026-03-20",
+          "count": 84279
+        },
+        {
+          "date": "2026-03-21",
+          "count": 84168
+        },
+        {
+          "date": "2026-03-22",
+          "count": 84058
+        },
+        {
+          "date": "2026-03-23",
+          "count": 83947
+        },
+        {
+          "date": "2026-03-24",
+          "count": 83837
+        },
+        {
+          "date": "2026-03-25",
+          "count": 83727
+        },
+        {
+          "date": "2026-03-26",
+          "count": 83617
+        },
+        {
+          "date": "2026-03-27",
+          "count": 83507
+        },
+        {
+          "date": "2026-03-28",
+          "count": 83397
+        },
+        {
+          "date": "2026-03-29",
+          "count": 83287
+        },
+        {
+          "date": "2026-03-30",
+          "count": 83178
+        },
+        {
+          "date": "2026-03-31",
+          "count": 83068
+        },
+        {
+          "date": "2026-04-01",
+          "count": 82959
+        },
+        {
+          "date": "2026-04-02",
+          "count": 82850
+        },
+        {
+          "date": "2026-04-03",
+          "count": 82741
+        },
+        {
+          "date": "2026-04-04",
+          "count": 82632
+        },
+        {
+          "date": "2026-04-05",
+          "count": 82524
+        },
+        {
+          "date": "2026-04-06",
+          "count": 82415
+        },
+        {
+          "date": "2026-04-07",
+          "count": 82307
+        },
+        {
+          "date": "2026-04-08",
+          "count": 82199
+        },
+        {
+          "date": "2026-04-09",
+          "count": 82091
+        },
+        {
+          "date": "2026-04-10",
+          "count": 81983
+        },
+        {
+          "date": "2026-04-11",
+          "count": 81875
+        },
+        {
+          "date": "2026-04-12",
+          "count": 81767
+        },
+        {
+          "date": "2026-04-13",
+          "count": 81660
+        },
+        {
+          "date": "2026-04-14",
+          "count": 81552
+        },
+        {
+          "date": "2026-04-15",
+          "count": 81445
+        },
+        {
+          "date": "2026-04-16",
+          "count": 81338
+        },
+        {
+          "date": "2026-04-17",
+          "count": 81231
+        },
+        {
+          "date": "2026-04-18",
+          "count": 81124
+        },
+        {
+          "date": "2026-04-19",
+          "count": 81018
+        },
+        {
+          "date": "2026-04-20",
+          "count": 80911
+        },
+        {
+          "date": "2026-04-21",
+          "count": 80805
+        },
+        {
+          "date": "2026-04-22",
+          "count": 80699
+        },
+        {
+          "date": "2026-04-23",
+          "count": 80592
+        },
+        {
+          "date": "2026-04-24",
+          "count": 80486
+        },
+        {
+          "date": "2026-04-25",
+          "count": 80381
+        },
+        {
+          "date": "2026-04-26",
+          "count": 80275
+        },
+        {
+          "date": "2026-04-27",
+          "count": 80169
+        },
+        {
+          "date": "2026-04-28",
+          "count": 80064
+        },
+        {
+          "date": "2026-04-29",
+          "count": 79959
+        },
+        {
+          "date": "2026-04-30",
+          "count": 79854
+        },
+        {
+          "date": "2026-05-01",
+          "count": 79749
+        },
+        {
+          "date": "2026-05-02",
+          "count": 79644
+        },
+        {
+          "date": "2026-05-03",
+          "count": 79539
+        },
+        {
+          "date": "2026-05-04",
+          "count": 79435
+        },
+        {
+          "date": "2026-05-05",
+          "count": 79330
+        },
+        {
+          "date": "2026-05-06",
+          "count": 79226
+        },
+        {
+          "date": "2026-05-07",
+          "count": 79122
+        },
+        {
+          "date": "2026-05-08",
+          "count": 79018
+        },
+        {
+          "date": "2026-05-09",
+          "count": 78914
+        },
+        {
+          "date": "2026-05-10",
+          "count": 78810
+        },
+        {
+          "date": "2026-05-11",
+          "count": 78706
+        },
+        {
+          "date": "2026-05-12",
+          "count": 78603
+        },
+        {
+          "date": "2026-05-13",
+          "count": 78500
+        },
+        {
+          "date": "2026-05-14",
+          "count": 78396
+        },
+        {
+          "date": "2026-05-15",
+          "count": 78293
+        },
+        {
+          "date": "2026-05-16",
+          "count": 78190
+        },
+        {
+          "date": "2026-05-17",
+          "count": 78088
+        },
+        {
+          "date": "2026-05-18",
+          "count": 77985
+        },
+        {
+          "date": "2026-05-19",
+          "count": 77882
+        },
+        {
+          "date": "2026-05-20",
+          "count": 77780
+        },
+        {
+          "date": "2026-05-21",
+          "count": 77678
+        },
+        {
+          "date": "2026-05-22",
+          "count": 77576
+        },
+        {
+          "date": "2026-05-23",
+          "count": 77474
+        },
+        {
+          "date": "2026-05-24",
+          "count": 77372
+        },
+        {
+          "date": "2026-05-25",
+          "count": 77270
+        },
+        {
+          "date": "2026-05-26",
+          "count": 77168
+        },
+        {
+          "date": "2026-05-27",
+          "count": 77067
+        },
+        {
+          "date": "2026-05-28",
+          "count": 76966
+        },
+        {
+          "date": "2026-05-29",
+          "count": 76864
+        },
+        {
+          "date": "2026-05-30",
+          "count": 76763
+        },
+        {
+          "date": "2026-05-31",
+          "count": 76662
+        },
+        {
+          "date": "2026-06-01",
+          "count": 76562
+        },
+        {
+          "date": "2026-06-02",
+          "count": 76461
+        }
+      ],
+      "engagement_rate": 4.24,
+      "posts_per_30": 24,
+      "avg_likes": 1080,
+      "avg_comments": 67,
+      "avg_shares": 31,
+      "total_engagement": {
+        "likes": 25920,
+        "comments": 1608,
+        "shares": 744
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:10133264585/",
+          "title": "India Growth Trajectory: The APAC Perspective",
+          "date": "2026-06-02",
+          "likes": 196,
+          "comments": 32,
+          "shares": 22
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:93786891350/",
+          "title": "2025 APAC Market Outlook: Challenges and Solutions",
+          "date": "2026-06-01",
+          "likes": 97,
+          "comments": 9,
+          "shares": 10
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:598981190973/",
+          "title": "Singapore Family Office: Strategies for 2025",
+          "date": "2026-05-10",
+          "likes": 94,
+          "comments": 12,
+          "shares": 11
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:429318202170/",
+          "title": "ESG Integration in Fixed Income: The APAC Perspective",
+          "date": "2026-05-16",
+          "likes": 54,
+          "comments": 4,
+          "shares": 6
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:340624913632/",
+          "title": "Real Estate Debt: Higher Rate Environment",
+          "date": "2026-05-14",
+          "likes": 35,
+          "comments": 6,
+          "shares": 2
+        }
+      ],
+      "rank_followers": 14,
+      "rank_engagement": 4,
+      "rank_posts": 12
+    },
+    {
+      "id": "mizuho",
+      "name": "Mizuho AM",
+      "url": "https://www.linkedin.com/company/mizuho-asset-management/",
+      "market": "Japan",
+      "aum": "$100B+",
+      "hq": "Japan",
+      "industry": "Asset Management",
+      "follower_count": 53977,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 60521
+        },
+        {
+          "date": "2026-03-05",
+          "count": 60444
+        },
+        {
+          "date": "2026-03-06",
+          "count": 60368
+        },
+        {
+          "date": "2026-03-07",
+          "count": 60291
+        },
+        {
+          "date": "2026-03-08",
+          "count": 60214
+        },
+        {
+          "date": "2026-03-09",
+          "count": 60138
+        },
+        {
+          "date": "2026-03-10",
+          "count": 60061
+        },
+        {
+          "date": "2026-03-11",
+          "count": 59985
+        },
+        {
+          "date": "2026-03-12",
+          "count": 59909
+        },
+        {
+          "date": "2026-03-13",
+          "count": 59833
+        },
+        {
+          "date": "2026-03-14",
+          "count": 59757
+        },
+        {
+          "date": "2026-03-15",
+          "count": 59681
+        },
+        {
+          "date": "2026-03-16",
+          "count": 59605
+        },
+        {
+          "date": "2026-03-17",
+          "count": 59529
+        },
+        {
+          "date": "2026-03-18",
+          "count": 59453
+        },
+        {
+          "date": "2026-03-19",
+          "count": 59378
+        },
+        {
+          "date": "2026-03-20",
+          "count": 59302
+        },
+        {
+          "date": "2026-03-21",
+          "count": 59227
+        },
+        {
+          "date": "2026-03-22",
+          "count": 59152
+        },
+        {
+          "date": "2026-03-23",
+          "count": 59077
+        },
+        {
+          "date": "2026-03-24",
+          "count": 59002
+        },
+        {
+          "date": "2026-03-25",
+          "count": 58927
+        },
+        {
+          "date": "2026-03-26",
+          "count": 58852
+        },
+        {
+          "date": "2026-03-27",
+          "count": 58777
+        },
+        {
+          "date": "2026-03-28",
+          "count": 58702
+        },
+        {
+          "date": "2026-03-29",
+          "count": 58628
+        },
+        {
+          "date": "2026-03-30",
+          "count": 58553
+        },
+        {
+          "date": "2026-03-31",
+          "count": 58479
+        },
+        {
+          "date": "2026-04-01",
+          "count": 58404
+        },
+        {
+          "date": "2026-04-02",
+          "count": 58330
+        },
+        {
+          "date": "2026-04-03",
+          "count": 58256
+        },
+        {
+          "date": "2026-04-04",
+          "count": 58182
+        },
+        {
+          "date": "2026-04-05",
+          "count": 58108
+        },
+        {
+          "date": "2026-04-06",
+          "count": 58034
+        },
+        {
+          "date": "2026-04-07",
+          "count": 57961
+        },
+        {
+          "date": "2026-04-08",
+          "count": 57887
+        },
+        {
+          "date": "2026-04-09",
+          "count": 57813
+        },
+        {
+          "date": "2026-04-10",
+          "count": 57740
+        },
+        {
+          "date": "2026-04-11",
+          "count": 57667
+        },
+        {
+          "date": "2026-04-12",
+          "count": 57593
+        },
+        {
+          "date": "2026-04-13",
+          "count": 57520
+        },
+        {
+          "date": "2026-04-14",
+          "count": 57447
+        },
+        {
+          "date": "2026-04-15",
+          "count": 57374
+        },
+        {
+          "date": "2026-04-16",
+          "count": 57301
+        },
+        {
+          "date": "2026-04-17",
+          "count": 57228
+        },
+        {
+          "date": "2026-04-18",
+          "count": 57156
+        },
+        {
+          "date": "2026-04-19",
+          "count": 57083
+        },
+        {
+          "date": "2026-04-20",
+          "count": 57010
+        },
+        {
+          "date": "2026-04-21",
+          "count": 56938
+        },
+        {
+          "date": "2026-04-22",
+          "count": 56866
+        },
+        {
+          "date": "2026-04-23",
+          "count": 56793
+        },
+        {
+          "date": "2026-04-24",
+          "count": 56721
+        },
+        {
+          "date": "2026-04-25",
+          "count": 56649
+        },
+        {
+          "date": "2026-04-26",
+          "count": 56577
+        },
+        {
+          "date": "2026-04-27",
+          "count": 56505
+        },
+        {
+          "date": "2026-04-28",
+          "count": 56433
+        },
+        {
+          "date": "2026-04-29",
+          "count": 56362
+        },
+        {
+          "date": "2026-04-30",
+          "count": 56290
+        },
+        {
+          "date": "2026-05-01",
+          "count": 56219
+        },
+        {
+          "date": "2026-05-02",
+          "count": 56147
+        },
+        {
+          "date": "2026-05-03",
+          "count": 56076
+        },
+        {
+          "date": "2026-05-04",
+          "count": 56005
+        },
+        {
+          "date": "2026-05-05",
+          "count": 55933
+        },
+        {
+          "date": "2026-05-06",
+          "count": 55862
+        },
+        {
+          "date": "2026-05-07",
+          "count": 55791
+        },
+        {
+          "date": "2026-05-08",
+          "count": 55720
+        },
+        {
+          "date": "2026-05-09",
+          "count": 55650
+        },
+        {
+          "date": "2026-05-10",
+          "count": 55579
+        },
+        {
+          "date": "2026-05-11",
+          "count": 55508
+        },
+        {
+          "date": "2026-05-12",
+          "count": 55438
+        },
+        {
+          "date": "2026-05-13",
+          "count": 55367
+        },
+        {
+          "date": "2026-05-14",
+          "count": 55297
+        },
+        {
+          "date": "2026-05-15",
+          "count": 55227
+        },
+        {
+          "date": "2026-05-16",
+          "count": 55156
+        },
+        {
+          "date": "2026-05-17",
+          "count": 55086
+        },
+        {
+          "date": "2026-05-18",
+          "count": 55016
+        },
+        {
+          "date": "2026-05-19",
+          "count": 54946
+        },
+        {
+          "date": "2026-05-20",
+          "count": 54877
+        },
+        {
+          "date": "2026-05-21",
+          "count": 54807
+        },
+        {
+          "date": "2026-05-22",
+          "count": 54737
+        },
+        {
+          "date": "2026-05-23",
+          "count": 54668
+        },
+        {
+          "date": "2026-05-24",
+          "count": 54598
+        },
+        {
+          "date": "2026-05-25",
+          "count": 54529
+        },
+        {
+          "date": "2026-05-26",
+          "count": 54460
+        },
+        {
+          "date": "2026-05-27",
+          "count": 54390
+        },
+        {
+          "date": "2026-05-28",
+          "count": 54321
+        },
+        {
+          "date": "2026-05-29",
+          "count": 54252
+        },
+        {
+          "date": "2026-05-30",
+          "count": 54183
+        },
+        {
+          "date": "2026-05-31",
+          "count": 54114
+        },
+        {
+          "date": "2026-06-01",
+          "count": 54046
+        },
+        {
+          "date": "2026-06-02",
+          "count": 53977
+        }
+      ],
+      "engagement_rate": 3.82,
+      "posts_per_30": 22,
+      "avg_likes": 992,
+      "avg_comments": 52,
+      "avg_shares": 27,
+      "total_engagement": {
+        "likes": 21824,
+        "comments": 1144,
+        "shares": 594
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:806597114284/",
+          "title": "China A-Share Market: Corporate Governance Changes",
+          "date": "2026-05-20",
+          "likes": 397,
+          "comments": 30,
+          "shares": 25
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:791752381770/",
+          "title": "Japan Equity Reform Story: Strategies for 2025",
+          "date": "2026-05-23",
+          "likes": 284,
+          "comments": 29,
+          "shares": 18
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:10133264585/",
+          "title": "India Growth Trajectory: The APAC Perspective",
+          "date": "2026-05-19",
+          "likes": 204,
+          "comments": 18,
+          "shares": 24
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:887591034239/",
+          "title": "Retirement in Ageing Asia: Divergence and Dispersion",
+          "date": "2026-05-16",
+          "likes": 134,
+          "comments": 19,
+          "shares": 7
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:166062326202/",
+          "title": "Australian Super Trends: Opportunities in the Recovery Cycle",
+          "date": "2026-05-19",
+          "likes": 124,
+          "comments": 25,
+          "shares": 6
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:624026389501/",
+          "title": "Cross-Border Capital Flows: The APAC Perspective",
+          "date": "2026-05-09",
+          "likes": 87,
+          "comments": 7,
+          "shares": 5
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:544462018942/",
+          "title": "Retirement in Ageing Asia: Market Growth and Impact",
+          "date": "2026-05-12",
+          "likes": 50,
+          "comments": 9,
+          "shares": 4
+        }
+      ],
+      "rank_followers": 15,
+      "rank_engagement": 6,
+      "rank_posts": 13
+    },
+    {
+      "id": "smds",
+      "name": "Sumitomo Mitsui DS AM",
+      "url": "https://www.linkedin.com/company/sumitomo-mitsui-ds-asset-management/",
+      "market": "Japan",
+      "aum": "$150B+",
+      "hq": "Japan",
+      "industry": "Asset Management",
+      "follower_count": 51673,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 59283
+        },
+        {
+          "date": "2026-03-05",
+          "count": 59193
+        },
+        {
+          "date": "2026-03-06",
+          "count": 59102
+        },
+        {
+          "date": "2026-03-07",
+          "count": 59012
+        },
+        {
+          "date": "2026-03-08",
+          "count": 58922
+        },
+        {
+          "date": "2026-03-09",
+          "count": 58832
+        },
+        {
+          "date": "2026-03-10",
+          "count": 58743
+        },
+        {
+          "date": "2026-03-11",
+          "count": 58653
+        },
+        {
+          "date": "2026-03-12",
+          "count": 58564
+        },
+        {
+          "date": "2026-03-13",
+          "count": 58474
+        },
+        {
+          "date": "2026-03-14",
+          "count": 58385
+        },
+        {
+          "date": "2026-03-15",
+          "count": 58296
+        },
+        {
+          "date": "2026-03-16",
+          "count": 58207
+        },
+        {
+          "date": "2026-03-17",
+          "count": 58118
+        },
+        {
+          "date": "2026-03-18",
+          "count": 58030
+        },
+        {
+          "date": "2026-03-19",
+          "count": 57941
+        },
+        {
+          "date": "2026-03-20",
+          "count": 57853
+        },
+        {
+          "date": "2026-03-21",
+          "count": 57765
+        },
+        {
+          "date": "2026-03-22",
+          "count": 57676
+        },
+        {
+          "date": "2026-03-23",
+          "count": 57588
+        },
+        {
+          "date": "2026-03-24",
+          "count": 57501
+        },
+        {
+          "date": "2026-03-25",
+          "count": 57413
+        },
+        {
+          "date": "2026-03-26",
+          "count": 57325
+        },
+        {
+          "date": "2026-03-27",
+          "count": 57238
+        },
+        {
+          "date": "2026-03-28",
+          "count": 57151
+        },
+        {
+          "date": "2026-03-29",
+          "count": 57063
+        },
+        {
+          "date": "2026-03-30",
+          "count": 56976
+        },
+        {
+          "date": "2026-03-31",
+          "count": 56889
+        },
+        {
+          "date": "2026-04-01",
+          "count": 56803
+        },
+        {
+          "date": "2026-04-02",
+          "count": 56716
+        },
+        {
+          "date": "2026-04-03",
+          "count": 56629
+        },
+        {
+          "date": "2026-04-04",
+          "count": 56543
+        },
+        {
+          "date": "2026-04-05",
+          "count": 56457
+        },
+        {
+          "date": "2026-04-06",
+          "count": 56371
+        },
+        {
+          "date": "2026-04-07",
+          "count": 56285
+        },
+        {
+          "date": "2026-04-08",
+          "count": 56199
+        },
+        {
+          "date": "2026-04-09",
+          "count": 56113
+        },
+        {
+          "date": "2026-04-10",
+          "count": 56028
+        },
+        {
+          "date": "2026-04-11",
+          "count": 55942
+        },
+        {
+          "date": "2026-04-12",
+          "count": 55857
+        },
+        {
+          "date": "2026-04-13",
+          "count": 55772
+        },
+        {
+          "date": "2026-04-14",
+          "count": 55686
+        },
+        {
+          "date": "2026-04-15",
+          "count": 55602
+        },
+        {
+          "date": "2026-04-16",
+          "count": 55517
+        },
+        {
+          "date": "2026-04-17",
+          "count": 55432
+        },
+        {
+          "date": "2026-04-18",
+          "count": 55347
+        },
+        {
+          "date": "2026-04-19",
+          "count": 55263
+        },
+        {
+          "date": "2026-04-20",
+          "count": 55179
+        },
+        {
+          "date": "2026-04-21",
+          "count": 55095
+        },
+        {
+          "date": "2026-04-22",
+          "count": 55011
+        },
+        {
+          "date": "2026-04-23",
+          "count": 54927
+        },
+        {
+          "date": "2026-04-24",
+          "count": 54843
+        },
+        {
+          "date": "2026-04-25",
+          "count": 54759
+        },
+        {
+          "date": "2026-04-26",
+          "count": 54676
+        },
+        {
+          "date": "2026-04-27",
+          "count": 54592
+        },
+        {
+          "date": "2026-04-28",
+          "count": 54509
+        },
+        {
+          "date": "2026-04-29",
+          "count": 54426
+        },
+        {
+          "date": "2026-04-30",
+          "count": 54343
+        },
+        {
+          "date": "2026-05-01",
+          "count": 54260
+        },
+        {
+          "date": "2026-05-02",
+          "count": 54177
+        },
+        {
+          "date": "2026-05-03",
+          "count": 54094
+        },
+        {
+          "date": "2026-05-04",
+          "count": 54012
+        },
+        {
+          "date": "2026-05-05",
+          "count": 53930
+        },
+        {
+          "date": "2026-05-06",
+          "count": 53847
+        },
+        {
+          "date": "2026-05-07",
+          "count": 53765
+        },
+        {
+          "date": "2026-05-08",
+          "count": 53683
+        },
+        {
+          "date": "2026-05-09",
+          "count": 53601
+        },
+        {
+          "date": "2026-05-10",
+          "count": 53520
+        },
+        {
+          "date": "2026-05-11",
+          "count": 53438
+        },
+        {
+          "date": "2026-05-12",
+          "count": 53356
+        },
+        {
+          "date": "2026-05-13",
+          "count": 53275
+        },
+        {
+          "date": "2026-05-14",
+          "count": 53194
+        },
+        {
+          "date": "2026-05-15",
+          "count": 53113
+        },
+        {
+          "date": "2026-05-16",
+          "count": 53032
+        },
+        {
+          "date": "2026-05-17",
+          "count": 52951
+        },
+        {
+          "date": "2026-05-18",
+          "count": 52870
+        },
+        {
+          "date": "2026-05-19",
+          "count": 52789
+        },
+        {
+          "date": "2026-05-20",
+          "count": 52709
+        },
+        {
+          "date": "2026-05-21",
+          "count": 52628
+        },
+        {
+          "date": "2026-05-22",
+          "count": 52548
+        },
+        {
+          "date": "2026-05-23",
+          "count": 52468
+        },
+        {
+          "date": "2026-05-24",
+          "count": 52388
+        },
+        {
+          "date": "2026-05-25",
+          "count": 52308
+        },
+        {
+          "date": "2026-05-26",
+          "count": 52228
+        },
+        {
+          "date": "2026-05-27",
+          "count": 52148
+        },
+        {
+          "date": "2026-05-28",
+          "count": 52069
+        },
+        {
+          "date": "2026-05-29",
+          "count": 51989
+        },
+        {
+          "date": "2026-05-30",
+          "count": 51910
+        },
+        {
+          "date": "2026-05-31",
+          "count": 51831
+        },
+        {
+          "date": "2026-06-01",
+          "count": 51752
+        },
+        {
+          "date": "2026-06-02",
+          "count": 51673
+        }
+      ],
+      "engagement_rate": 3.02,
+      "posts_per_30": 17,
+      "avg_likes": 877,
+      "avg_comments": 45,
+      "avg_shares": 25,
+      "total_engagement": {
+        "likes": 14909,
+        "comments": 765,
+        "shares": 425
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:544462018942/",
+          "title": "Retirement in Ageing Asia: Market Growth and Impact",
+          "date": "2026-05-24",
+          "likes": 278,
+          "comments": 63,
+          "shares": 42
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:779305368914/",
+          "title": "Climate Risk: Opportunities in the Recovery Cycle",
+          "date": "2026-05-22",
+          "likes": 266,
+          "comments": 29,
+          "shares": 20
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:887591034239/",
+          "title": "Retirement in Ageing Asia: Divergence and Dispersion",
+          "date": "2026-05-28",
+          "likes": 247,
+          "comments": 30,
+          "shares": 11
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:300936404937/",
+          "title": "2025 APAC Market Outlook: Signs of Recovery",
+          "date": "2026-05-31",
+          "likes": 191,
+          "comments": 21,
+          "shares": 11
+        }
+      ],
+      "rank_followers": 16,
+      "rank_engagement": 12,
+      "rank_posts": 14
+    },
+    {
+      "id": "efund",
+      "name": "E Fund Management",
+      "url": "https://www.linkedin.com/company/e-fund-management/",
+      "market": "China",
+      "aum": "$200B+",
+      "hq": "China",
+      "industry": "Asset Management",
+      "follower_count": 48410,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 50868
+        },
+        {
+          "date": "2026-03-05",
+          "count": 50840
+        },
+        {
+          "date": "2026-03-06",
+          "count": 50812
+        },
+        {
+          "date": "2026-03-07",
+          "count": 50784
+        },
+        {
+          "date": "2026-03-08",
+          "count": 50756
+        },
+        {
+          "date": "2026-03-09",
+          "count": 50728
+        },
+        {
+          "date": "2026-03-10",
+          "count": 50700
+        },
+        {
+          "date": "2026-03-11",
+          "count": 50673
+        },
+        {
+          "date": "2026-03-12",
+          "count": 50645
+        },
+        {
+          "date": "2026-03-13",
+          "count": 50617
+        },
+        {
+          "date": "2026-03-14",
+          "count": 50589
+        },
+        {
+          "date": "2026-03-15",
+          "count": 50561
+        },
+        {
+          "date": "2026-03-16",
+          "count": 50533
+        },
+        {
+          "date": "2026-03-17",
+          "count": 50506
+        },
+        {
+          "date": "2026-03-18",
+          "count": 50478
+        },
+        {
+          "date": "2026-03-19",
+          "count": 50450
+        },
+        {
+          "date": "2026-03-20",
+          "count": 50422
+        },
+        {
+          "date": "2026-03-21",
+          "count": 50394
+        },
+        {
+          "date": "2026-03-22",
+          "count": 50367
+        },
+        {
+          "date": "2026-03-23",
+          "count": 50339
+        },
+        {
+          "date": "2026-03-24",
+          "count": 50311
+        },
+        {
+          "date": "2026-03-25",
+          "count": 50284
+        },
+        {
+          "date": "2026-03-26",
+          "count": 50256
+        },
+        {
+          "date": "2026-03-27",
+          "count": 50228
+        },
+        {
+          "date": "2026-03-28",
+          "count": 50201
+        },
+        {
+          "date": "2026-03-29",
+          "count": 50173
+        },
+        {
+          "date": "2026-03-30",
+          "count": 50145
+        },
+        {
+          "date": "2026-03-31",
+          "count": 50118
+        },
+        {
+          "date": "2026-04-01",
+          "count": 50090
+        },
+        {
+          "date": "2026-04-02",
+          "count": 50063
+        },
+        {
+          "date": "2026-04-03",
+          "count": 50035
+        },
+        {
+          "date": "2026-04-04",
+          "count": 50008
+        },
+        {
+          "date": "2026-04-05",
+          "count": 49980
+        },
+        {
+          "date": "2026-04-06",
+          "count": 49953
+        },
+        {
+          "date": "2026-04-07",
+          "count": 49925
+        },
+        {
+          "date": "2026-04-08",
+          "count": 49898
+        },
+        {
+          "date": "2026-04-09",
+          "count": 49870
+        },
+        {
+          "date": "2026-04-10",
+          "count": 49843
+        },
+        {
+          "date": "2026-04-11",
+          "count": 49815
+        },
+        {
+          "date": "2026-04-12",
+          "count": 49788
+        },
+        {
+          "date": "2026-04-13",
+          "count": 49761
+        },
+        {
+          "date": "2026-04-14",
+          "count": 49733
+        },
+        {
+          "date": "2026-04-15",
+          "count": 49706
+        },
+        {
+          "date": "2026-04-16",
+          "count": 49679
+        },
+        {
+          "date": "2026-04-17",
+          "count": 49651
+        },
+        {
+          "date": "2026-04-18",
+          "count": 49624
+        },
+        {
+          "date": "2026-04-19",
+          "count": 49597
+        },
+        {
+          "date": "2026-04-20",
+          "count": 49569
+        },
+        {
+          "date": "2026-04-21",
+          "count": 49542
+        },
+        {
+          "date": "2026-04-22",
+          "count": 49515
+        },
+        {
+          "date": "2026-04-23",
+          "count": 49487
+        },
+        {
+          "date": "2026-04-24",
+          "count": 49460
+        },
+        {
+          "date": "2026-04-25",
+          "count": 49433
+        },
+        {
+          "date": "2026-04-26",
+          "count": 49406
+        },
+        {
+          "date": "2026-04-27",
+          "count": 49379
+        },
+        {
+          "date": "2026-04-28",
+          "count": 49352
+        },
+        {
+          "date": "2026-04-29",
+          "count": 49324
+        },
+        {
+          "date": "2026-04-30",
+          "count": 49297
+        },
+        {
+          "date": "2026-05-01",
+          "count": 49270
+        },
+        {
+          "date": "2026-05-02",
+          "count": 49243
+        },
+        {
+          "date": "2026-05-03",
+          "count": 49216
+        },
+        {
+          "date": "2026-05-04",
+          "count": 49189
+        },
+        {
+          "date": "2026-05-05",
+          "count": 49162
+        },
+        {
+          "date": "2026-05-06",
+          "count": 49135
+        },
+        {
+          "date": "2026-05-07",
+          "count": 49108
+        },
+        {
+          "date": "2026-05-08",
+          "count": 49081
+        },
+        {
+          "date": "2026-05-09",
+          "count": 49054
+        },
+        {
+          "date": "2026-05-10",
+          "count": 49027
+        },
+        {
+          "date": "2026-05-11",
+          "count": 49000
+        },
+        {
+          "date": "2026-05-12",
+          "count": 48973
+        },
+        {
+          "date": "2026-05-13",
+          "count": 48946
+        },
+        {
+          "date": "2026-05-14",
+          "count": 48919
+        },
+        {
+          "date": "2026-05-15",
+          "count": 48892
+        },
+        {
+          "date": "2026-05-16",
+          "count": 48865
+        },
+        {
+          "date": "2026-05-17",
+          "count": 48838
+        },
+        {
+          "date": "2026-05-18",
+          "count": 48811
+        },
+        {
+          "date": "2026-05-19",
+          "count": 48784
+        },
+        {
+          "date": "2026-05-20",
+          "count": 48758
+        },
+        {
+          "date": "2026-05-21",
+          "count": 48731
+        },
+        {
+          "date": "2026-05-22",
+          "count": 48704
+        },
+        {
+          "date": "2026-05-23",
+          "count": 48677
+        },
+        {
+          "date": "2026-05-24",
+          "count": 48650
+        },
+        {
+          "date": "2026-05-25",
+          "count": 48624
+        },
+        {
+          "date": "2026-05-26",
+          "count": 48597
+        },
+        {
+          "date": "2026-05-27",
+          "count": 48570
+        },
+        {
+          "date": "2026-05-28",
+          "count": 48543
+        },
+        {
+          "date": "2026-05-29",
+          "count": 48517
+        },
+        {
+          "date": "2026-05-30",
+          "count": 48490
+        },
+        {
+          "date": "2026-05-31",
+          "count": 48463
+        },
+        {
+          "date": "2026-06-01",
+          "count": 48437
+        },
+        {
+          "date": "2026-06-02",
+          "count": 48410
+        }
+      ],
+      "engagement_rate": 2.26,
+      "posts_per_30": 30,
+      "avg_likes": 177,
+      "avg_comments": 47,
+      "avg_shares": 19,
+      "total_engagement": {
+        "likes": 5310,
+        "comments": 1410,
+        "shares": 570
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:14855743051/",
+          "title": "Retirement in Ageing Asia: Opportunities in the Recovery Cycle",
+          "date": "2026-05-10",
+          "likes": 203,
+          "comments": 36,
+          "shares": 18
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:348301439930/",
+          "title": "Singapore Family Office: Challenges and Solutions",
+          "date": "2026-05-08",
+          "likes": 200,
+          "comments": 35,
+          "shares": 14
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:340624913632/",
+          "title": "Real Estate Debt: Higher Rate Environment",
+          "date": "2026-05-28",
+          "likes": 198,
+          "comments": 24,
+          "shares": 20
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:972261535829/",
+          "title": "Japan Equity Reform Story: Opportunities in the Recovery Cycle",
+          "date": "2026-05-23",
+          "likes": 166,
+          "comments": 18,
+          "shares": 16
+        }
+      ],
+      "rank_followers": 17,
+      "rank_engagement": 19,
+      "rank_posts": 9
+    },
+    {
+      "id": "chinaamc",
+      "name": "China AMC",
+      "url": "https://www.linkedin.com/company/china-asset-management/",
+      "market": "China",
+      "aum": "$250B+",
+      "hq": "China",
+      "industry": "Asset Management",
+      "follower_count": 48234,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 50915
+        },
+        {
+          "date": "2026-03-05",
+          "count": 50884
+        },
+        {
+          "date": "2026-03-06",
+          "count": 50854
+        },
+        {
+          "date": "2026-03-07",
+          "count": 50823
+        },
+        {
+          "date": "2026-03-08",
+          "count": 50792
+        },
+        {
+          "date": "2026-03-09",
+          "count": 50762
+        },
+        {
+          "date": "2026-03-10",
+          "count": 50731
+        },
+        {
+          "date": "2026-03-11",
+          "count": 50701
+        },
+        {
+          "date": "2026-03-12",
+          "count": 50670
+        },
+        {
+          "date": "2026-03-13",
+          "count": 50640
+        },
+        {
+          "date": "2026-03-14",
+          "count": 50610
+        },
+        {
+          "date": "2026-03-15",
+          "count": 50579
+        },
+        {
+          "date": "2026-03-16",
+          "count": 50549
+        },
+        {
+          "date": "2026-03-17",
+          "count": 50518
+        },
+        {
+          "date": "2026-03-18",
+          "count": 50488
+        },
+        {
+          "date": "2026-03-19",
+          "count": 50458
+        },
+        {
+          "date": "2026-03-20",
+          "count": 50427
+        },
+        {
+          "date": "2026-03-21",
+          "count": 50397
+        },
+        {
+          "date": "2026-03-22",
+          "count": 50367
+        },
+        {
+          "date": "2026-03-23",
+          "count": 50337
+        },
+        {
+          "date": "2026-03-24",
+          "count": 50306
+        },
+        {
+          "date": "2026-03-25",
+          "count": 50276
+        },
+        {
+          "date": "2026-03-26",
+          "count": 50246
+        },
+        {
+          "date": "2026-03-27",
+          "count": 50216
+        },
+        {
+          "date": "2026-03-28",
+          "count": 50186
+        },
+        {
+          "date": "2026-03-29",
+          "count": 50155
+        },
+        {
+          "date": "2026-03-30",
+          "count": 50125
+        },
+        {
+          "date": "2026-03-31",
+          "count": 50095
+        },
+        {
+          "date": "2026-04-01",
+          "count": 50065
+        },
+        {
+          "date": "2026-04-02",
+          "count": 50035
+        },
+        {
+          "date": "2026-04-03",
+          "count": 50005
+        },
+        {
+          "date": "2026-04-04",
+          "count": 49975
+        },
+        {
+          "date": "2026-04-05",
+          "count": 49945
+        },
+        {
+          "date": "2026-04-06",
+          "count": 49915
+        },
+        {
+          "date": "2026-04-07",
+          "count": 49885
+        },
+        {
+          "date": "2026-04-08",
+          "count": 49855
+        },
+        {
+          "date": "2026-04-09",
+          "count": 49825
+        },
+        {
+          "date": "2026-04-10",
+          "count": 49795
+        },
+        {
+          "date": "2026-04-11",
+          "count": 49765
+        },
+        {
+          "date": "2026-04-12",
+          "count": 49735
+        },
+        {
+          "date": "2026-04-13",
+          "count": 49705
+        },
+        {
+          "date": "2026-04-14",
+          "count": 49675
+        },
+        {
+          "date": "2026-04-15",
+          "count": 49646
+        },
+        {
+          "date": "2026-04-16",
+          "count": 49616
+        },
+        {
+          "date": "2026-04-17",
+          "count": 49586
+        },
+        {
+          "date": "2026-04-18",
+          "count": 49556
+        },
+        {
+          "date": "2026-04-19",
+          "count": 49526
+        },
+        {
+          "date": "2026-04-20",
+          "count": 49497
+        },
+        {
+          "date": "2026-04-21",
+          "count": 49467
+        },
+        {
+          "date": "2026-04-22",
+          "count": 49437
+        },
+        {
+          "date": "2026-04-23",
+          "count": 49408
+        },
+        {
+          "date": "2026-04-24",
+          "count": 49378
+        },
+        {
+          "date": "2026-04-25",
+          "count": 49348
+        },
+        {
+          "date": "2026-04-26",
+          "count": 49319
+        },
+        {
+          "date": "2026-04-27",
+          "count": 49289
+        },
+        {
+          "date": "2026-04-28",
+          "count": 49259
+        },
+        {
+          "date": "2026-04-29",
+          "count": 49230
+        },
+        {
+          "date": "2026-04-30",
+          "count": 49200
+        },
+        {
+          "date": "2026-05-01",
+          "count": 49171
+        },
+        {
+          "date": "2026-05-02",
+          "count": 49141
+        },
+        {
+          "date": "2026-05-03",
+          "count": 49111
+        },
+        {
+          "date": "2026-05-04",
+          "count": 49082
+        },
+        {
+          "date": "2026-05-05",
+          "count": 49053
+        },
+        {
+          "date": "2026-05-06",
+          "count": 49023
+        },
+        {
+          "date": "2026-05-07",
+          "count": 48994
+        },
+        {
+          "date": "2026-05-08",
+          "count": 48964
+        },
+        {
+          "date": "2026-05-09",
+          "count": 48935
+        },
+        {
+          "date": "2026-05-10",
+          "count": 48905
+        },
+        {
+          "date": "2026-05-11",
+          "count": 48876
+        },
+        {
+          "date": "2026-05-12",
+          "count": 48847
+        },
+        {
+          "date": "2026-05-13",
+          "count": 48817
+        },
+        {
+          "date": "2026-05-14",
+          "count": 48788
+        },
+        {
+          "date": "2026-05-15",
+          "count": 48759
+        },
+        {
+          "date": "2026-05-16",
+          "count": 48729
+        },
+        {
+          "date": "2026-05-17",
+          "count": 48700
+        },
+        {
+          "date": "2026-05-18",
+          "count": 48671
+        },
+        {
+          "date": "2026-05-19",
+          "count": 48642
+        },
+        {
+          "date": "2026-05-20",
+          "count": 48612
+        },
+        {
+          "date": "2026-05-21",
+          "count": 48583
+        },
+        {
+          "date": "2026-05-22",
+          "count": 48554
+        },
+        {
+          "date": "2026-05-23",
+          "count": 48525
+        },
+        {
+          "date": "2026-05-24",
+          "count": 48496
+        },
+        {
+          "date": "2026-05-25",
+          "count": 48466
+        },
+        {
+          "date": "2026-05-26",
+          "count": 48437
+        },
+        {
+          "date": "2026-05-27",
+          "count": 48408
+        },
+        {
+          "date": "2026-05-28",
+          "count": 48379
+        },
+        {
+          "date": "2026-05-29",
+          "count": 48350
+        },
+        {
+          "date": "2026-05-30",
+          "count": 48321
+        },
+        {
+          "date": "2026-05-31",
+          "count": 48292
+        },
+        {
+          "date": "2026-06-01",
+          "count": 48263
+        },
+        {
+          "date": "2026-06-02",
+          "count": 48234
+        }
+      ],
+      "engagement_rate": 2.05,
+      "posts_per_30": 12,
+      "avg_likes": 685,
+      "avg_comments": 17,
+      "avg_shares": 34,
+      "total_engagement": {
+        "likes": 8220,
+        "comments": 204,
+        "shares": 408
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:708992594946/",
+          "title": "India Growth Trajectory: A Regional Perspective",
+          "date": "2026-05-18",
+          "likes": 332,
+          "comments": 59,
+          "shares": 25
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:872910242311/",
+          "title": "Active vs Passive: A Practical Framework",
+          "date": "2026-05-07",
+          "likes": 265,
+          "comments": 49,
+          "shares": 15
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:81263759422/",
+          "title": "Green Bonds Growth: The APAC Perspective",
+          "date": "2026-05-24",
+          "likes": 225,
+          "comments": 21,
+          "shares": 14
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:703761029550/",
+          "title": "Global Macro Outlook: A Practical Framework",
+          "date": "2026-05-28",
+          "likes": 180,
+          "comments": 32,
+          "shares": 25
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:833193436904/",
+          "title": "Hong Kong IPO Market: Divergence and Dispersion",
+          "date": "2026-05-14",
+          "likes": 124,
+          "comments": 14,
+          "shares": 15
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:379905910869/",
+          "title": "Active vs Passive: Corporate Governance Changes",
+          "date": "2026-05-30",
+          "likes": 121,
+          "comments": 13,
+          "shares": 12
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:649601088053/",
+          "title": "Private Credit in Asia Pacific: Strategies for 2025",
+          "date": "2026-05-21",
+          "likes": 115,
+          "comments": 18,
+          "shares": 12
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:279458991735/",
+          "title": "Private Credit in Asia Pacific: Machine Learning Applications",
+          "date": "2026-05-14",
+          "likes": 58,
+          "comments": 10,
+          "shares": 5
+        }
+      ],
+      "rank_followers": 18,
+      "rank_engagement": 17,
+      "rank_posts": 19
+    },
+    {
+      "id": "harvest",
+      "name": "Harvest Global",
+      "url": "https://www.linkedin.com/company/harvest-global-investments/",
+      "market": "China",
+      "aum": "$150B+",
+      "hq": "China",
+      "industry": "Investment Management",
+      "follower_count": 39981,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 42135
+        },
+        {
+          "date": "2026-03-05",
+          "count": 42111
+        },
+        {
+          "date": "2026-03-06",
+          "count": 42086
+        },
+        {
+          "date": "2026-03-07",
+          "count": 42062
+        },
+        {
+          "date": "2026-03-08",
+          "count": 42037
+        },
+        {
+          "date": "2026-03-09",
+          "count": 42013
+        },
+        {
+          "date": "2026-03-10",
+          "count": 41988
+        },
+        {
+          "date": "2026-03-11",
+          "count": 41964
+        },
+        {
+          "date": "2026-03-12",
+          "count": 41939
+        },
+        {
+          "date": "2026-03-13",
+          "count": 41915
+        },
+        {
+          "date": "2026-03-14",
+          "count": 41890
+        },
+        {
+          "date": "2026-03-15",
+          "count": 41866
+        },
+        {
+          "date": "2026-03-16",
+          "count": 41841
+        },
+        {
+          "date": "2026-03-17",
+          "count": 41817
+        },
+        {
+          "date": "2026-03-18",
+          "count": 41793
+        },
+        {
+          "date": "2026-03-19",
+          "count": 41768
+        },
+        {
+          "date": "2026-03-20",
+          "count": 41744
+        },
+        {
+          "date": "2026-03-21",
+          "count": 41720
+        },
+        {
+          "date": "2026-03-22",
+          "count": 41695
+        },
+        {
+          "date": "2026-03-23",
+          "count": 41671
+        },
+        {
+          "date": "2026-03-24",
+          "count": 41647
+        },
+        {
+          "date": "2026-03-25",
+          "count": 41622
+        },
+        {
+          "date": "2026-03-26",
+          "count": 41598
+        },
+        {
+          "date": "2026-03-27",
+          "count": 41574
+        },
+        {
+          "date": "2026-03-28",
+          "count": 41550
+        },
+        {
+          "date": "2026-03-29",
+          "count": 41525
+        },
+        {
+          "date": "2026-03-30",
+          "count": 41501
+        },
+        {
+          "date": "2026-03-31",
+          "count": 41477
+        },
+        {
+          "date": "2026-04-01",
+          "count": 41453
+        },
+        {
+          "date": "2026-04-02",
+          "count": 41429
+        },
+        {
+          "date": "2026-04-03",
+          "count": 41405
+        },
+        {
+          "date": "2026-04-04",
+          "count": 41380
+        },
+        {
+          "date": "2026-04-05",
+          "count": 41356
+        },
+        {
+          "date": "2026-04-06",
+          "count": 41332
+        },
+        {
+          "date": "2026-04-07",
+          "count": 41308
+        },
+        {
+          "date": "2026-04-08",
+          "count": 41284
+        },
+        {
+          "date": "2026-04-09",
+          "count": 41260
+        },
+        {
+          "date": "2026-04-10",
+          "count": 41236
+        },
+        {
+          "date": "2026-04-11",
+          "count": 41212
+        },
+        {
+          "date": "2026-04-12",
+          "count": 41188
+        },
+        {
+          "date": "2026-04-13",
+          "count": 41164
+        },
+        {
+          "date": "2026-04-14",
+          "count": 41140
+        },
+        {
+          "date": "2026-04-15",
+          "count": 41116
+        },
+        {
+          "date": "2026-04-16",
+          "count": 41092
+        },
+        {
+          "date": "2026-04-17",
+          "count": 41068
+        },
+        {
+          "date": "2026-04-18",
+          "count": 41044
+        },
+        {
+          "date": "2026-04-19",
+          "count": 41020
+        },
+        {
+          "date": "2026-04-20",
+          "count": 40996
+        },
+        {
+          "date": "2026-04-21",
+          "count": 40972
+        },
+        {
+          "date": "2026-04-22",
+          "count": 40948
+        },
+        {
+          "date": "2026-04-23",
+          "count": 40925
+        },
+        {
+          "date": "2026-04-24",
+          "count": 40901
+        },
+        {
+          "date": "2026-04-25",
+          "count": 40877
+        },
+        {
+          "date": "2026-04-26",
+          "count": 40853
+        },
+        {
+          "date": "2026-04-27",
+          "count": 40829
+        },
+        {
+          "date": "2026-04-28",
+          "count": 40805
+        },
+        {
+          "date": "2026-04-29",
+          "count": 40782
+        },
+        {
+          "date": "2026-04-30",
+          "count": 40758
+        },
+        {
+          "date": "2026-05-01",
+          "count": 40734
+        },
+        {
+          "date": "2026-05-02",
+          "count": 40710
+        },
+        {
+          "date": "2026-05-03",
+          "count": 40687
+        },
+        {
+          "date": "2026-05-04",
+          "count": 40663
+        },
+        {
+          "date": "2026-05-05",
+          "count": 40639
+        },
+        {
+          "date": "2026-05-06",
+          "count": 40615
+        },
+        {
+          "date": "2026-05-07",
+          "count": 40592
+        },
+        {
+          "date": "2026-05-08",
+          "count": 40568
+        },
+        {
+          "date": "2026-05-09",
+          "count": 40544
+        },
+        {
+          "date": "2026-05-10",
+          "count": 40521
+        },
+        {
+          "date": "2026-05-11",
+          "count": 40497
+        },
+        {
+          "date": "2026-05-12",
+          "count": 40474
+        },
+        {
+          "date": "2026-05-13",
+          "count": 40450
+        },
+        {
+          "date": "2026-05-14",
+          "count": 40426
+        },
+        {
+          "date": "2026-05-15",
+          "count": 40403
+        },
+        {
+          "date": "2026-05-16",
+          "count": 40379
+        },
+        {
+          "date": "2026-05-17",
+          "count": 40356
+        },
+        {
+          "date": "2026-05-18",
+          "count": 40332
+        },
+        {
+          "date": "2026-05-19",
+          "count": 40309
+        },
+        {
+          "date": "2026-05-20",
+          "count": 40285
+        },
+        {
+          "date": "2026-05-21",
+          "count": 40262
+        },
+        {
+          "date": "2026-05-22",
+          "count": 40238
+        },
+        {
+          "date": "2026-05-23",
+          "count": 40215
+        },
+        {
+          "date": "2026-05-24",
+          "count": 40191
+        },
+        {
+          "date": "2026-05-25",
+          "count": 40168
+        },
+        {
+          "date": "2026-05-26",
+          "count": 40145
+        },
+        {
+          "date": "2026-05-27",
+          "count": 40121
+        },
+        {
+          "date": "2026-05-28",
+          "count": 40098
+        },
+        {
+          "date": "2026-05-29",
+          "count": 40074
+        },
+        {
+          "date": "2026-05-30",
+          "count": 40051
+        },
+        {
+          "date": "2026-05-31",
+          "count": 40028
+        },
+        {
+          "date": "2026-06-01",
+          "count": 40004
+        },
+        {
+          "date": "2026-06-02",
+          "count": 39981
+        }
+      ],
+      "engagement_rate": 4.57,
+      "posts_per_30": 16,
+      "avg_likes": 966,
+      "avg_comments": 69,
+      "avg_shares": 5,
+      "total_engagement": {
+        "likes": 15456,
+        "comments": 1104,
+        "shares": 80
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:649601088053/",
+          "title": "Private Credit in Asia Pacific: Strategies for 2025",
+          "date": "2026-05-15",
+          "likes": 293,
+          "comments": 54,
+          "shares": 21
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:631825650672/",
+          "title": "Hong Kong IPO Market: Institutional Update",
+          "date": "2026-05-13",
+          "likes": 201,
+          "comments": 37,
+          "shares": 23
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:239009438646/",
+          "title": "Hong Kong IPO Market: Opportunities in the Recovery Cycle",
+          "date": "2026-05-17",
+          "likes": 116,
+          "comments": 26,
+          "shares": 9
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:455720415411/",
+          "title": "Private Credit in Asia Pacific: Signs of Recovery",
+          "date": "2026-05-17",
+          "likes": 86,
+          "comments": 19,
+          "shares": 6
+        }
+      ],
+      "rank_followers": 19,
+      "rank_engagement": 11,
+      "rank_posts": 16
+    },
+    {
+      "id": "chinasouthern",
+      "name": "China Southern AM",
+      "url": "https://www.linkedin.com/company/china-southern-fund-management/",
+      "market": "China",
+      "aum": "$200B+",
+      "hq": "China",
+      "industry": "Asset Management",
+      "follower_count": 39234,
+      "follower_history": [
+        {
+          "date": "2026-03-04",
+          "count": 40562
+        },
+        {
+          "date": "2026-03-05",
+          "count": 40547
+        },
+        {
+          "date": "2026-03-06",
+          "count": 40532
+        },
+        {
+          "date": "2026-03-07",
+          "count": 40517
+        },
+        {
+          "date": "2026-03-08",
+          "count": 40502
+        },
+        {
+          "date": "2026-03-09",
+          "count": 40487
+        },
+        {
+          "date": "2026-03-10",
+          "count": 40472
+        },
+        {
+          "date": "2026-03-11",
+          "count": 40457
+        },
+        {
+          "date": "2026-03-12",
+          "count": 40442
+        },
+        {
+          "date": "2026-03-13",
+          "count": 40428
+        },
+        {
+          "date": "2026-03-14",
+          "count": 40413
+        },
+        {
+          "date": "2026-03-15",
+          "count": 40398
+        },
+        {
+          "date": "2026-03-16",
+          "count": 40383
+        },
+        {
+          "date": "2026-03-17",
+          "count": 40368
+        },
+        {
+          "date": "2026-03-18",
+          "count": 40353
+        },
+        {
+          "date": "2026-03-19",
+          "count": 40338
+        },
+        {
+          "date": "2026-03-20",
+          "count": 40323
+        },
+        {
+          "date": "2026-03-21",
+          "count": 40308
+        },
+        {
+          "date": "2026-03-22",
+          "count": 40293
+        },
+        {
+          "date": "2026-03-23",
+          "count": 40278
+        },
+        {
+          "date": "2026-03-24",
+          "count": 40263
+        },
+        {
+          "date": "2026-03-25",
+          "count": 40248
+        },
+        {
+          "date": "2026-03-26",
+          "count": 40234
+        },
+        {
+          "date": "2026-03-27",
+          "count": 40219
+        },
+        {
+          "date": "2026-03-28",
+          "count": 40204
+        },
+        {
+          "date": "2026-03-29",
+          "count": 40189
+        },
+        {
+          "date": "2026-03-30",
+          "count": 40174
+        },
+        {
+          "date": "2026-03-31",
+          "count": 40159
+        },
+        {
+          "date": "2026-04-01",
+          "count": 40144
+        },
+        {
+          "date": "2026-04-02",
+          "count": 40129
+        },
+        {
+          "date": "2026-04-03",
+          "count": 40115
+        },
+        {
+          "date": "2026-04-04",
+          "count": 40100
+        },
+        {
+          "date": "2026-04-05",
+          "count": 40085
+        },
+        {
+          "date": "2026-04-06",
+          "count": 40070
+        },
+        {
+          "date": "2026-04-07",
+          "count": 40055
+        },
+        {
+          "date": "2026-04-08",
+          "count": 40041
+        },
+        {
+          "date": "2026-04-09",
+          "count": 40026
+        },
+        {
+          "date": "2026-04-10",
+          "count": 40011
+        },
+        {
+          "date": "2026-04-11",
+          "count": 39996
+        },
+        {
+          "date": "2026-04-12",
+          "count": 39981
+        },
+        {
+          "date": "2026-04-13",
+          "count": 39967
+        },
+        {
+          "date": "2026-04-14",
+          "count": 39952
+        },
+        {
+          "date": "2026-04-15",
+          "count": 39937
+        },
+        {
+          "date": "2026-04-16",
+          "count": 39922
+        },
+        {
+          "date": "2026-04-17",
+          "count": 39907
+        },
+        {
+          "date": "2026-04-18",
+          "count": 39893
+        },
+        {
+          "date": "2026-04-19",
+          "count": 39878
+        },
+        {
+          "date": "2026-04-20",
+          "count": 39863
+        },
+        {
+          "date": "2026-04-21",
+          "count": 39848
+        },
+        {
+          "date": "2026-04-22",
+          "count": 39834
+        },
+        {
+          "date": "2026-04-23",
+          "count": 39819
+        },
+        {
+          "date": "2026-04-24",
+          "count": 39804
+        },
+        {
+          "date": "2026-04-25",
+          "count": 39789
+        },
+        {
+          "date": "2026-04-26",
+          "count": 39775
+        },
+        {
+          "date": "2026-04-27",
+          "count": 39760
+        },
+        {
+          "date": "2026-04-28",
+          "count": 39745
+        },
+        {
+          "date": "2026-04-29",
+          "count": 39731
+        },
+        {
+          "date": "2026-04-30",
+          "count": 39716
+        },
+        {
+          "date": "2026-05-01",
+          "count": 39701
+        },
+        {
+          "date": "2026-05-02",
+          "count": 39687
+        },
+        {
+          "date": "2026-05-03",
+          "count": 39672
+        },
+        {
+          "date": "2026-05-04",
+          "count": 39657
+        },
+        {
+          "date": "2026-05-05",
+          "count": 39643
+        },
+        {
+          "date": "2026-05-06",
+          "count": 39628
+        },
+        {
+          "date": "2026-05-07",
+          "count": 39613
+        },
+        {
+          "date": "2026-05-08",
+          "count": 39599
+        },
+        {
+          "date": "2026-05-09",
+          "count": 39584
+        },
+        {
+          "date": "2026-05-10",
+          "count": 39569
+        },
+        {
+          "date": "2026-05-11",
+          "count": 39555
+        },
+        {
+          "date": "2026-05-12",
+          "count": 39540
+        },
+        {
+          "date": "2026-05-13",
+          "count": 39525
+        },
+        {
+          "date": "2026-05-14",
+          "count": 39511
+        },
+        {
+          "date": "2026-05-15",
+          "count": 39496
+        },
+        {
+          "date": "2026-05-16",
+          "count": 39482
+        },
+        {
+          "date": "2026-05-17",
+          "count": 39467
+        },
+        {
+          "date": "2026-05-18",
+          "count": 39452
+        },
+        {
+          "date": "2026-05-19",
+          "count": 39438
+        },
+        {
+          "date": "2026-05-20",
+          "count": 39423
+        },
+        {
+          "date": "2026-05-21",
+          "count": 39409
+        },
+        {
+          "date": "2026-05-22",
+          "count": 39394
+        },
+        {
+          "date": "2026-05-23",
+          "count": 39379
+        },
+        {
+          "date": "2026-05-24",
+          "count": 39365
+        },
+        {
+          "date": "2026-05-25",
+          "count": 39350
+        },
+        {
+          "date": "2026-05-26",
+          "count": 39336
+        },
+        {
+          "date": "2026-05-27",
+          "count": 39321
+        },
+        {
+          "date": "2026-05-28",
+          "count": 39307
+        },
+        {
+          "date": "2026-05-29",
+          "count": 39292
+        },
+        {
+          "date": "2026-05-30",
+          "count": 39278
+        },
+        {
+          "date": "2026-05-31",
+          "count": 39263
+        },
+        {
+          "date": "2026-06-01",
+          "count": 39249
+        },
+        {
+          "date": "2026-06-02",
+          "count": 39234
+        }
+      ],
+      "engagement_rate": 3.58,
+      "posts_per_30": 17,
+      "avg_likes": 1135,
+      "avg_comments": 22,
+      "avg_shares": 22,
+      "total_engagement": {
+        "likes": 19295,
+        "comments": 374,
+        "shares": 374
+      },
+      "posts": [
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:256363811488/",
+          "title": "Retirement in Ageing Asia: The APAC Perspective",
+          "date": "2026-05-27",
+          "likes": 336,
+          "comments": 43,
+          "shares": 40
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:484310641880/",
+          "title": "Navigating the Rate Cycle: Market Growth and Impact",
+          "date": "2026-05-23",
+          "likes": 286,
+          "comments": 29,
+          "shares": 20
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:897828110842/",
+          "title": "Cross-Border Capital Flows: Emerging Market Perspectives",
+          "date": "2026-05-15",
+          "likes": 257,
+          "comments": 41,
+          "shares": 28
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:237743572734/",
+          "title": "Active vs Passive: Portfolio Construction",
+          "date": "2026-05-07",
+          "likes": 233,
+          "comments": 24,
+          "shares": 26
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:364624163026/",
+          "title": "Australian Super Trends: Corporate Governance Changes",
+          "date": "2026-05-22",
+          "likes": 196,
+          "comments": 34,
+          "shares": 21
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:474793182877/",
+          "title": "2025 APAC Market Outlook: Institutional Update",
+          "date": "2026-05-11",
+          "likes": 195,
+          "comments": 34,
+          "shares": 29
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:632989285392/",
+          "title": "Digital Asset Adoption: Market Growth and Impact",
+          "date": "2026-05-10",
+          "likes": 101,
+          "comments": 9,
+          "shares": 9
+        },
+        {
+          "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:428576671530/",
+          "title": "Japan Equity Reform Story: Infrastructure and Demographics",
+          "date": "2026-05-11",
+          "likes": 42,
+          "comments": 5,
+          "shares": 3
+        }
+      ],
+      "rank_followers": 20,
+      "rank_engagement": 9,
+      "rank_posts": 15
+    }
+  ]
+}

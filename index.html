@@ -6,490 +6,292 @@
 <title>LinkedIn Tracker — APAC Asset Management</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"/>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{font-size:14px}
 :root{
-  --bg:           #0a0b0f;
-  --surface:      #131722;
-  --surface-2:    #1e222d;
-  --surface-3:    #2a2e39;
-  --border:       #2a2e39;
-  --border-2:     #363a45;
-  --text:         #d1d4dc;
-  --text-2:       #787b86;
-  --text-3:       #50535c;
-  --accent:       #2962ff;
-  --accent-2:     #1e88e5;
-  --green:        #089981;
-  --green-bg:     rgba(8,153,129,0.12);
-  --red:          #f23645;
-  --red-bg:       rgba(242,54,69,0.12);
-  --yellow:       #ff9800;
-  --yellow-bg:    rgba(255,152,0,0.12);
-  --purple:       #ab47bc;
-  --orange:       #ff6d00;
-  --font:         'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
-  --mono:         'JetBrains Mono','Fira Code',monospace;
+  --bg:#0a0b0f;--surface:#131722;--surface-2:#1e222d;--surface-3:#2a2e39;
+  --border:#2a2e39;--border-2:#363a45;
+  --text:#d1d4dc;--text-2:#787b86;--text-3:#50535c;
+  --accent:#2962ff;--accent-2:#1e88e5;
+  --green:#089981;--green-bg:rgba(8,153,129,0.12);
+  --red:#f23645;--red-bg:rgba(242,54,69,0.12);
+  --yellow:#ff9800;--orange:#ff6d00;
+  --font:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  --mono:'JetBrains Mono','Fira Code',monospace;
 }
-body{
-  background:var(--bg);
-  color:var(--text);
-  font-family:var(--font);
-  line-height:1.5;
-  min-height:100vh;
-}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5;min-height:100vh}
 ::-webkit-scrollbar{width:5px;height:5px}
 ::-webkit-scrollbar-track{background:var(--surface)}
 ::-webkit-scrollbar-thumb{background:var(--surface-3);border-radius:3px}
-::-webkit-scrollbar-thumb:hover{background:var(--text-3)}
-
-/* ── Header ── */
-.header{
-  background:var(--surface);
-  border-bottom:1px solid var(--border);
-  padding:12px 24px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  flex-wrap:wrap;
-  gap:12px;
-  position:sticky;
-  top:0;
-  z-index:100;
-}
+.header{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;position:sticky;top:0;z-index:100}
 .header-left{display:flex;align-items:center;gap:16px}
-.logo{font-size:18px;font-weight:700;color:var(--text);letter-spacing:-0.3px}
+.logo{font-size:18px;font-weight:700;letter-spacing:-0.3px}
 .logo span{color:var(--accent)}
 .logo-sub{font-size:11px;color:var(--text-2);font-weight:400;margin-left:8px}
-.header-right{display:flex;align-items:center;gap:12px}
-.last-update{font-size:11px;color:var(--text-2)}
-.badge{
-  display:inline-flex;align-items:center;gap:4px;
-  padding:3px 8px;border-radius:4px;font-size:11px;font-weight:500;
-  background:var(--green-bg);color:var(--green);
-}
+.header-right{display:flex;align-items:center;gap:12px;font-size:11px;color:var(--text-2)}
+.header-right .badge{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:500;background:var(--green-bg);color:var(--green)}
 
-/* ── Controls Bar ── */
-.controls{
-  display:flex;align-items:center;gap:10px;
-  padding:10px 24px;
-  background:var(--surface);
-  border-bottom:1px solid var(--border);
-  flex-wrap:wrap;
-}
+.controls{display:flex;align-items:center;gap:10px;padding:10px 24px;background:var(--surface);border-bottom:1px solid var(--border);flex-wrap:wrap}
 .select-group{display:flex;align-items:center;gap:6px}
 .select-group label{font-size:11px;color:var(--text-2);text-transform:uppercase;letter-spacing:0.5px}
-.select-group select{
-  background:var(--surface-2);
-  border:1px solid var(--border);
-  color:var(--text);
-  padding:5px 10px;
-  border-radius:4px;
-  font-size:12px;
-  font-family:var(--font);
-  cursor:pointer;
-}
+.select-group select{background:var(--surface-2);border:1px solid var(--border);color:var(--text);padding:5px 10px;border-radius:4px;font-size:12px;font-family:var(--font);cursor:pointer}
 .select-group select:hover{border-color:var(--text-3)}
-.search-input{
-  background:var(--surface-2);
-  border:1px solid var(--border);
-  color:var(--text);
-  padding:5px 10px;
-  border-radius:4px;
-  font-size:12px;
-  width:200px;
-}
+.search-input{background:var(--surface-2);border:1px solid var(--border);color:var(--text);padding:5px 10px;border-radius:4px;font-size:12px;width:200px}
 .search-input:focus{outline:none;border-color:var(--accent)}
 
-/* ── Stat Cards ── */
-.stats-row{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
-  gap:12px;
-  padding:16px 24px;
-}
-.stat-card{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:6px;
-  padding:14px 18px;
-}
-.stat-card .label{font-size:11px;color:var(--text-2);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px}
-.stat-card .value{font-size:22px;font-weight:700;font-family:var(--mono);letter-spacing:-0.5px}
-.stat-card .change{font-size:11px;margin-top:4px;font-weight:500}
-.stat-card .change.up{color:var(--green)}
-.stat-card .change.down{color:var(--red)}
+/* Rank Bar */
+.rank-bar{display:flex;align-items:center;gap:10px;padding:10px 24px;background:var(--surface);border-bottom:1px solid var(--border)}
+.rank-bar .rank-label{font-size:12px;color:var(--text-2);font-weight:500}
+.rank-bar .rank-value{font-size:24px;font-weight:800;color:var(--accent);font-family:var(--mono)}
+.rank-bar .rank-detail{font-size:11px;color:var(--text-3)}
+.rank-bar .rank-divider{width:1px;height:28px;background:var(--border);margin:0 8px}
+.rank-bar .highlight-name{font-weight:700;color:var(--text);font-size:13px}
 
-/* ── Main Grid ── */
-.grid-container{
-  display:grid;
-  grid-template-columns:320px 1fr;
-  gap:1px;
-  background:var(--border);
-  min-height:400px;
-}
-.grid-container > *{background:var(--bg)}
+.stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;padding:14px 24px}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:12px 16px}
+.stat-card .label{font-size:10px;color:var(--text-2);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px}
+.stat-card .value{font-size:20px;font-weight:700;font-family:var(--mono);letter-spacing:-0.5px}
+.stat-card .sub{font-size:10px;color:var(--text-3);margin-top:2px}
+.stat-card .rank{font-size:10px;color:var(--accent);font-weight:600;margin-top:1px}
+.stat-card .highlight{color:var(--accent)}
+.stat-card .green{color:var(--green)}
+.stat-card .red{color:var(--red)}
 
-/* ── Sidebar ── */
-.sidebar{
-  background:var(--surface);
-  padding:0;
-  overflow-y:auto;
-  max-height:calc(100vh - 280px);
-}
-.sidebar-header{
-  padding:10px 16px;
-  font-size:11px;
-  text-transform:uppercase;
-  letter-spacing:0.5px;
-  color:var(--text-2);
-  border-bottom:1px solid var(--border);
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  background:var(--surface-2);
-}
-.sidebar-header .count{font-size:11px;color:var(--text-3)}
-.company-item{
-  padding:8px 16px;
-  border-bottom:1px solid var(--border);
-  cursor:pointer;
-  transition:background 0.15s;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
+.grid-container{display:grid;grid-template-columns:280px 1fr;gap:1px;background:var(--border);min-height:400px}
+.grid-container>*{background:var(--bg)}
+
+.sidebar{background:var(--surface);padding:0;overflow-y:auto;max-height:calc(100vh-320px)}
+.sidebar-header{padding:10px 14px;font-size:10px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-2);border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;background:var(--surface-2)}
+.sidebar-header .count{font-size:10px;color:var(--text-3)}
+.company-item{padding:7px 14px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .15s;display:flex;justify-content:space-between;align-items:center}
 .company-item:hover{background:var(--surface-2)}
 .company-item.active{background:var(--surface-3);border-left:3px solid var(--accent)}
-.company-item .name{font-size:13px;font-weight:500;color:var(--text)}
-.company-item .region{font-size:10px;color:var(--text-3);margin-top:1px}
-.company-item .followers{font-size:12px;font-family:var(--mono);color:var(--text-2)}
-.company-item .check{
-  width:16px;height:16px;border:2px solid var(--text-3);border-radius:3px;
-  display:flex;align-items:center;justify-content:center;
-  flex-shrink:0;cursor:pointer;transition:all 0.15s;
-}
+.company-item .name{font-size:12px;font-weight:500;color:var(--text)}
+.company-item .region{font-size:9px;color:var(--text-3);margin-top:1px}
+.company-item .followers{font-size:11px;font-family:var(--mono);color:var(--text-2)}
+.company-item .check{width:14px;height:14px;border:2px solid var(--text-3);border-radius:3px;display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer;transition:all .15s}
 .company-item .check.checked{background:var(--accent);border-color:var(--accent)}
-.company-item .check.checked::after{content:'✓';color:#fff;font-size:10px;font-weight:700}
-.company-item .left{display:flex;align-items:center;gap:10px;min-width:0;flex:1}
-.company-item .right{display:flex;align-items:center;gap:10px}
-.company-item .aum{font-size:10px;color:var(--text-3);font-family:var(--mono)}
+.company-item .check.checked::after{content:'✓';color:#fff;font-size:9px;font-weight:700}
+.company-item .left{display:flex;align-items:center;gap:8px;min-width:0;flex:1}
+.company-item .right{display:flex;align-items:center;gap:8px}
+.company-item .rank-badge{font-size:10px;font-family:var(--mono);color:var(--text-3);width:18px;text-align:center}
+.company-item .rank-badge.top3{color:var(--accent);font-weight:700}
 
-/* ── Main Content ── */
-.main-content{padding:16px 20px;background:var(--bg)}
-.panel-header{
-  display:flex;justify-content:space-between;align-items:center;
-  margin-bottom:14px;
-}
-.panel-title{font-size:14px;font-weight:600;color:var(--text)}
+.main-content{padding:14px 18px;background:var(--bg)}
+.panel-title{font-size:13px;font-weight:600;color:var(--text);margin-bottom:10px}
 .panel-title .highlight{color:var(--accent);font-weight:700}
+.panel-title .sub{font-size:11px;color:var(--text-3);font-weight:400;margin-left:8px}
 
-/* ── Chart Container ── */
-.chart-box{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:6px;
-  padding:16px;
-  margin-bottom:12px;
-}
-.chart-box .chart-title{
-  font-size:12px;font-weight:500;color:var(--text-2);
-  margin-bottom:10px;
-  display:flex;justify-content:space-between;
-}
-.chart-box .chart-title .legend{display:flex;gap:12px}
-.chart-box .chart-title .legend span{display:flex;align-items:center;gap:4px;font-size:11px}
-.chart-box .chart-title .legend .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
-.chart-wrap{position:relative;height:200px}
-.chart-wrap.sm{height:260px}
-.chart-wrap.xs{height:120px}
+.chart-box{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px;margin-bottom:10px}
+.chart-box .ch-title{font-size:11px;font-weight:500;color:var(--text-2);margin-bottom:8px;display:flex;justify-content:space-between}
+.chart-box .ch-title .leg{display:flex;gap:10px}
+.chart-box .ch-title .leg span{display:flex;align-items:center;gap:3px;font-size:10px}
+.chart-box .ch-title .leg .dot{width:7px;height:7px;border-radius:50%}
+.chart-wrap{position:relative;height:180px}
+.chart-wrap.md{height:240px}
+.chart-wrap.lg{height:280px}
+.chart-wrap.xs{height:100px}
 
-/* ── Rank Charts Row ── */
-.rank-row{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-  margin-bottom:12px;
-}
-.rank-chart-box{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:6px;
-  padding:16px;
-}
-.rank-chart-box .chart-title{
-  font-size:12px;font-weight:500;color:var(--text-2);
-  margin-bottom:8px;
-}
-.rank-chart-box .chart-wrap{height:260px}
+.rank-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:10px}
+.rank-chart{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px}
+.rank-chart .ch-title{font-size:11px;font-weight:500;color:var(--text-2);margin-bottom:6px}
+.rank-chart .chart-wrap{height:220px}
 
-/* ── Table ── */
-.data-table{
-  width:100%;
-  border-collapse:collapse;
-  font-size:12px;
-}
-.data-table th{
-  text-align:left;
-  padding:8px 12px;
-  color:var(--text-2);
-  font-weight:500;
-  font-size:11px;
-  text-transform:uppercase;
-  letter-spacing:0.3px;
-  border-bottom:1px solid var(--border);
-  white-space:nowrap;
-}
-.data-table td{
-  padding:8px 12px;
-  border-bottom:1px solid var(--border);
-  white-space:nowrap;
-}
+/* Post Feed */
+.post-feed{background:var(--surface);border:1px solid var(--border);border-radius:6px;margin-bottom:10px;overflow:hidden}
+.post-feed-h{padding:10px 14px 8px;font-size:11px;font-weight:500;color:var(--text-2);border-bottom:1px solid var(--border);display:flex;justify-content:space-between}
+.post-item{padding:10px 14px;border-bottom:1px solid var(--border);display:flex;gap:10px;transition:background .15s;cursor:pointer}
+.post-item:last-child{border-bottom:none}
+.post-item:hover{background:var(--surface-2)}
+.post-item .pa{width:32px;height:32px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0}
+.post-item .pb{min-width:0;flex:1}
+.post-item .pc{font-weight:600;font-size:11px;color:var(--text)}
+.post-item .pt{font-size:11px;color:var(--text-2);margin:2px 0;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.post-item .ps{display:flex;gap:10px;font-size:10px;color:var(--text-3);margin-top:3px}
+.post-item .ps span{display:flex;align-items:center;gap:2px}
+.post-item .ptime{font-size:9px;color:var(--text-3);white-space:nowrap;margin-top:2px}
+.post-item .plink{text-decoration:none;color:inherit;display:contents}
+.post-empty{text-align:center;padding:24px;color:var(--text-3);font-size:12px}
+
+/* Table */
+.data-table{width:100%;border-collapse:collapse;font-size:11px}
+.data-table th{text-align:left;padding:7px 10px;color:var(--text-2);font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.3px;border-bottom:1px solid var(--border);white-space:nowrap}
+.data-table td{padding:7px 10px;border-bottom:1px solid var(--border);white-space:nowrap}
 .data-table tr:hover td{background:var(--surface-2)}
 .data-table .num{font-family:var(--mono);text-align:right}
 .data-table .up{color:var(--green)}
 .data-table .down{color:var(--red)}
-.data-table .company-cell{font-weight:500;color:var(--text)}
+.data-table .name-cell{font-weight:500;color:var(--text)}
+.data-table .jpm{background:rgba(41,98,255,0.05)}
+.data-table .jpm td{color:var(--accent);font-weight:600}
+.data-table tr.jpm:hover td{background:rgba(41,98,255,0.1)}
+.data-table .rnum{font-family:var(--mono);font-size:10px;color:var(--text-3);text-align:center;width:24px}
+.data-table .rnum.t3{color:var(--accent);font-weight:700}
 
-/* ── Expanded Row Details ── */
 .expand-row td{background:var(--surface-2);padding:0}
-.expand-content{padding:12px 12px 12px 40px;font-size:12px;color:var(--text-2);display:none}
+.expand-content{padding:10px 10px 10px 36px;font-size:11px;color:var(--text-2);display:none;line-height:1.6}
 .expand-content.show{display:block}
 .tr-expand{cursor:pointer}
-.tr-expand .expand-icon{display:inline-block;transition:transform 0.15s;font-size:10px;margin-right:6px}
-.tr-expand.open .expand-icon{transform:rotate(90deg)}
+.tr-expand .ei{display:inline-block;transition:transform .15s;font-size:9px;margin-right:4px}
+.tr-expand.open .ei{transform:rotate(90deg)}
 
-/* ── Bottom Row ── */
-.bottom-row{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-  margin-top:12px;
-}
-.bottom-panel{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:6px;
-  padding:14px;
-}
-.bottom-panel h4{
-  font-size:11px;
-  text-transform:uppercase;
-  letter-spacing:0.5px;
-  color:var(--text-2);
-  margin-bottom:10px;
-}
-
-/* ── Recent Posts Feed ── */
-.post-feed{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:6px;
-  padding:0;
-  margin-bottom:12px;
-  overflow:hidden;
-}
-.post-feed-header{
-  padding:12px 16px 8px;
-  font-size:12px;font-weight:500;color:var(--text-2);
-  border-bottom:1px solid var(--border);
-  display:flex;justify-content:space-between;
-}
-.post-item{
-  padding:12px 16px;
-  border-bottom:1px solid var(--border);
-  display:flex;
-  gap:12px;
-  transition:background 0.15s;
-}
-.post-item:last-child{border-bottom:none}
-.post-item:hover{background:var(--surface-2)}
-.post-item .post-avatar{
-  width:36px;height:36px;border-radius:6px;
-  display:flex;align-items:center;justify-content:center;
-  font-weight:700;font-size:13px;color:#fff;
-  flex-shrink:0;
-}
-.post-item .post-body{min-width:0;flex:1}
-.post-item .post-company{font-weight:600;font-size:12px;color:var(--text)}
-.post-item .post-title{font-size:12px;color:var(--text-2);margin:3px 0;line-height:1.4}
-.post-item .post-stats{display:flex;gap:14px;font-size:11px;color:var(--text-3);margin-top:4px}
-.post-item .post-stats span{display:flex;align-items:center;gap:3px}
-.post-item .post-time{font-size:10px;color:var(--text-3);white-space:nowrap}
-.post-empty{text-align:center;padding:30px;color:var(--text-3);font-size:12px}
-
-/* ── Hashtag / Topic Tags ── */
-.tag{
-  display:inline-flex;
-  padding:3px 8px;
-  border-radius:4px;
-  font-size:11px;
-  background:var(--surface-2);
-  color:var(--text-2);
-  margin:2px;
-}
-.tag.active{background:var(--accent);color:#fff}
-.tag-bar{display:flex;flex-wrap:wrap;gap:4px}
-.tag-stats{display:flex;justify-content:space-between;font-size:11px;margin:6px 0}
+.bottom-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.bottom-panel{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:12px}
+.bottom-panel h4{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--text-2);margin-bottom:8px}
+.tag{display:inline-flex;padding:2px 7px;border-radius:4px;font-size:10px;background:var(--surface-2);color:var(--text-2);margin:2px}
+.tag-bar{display:flex;flex-wrap:wrap;gap:3px}
+.tag-stats{display:flex;justify-content:space-between;font-size:10px;margin:5px 0}
 .tag-stats .label{color:var(--text-2)}
 .tag-stats .val{font-family:var(--mono)}
 
-/* ── Loading ── */
-.loading{text-align:center;padding:40px;color:var(--text-2);font-size:13px}
-.loading .spinner{width:24px;height:24px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 12px}
-@keyframes spin{to{transform:rotate(360deg)}}
+/* Tooltip */
+.ttip{position:relative;cursor:help}
+.ttip:hover::after{content:attr(data-tip);position:absolute;background:var(--surface-3);color:var(--text);padding:4px 8px;border-radius:4px;font-size:10px;white-space:nowrap;z-index:10;bottom:100%;left:50%;transform:translateX(-50%);border:1px solid var(--border)}
 
-/* ── Responsive ── */
-@media(max-width:1024px){
-  .rank-row{grid-template-columns:1fr}
-}
-@media(max-width:900px){
-  .grid-container{grid-template-columns:1fr}
-  .bottom-row{grid-template-columns:1fr}
-  .stats-row{grid-template-columns:repeat(2,1fr)}
-  .controls{flex-direction:column;align-items:stretch}
-  .search-input{width:100%}
-}
-@media(max-width:600px){
-  .stats-row{grid-template-columns:1fr}
-}
+.loading{text-align:center;padding:40px;color:var(--text-2);font-size:13px}
+.loading .sp{width:24px;height:24px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 12px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.error{text-align:center;padding:30px;color:var(--red);font-size:12px}
+
+@media(max-width:1024px){.rank-row{grid-template-columns:1fr}}
+@media(max-width:900px){.grid-container{grid-template-columns:1fr}.bottom-row{grid-template-columns:1fr}.stats-row{grid-template-columns:repeat(2,1fr)}.controls{flex-direction:column;align-items:stretch}.search-input{width:100%}}
+@media(max-width:600px){.stats-row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
-<!-- ═══ HEADER ═══ -->
 <header class="header">
   <div class="header-left">
-    <div class="logo">&#x1F4CA; <span>LinkedIn</span> Tracker <span class="logo-sub">APAC Asset Management</span></div>
+    <div class="logo">&#x1F4CA; <span>LinkedIn</span> Tracker <span class="logo-sub">APAC Asset Management Rankings</span></div>
   </div>
   <div class="header-right">
-    <span class="last-update" id="lastUpdate">Last update: &mdash;</span>
+    <span id="lastUpdate">Loading&hellip;</span>
     <span class="badge" id="statusBadge">&#x25CF; Live</span>
   </div>
 </header>
 
-<!-- ═══ CONTROLS ═══ -->
+<!-- Rank Bar -->
+<div class="rank-bar" id="rankBar">
+  <span class="rank-label">Focus Company</span>
+  <span class="highlight-name" id="focusName">J.P. Morgan AM</span>
+  <div class="rank-divider"></div>
+  <span class="rank-label">Followers Rank</span>
+  <span class="rank-value" id="focusFollowersRank">#3</span>
+  <span class="rank-detail" id="focusFollowersDetail">of 20</span>
+  <div class="rank-divider"></div>
+  <span class="rank-label">Engagement Rank</span>
+  <span class="rank-value" id="focusEngagementRank">#4</span>
+  <span class="rank-detail" id="focusEngagementDetail">of 20</span>
+  <div class="rank-divider"></div>
+  <span class="rank-label">Post Frequency Rank</span>
+  <span class="rank-value" id="focusPostsRank">#5</span>
+  <span class="rank-detail" id="focusPostsDetail">of 20</span>
+</div>
+
 <div class="controls">
   <div class="select-group">
-    <label>Metric</label>
-    <select id="metricSelect">
-      <option value="followers">Follower Growth</option>
-      <option value="engagement">Engagement Rate</option>
-      <option value="posts">Post Frequency</option>
-    </select>
+    <label>Focus</label>
+    <select id="focusSelect"></select>
   </div>
   <div class="select-group">
     <label>Period</label>
     <select id="periodSelect">
-      <option value="7d">7 Days</option>
       <option value="30d" selected>30 Days</option>
       <option value="90d">90 Days</option>
+      <option value="180d">180 Days</option>
     </select>
   </div>
   <div class="select-group">
-    <label>Region</label>
-    <select id="regionSelect">
+    <label>Market</label>
+    <select id="marketSelect">
       <option value="all">All Markets</option>
-      <option value="Global">Global</option>
-      <option value="Hong Kong">Hong Kong</option>
-      <option value="Singapore">Singapore</option>
-      <option value="Australia">Australia</option>
-      <option value="China">China</option>
-      <option value="Japan">Japan</option>
     </select>
   </div>
   <input type="text" class="search-input" id="searchInput" placeholder="Search companies&hellip;"/>
 </div>
 
-<!-- ═══ STATS ROW ═══ -->
 <div class="stats-row" id="statsRow">
-  <div class="stat-card"><div class="label">Companies Tracked</div><div class="value" id="statCompanies">20</div></div>
-  <div class="stat-card"><div class="label">Total Followers</div><div class="value" id="statFollowers">&mdash;</div><div class="change up" id="statFollowerChange">&#x25B2; &mdash;</div></div>
-  <div class="stat-card"><div class="label">Avg Engagement Rate</div><div class="value" id="statEngagement">&mdash;</div><div class="change up" id="statEngagementChange">&#x25B2; &mdash;</div></div>
-  <div class="stat-card"><div class="label">Total Posts (30d)</div><div class="value" id="statPosts">&mdash;</div></div>
-  <div class="stat-card"><div class="label">Avg Likes / Post</div><div class="value" id="statAvgLikes">&mdash;</div><div class="change up" id="statAvgLikesChange">&#x25B2; &mdash;</div></div>
+  <div class="stat-card"><div class="label">Companies</div><div class="value" id="statCompanies">—</div></div>
+  <div class="stat-card"><div class="label">Total Followers</div><div class="value" id="statTotalFollowers">—</div><div class="sub">Selected</div></div>
+  <div class="stat-card"><div class="label">Avg Engagement</div><div class="value" id="statAvgEng">—</div><div class="rank" id="statEngRank">—</div></div>
+  <div class="stat-card"><div class="label">Total Posts (30d)</div><div class="value" id="statTotalPosts">—</div><div class="rank" id="statPostsRank">—</div></div>
+  <div class="stat-card"><div class="label">Avg Likes/Post</div><div class="value" id="statAvgLikes">—</div><div class="rank" id="statLikesRank">—</div></div>
 </div>
 
-<!-- ═══ MAIN GRID ═══ -->
 <div class="grid-container">
-  <!-- ── Sidebar ── -->
-  <div class="sidebar" id="companySidebar">
+  <div class="sidebar" id="sidebar">
     <div class="sidebar-header">
-      <span>Companies</span>
-      <span class="count" id="companyCount">20</span>
+      <span>Rank &#x25BC;</span>
+      <span class="count" id="companyCount">0</span>
     </div>
     <div id="companyList"></div>
   </div>
 
-  <!-- ── Main Content ── -->
   <div class="main-content">
     <!-- Trend Chart -->
     <div class="chart-box">
-      <div class="chart-title">
-        <span>Follower Growth Trend</span>
-        <div class="legend" id="chartLegend"></div>
+      <div class="ch-title">
+        <span id="trendTitle">Follower Growth Trend (90 days)</span>
+        <div class="leg" id="chartLegend"></div>
       </div>
-      <div class="chart-wrap">
+      <div class="chart-wrap md">
         <canvas id="mainChart"></canvas>
       </div>
     </div>
 
     <!-- Rank Charts Row -->
     <div class="rank-row">
-      <div class="rank-chart-box">
-        <div class="chart-title">Follower Rank</div>
-        <div class="chart-wrap sm">
-          <canvas id="followerRankChart"></canvas>
-        </div>
+      <div class="rank-chart">
+        <div class="ch-title">Follower Rank</div>
+        <div class="chart-wrap"><canvas id="followerRankChart"></canvas></div>
       </div>
-      <div class="rank-chart-box">
-        <div class="chart-title">Total Engagement Rank</div>
-        <div class="chart-wrap sm">
-          <canvas id="engagementRankChart"></canvas>
-        </div>
+      <div class="rank-chart">
+        <div class="ch-title">Engagement Rank &#x1F4CA; (Likes + Comments + Shares)</div>
+        <div class="chart-wrap"><canvas id="engagementRankChart"></canvas></div>
+      </div>
+      <div class="rank-chart">
+        <div class="ch-title">Post Frequency Rank (Posts/30d)</div>
+        <div class="chart-wrap"><canvas id="postFreqRankChart"></canvas></div>
       </div>
     </div>
 
     <!-- Recent Top Posts -->
     <div class="post-feed">
-      <div class="post-feed-header">
-        <span>Recent Top Posts</span>
-        <span style="color:var(--text-3);font-size:10px;font-weight:400">Selected brands &middot; 30 days</span>
+      <div class="post-feed-h">
+        <span>Top LinkedIn Posts &#x1F517;</span>
+        <span style="color:var(--text-3);font-size:10px">Click a post to open on LinkedIn</span>
       </div>
       <div id="postFeed"></div>
     </div>
 
-    <!-- Data Table -->
-    <div class="panel-header">
-      <div class="panel-title"><span class="highlight">Company</span> Performance Overview</div>
-      <div class="panel-controls"></div>
-    </div>
+    <!-- Table -->
+    <div class="panel-title"><span class="highlight">Ranking</span> Overview <span class="sub">Sorted by followers</span></div>
     <div class="chart-box" style="padding:0;overflow-x:auto">
-      <table class="data-table" id="dataTable">
+      <table class="data-table">
         <thead>
           <tr>
-            <th style="width:30px"></th>
+            <th>#</th>
             <th>Company</th>
             <th style="text-align:right">Followers</th>
-            <th style="text-align:right">Follower &Delta;</th>
             <th style="text-align:right">Eng. Rate</th>
+            <th style="text-align:right">Likes/Post</th>
             <th style="text-align:right">Posts/30d</th>
-            <th style="text-align:right">Avg Likes</th>
+            <th style="text-align:right">Total Eng.</th>
             <th style="text-align:right">AUM</th>
+            <th style="text-align:right">Market</th>
           </tr>
         </thead>
         <tbody id="tableBody"></tbody>
       </table>
     </div>
 
-    <!-- Bottom Row -->
+    <!-- Bottom -->
     <div class="bottom-row">
       <div class="bottom-panel">
         <h4>Content Type Split</h4>
-        <div class="chart-wrap xs">
-          <canvas id="contentChart"></canvas>
-        </div>
+        <div class="chart-wrap xs"><canvas id="contentChart"></canvas></div>
       </div>
       <div class="bottom-panel">
         <h4>Top Hashtags</h4>
@@ -500,556 +302,380 @@ body{
 </div>
 
 <script>
-// ════════════════════════════════════════════════════════════════
-// DATA
-// ════════════════════════════════════════════════════════════════
-const COMPANIES = [
-  {id:'blackrock',         name:'BlackRock',                market:'Global',    aum:'$11.5T', linkedin:'linkedin.com/company/blackrock', hq:'USA'},
-  {id:'jpmorgan',          name:'J.P. Morgan AM',           market:'Global',    aum:'$4.0T',  linkedin:'linkedin.com/company/jpmorgan-asset-management', hq:'USA'},
-  {id:'fidelity',          name:'Fidelity Investments',     market:'Global',    aum:'$5.5T',  linkedin:'linkedin.com/company/fidelity-investments', hq:'USA'},
-  {id:'hsbc',              name:'HSBC Asset Management',    market:'Hong Kong', aum:'$600B+', linkedin:'linkedin.com/company/hsbc-asset-management', hq:'HK'},
-  {id:'eastspring',        name:'Eastspring Investments',   market:'Singapore', aum:'$200B+', linkedin:'linkedin.com/company/eastspring-investments', hq:'Singapore'},
-  {id:'macquarie',         name:'Macquarie AM',             market:'Australia', aum:'$450B+', linkedin:'linkedin.com/company/macquarie-asset-management', hq:'Australia'},
-  {id:'firstsentier',      name:'First Sentier',            market:'Australia', aum:'$150B+', linkedin:'linkedin.com/company/first-sentier-investors', hq:'Australia'},
-  {id:'ampcapital',        name:'AMP Capital',              market:'Australia', aum:'$150B+', linkedin:'linkedin.com/company/amp-capital', hq:'Australia'},
-  {id:'pingan',            name:'Ping An AM',               market:'China',     aum:'$500B+', linkedin:'linkedin.com/company/ping-an-asset-management', hq:'China'},
-  {id:'chinaamc',          name:'China AMC',                market:'China',     aum:'$250B+', linkedin:'linkedin.com/company/china-asset-management', hq:'China'},
-  {id:'efund',             name:'E Fund Management',        market:'China',     aum:'$200B+', linkedin:'linkedin.com/company/e-fund-management', hq:'China'},
-  {id:'harvest',           name:'Harvest Global',           market:'China',     aum:'$150B+', linkedin:'linkedin.com/company/harvest-global-investments', hq:'China'},
-  {id:'chinasouthern',     name:'China Southern AM',        market:'China',     aum:'$200B+', linkedin:'linkedin.com/company/china-southern-fund-management', hq:'China'},
-  {id:'nomura',            name:'Nomura AM',                market:'Japan',     aum:'$500B+', linkedin:'linkedin.com/company/nomura-asset-management', hq:'Japan'},
-  {id:'daiwa',             name:'Daiwa AM',                 market:'Japan',     aum:'$200B+', linkedin:'linkedin.com/company/daiwa-asset-management', hq:'Japan'},
-  {id:'nikko',             name:'Nikko AM',                 market:'Japan',     aum:'$200B+', linkedin:'linkedin.com/company/nikko-am', hq:'Japan'},
-  {id:'smds',              name:'Sumitomo Mitsui DS AM',    market:'Japan',     aum:'$150B+', linkedin:'linkedin.com/company/sumitomo-mitsui-ds-asset-management', hq:'Japan'},
-  {id:'mizuho',            name:'Mizuho AM',                market:'Japan',     aum:'$100B+', linkedin:'linkedin.com/company/mizuho-asset-management', hq:'Japan'},
-  {id:'schroders',         name:'Schroders',                market:'Global',    aum:'$800B+', linkedin:'linkedin.com/company/schroders', hq:'UK'},
-  {id:'amundi',            name:'Amundi',                   market:'Global',    aum:'$2.3T',  linkedin:'linkedin.com/company/amundi_asset_management', hq:'France'},
-];
+// ═══════ DATA ═══════
+let COMPANY_DATA = [];
+let COMPANIES = [];
+let focusId = 'jpmorgan';
+let mainChart, followerRankChart, engagementRankChart, postFreqRankChart, contentChart;
+const COLORS = ['#2962ff','#089981','#f23645','#ff9800','#ab47bc','#00bcd4','#ff6d00','#43a047','#e91e63','#7c4dff','#1de9b6','#fdd835','#5c6bc0','#26a69a','#ec407a','#78909c','#ffab40','#ce93d8','#4dd0e1','#a5d6a7'];
+const ENG_COLORS = {likes:'#2962ff', comments:'#089981', shares:'#ff9800'};
 
-// Simulated data generator
-function rand(min,max){return +(min + Math.random()*(max-min)).toFixed(1)}
-function randInt(min,max){return Math.floor(min+Math.random()*(max-min+1))}
+function formatNum(n){if(n>=1e6)return (n/1e6).toFixed(1)+'M';if(n>=1e3)return (n/1e3).toFixed(1)+'K';return n.toLocaleString()}
+function timeAgo(d){const n=new Date();const df=(n-d)/1000;if(df<3600)return Math.floor(df/60)+'m';if(df<86400)return Math.floor(df/3600)+'h';return Math.floor(df/86400)+'d'}
 
-const COLORS = ['#2962ff','#089981','#f23645','#ff9800','#ab47bc','#00bcd4','#ff6d00','#43a047','#e91e63','#7c4dff',
-                '#1de9b6','#fdd835','#5c6bc0','#26a69a','#ec407a'];
-
-const NOW = new Date();
-const POST_TOPICS = [
-  '2025 APAC Market Outlook: Key Themes for the Year Ahead',
-  'ESG Integration in Fixed Income: A Practical Framework',
-  'China A-Share Market: Opportunities in the Recovery Cycle',
-  'Japan Equity Reform Story: Corporate Governance Changes',
-  'Private Credit in Asia Pacific: The Next Frontier',
-  'Navigating the Rate Cycle: Fixed Income Strategies for 2025',
-  'India\'s Growth Trajectory: Infrastructure and Demographics',
-  'Sustainable Investing in Emerging Markets',
-  'AI and Machine Learning in Asset Management',
-  'Hong Kong IPO Market: Signs of Recovery',
-  'Australian Superannuation: Trends and Opportunities',
-  'Singapore Family Office Growth: A Regional Perspective',
-  'Green Bonds: Market Growth and Impact Measurement',
-  'Retirement Planning in an Ageing Asia',
-  'Digital Assets: Institutional Adoption Update',
-  'Global Macro Outlook: Divergence and Dispersion',
-  'Real Estate Debt: Opportunities in a Higher Rate Environment',
-  'Active vs Passive: The APAC Perspective',
-  'Climate Risk in Portfolio Construction',
-  'Cross-Border Capital Flows in Asia',
-];
-
-function genTimeseries(days){
-  const pts=[];
-  for(let i=days;i>=0;i--){
-    const d=new Date(NOW);d.setDate(d.getDate()-i);
-    pts.push(d.toISOString().slice(0,10));
+// ═══════ LOAD DATA ═══════
+async function loadData(){
+  try{
+    const resp = await fetch('data/companies.json?t='+Date.now());
+    if(!resp.ok) throw new Error('HTTP '+resp.status);
+    const json = await resp.json();
+    COMPANY_DATA = json.companies || [];
+    COMPANIES = COMPANY_DATA;
+    document.getElementById('lastUpdate').textContent = 'Updated: '+ (json.last_updated ? new Date(json.last_updated).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) : '—');
+    if(COMPANIES.length===0) throw new Error('No companies data');
+    return true;
+  }catch(e){
+    console.error('Data load failed:', e);
+    document.getElementById('lastUpdate').textContent = 'Data unavailable';
+    document.getElementById('statusBadge').textContent = '\u26A0 Error';
+    document.getElementById('statusBadge').style.color = 'var(--red)';
+    document.getElementById('statusBadge').style.background = 'var(--red-bg)';
+    return false;
   }
-  return pts;
 }
 
-const DAYS30 = genTimeseries(30);
-const DAYS7 = genTimeseries(7);
-
-// Generate company data + posts
-let allPosts = [];
-
-COMPANIES.forEach((c,i)=>{
-  const base = 50000 + Math.random()*2000000;
-  c.followerHistory = DAYS30.map((_,j)=>{
-    return Math.round(base * (1 + Math.sin(j/5)*0.05 + (Math.random()-0.5)*0.02));
-  });
-  c.followers = c.followerHistory[c.followerHistory.length-1];
-  c.followerChange = ((c.followers - c.followerHistory[0]) / c.followerHistory[0] * 100).toFixed(1);
-  c.engagement = +(rand(1.2,5.8)).toFixed(2);
-  c.postsPer30 = randInt(8,45);
-  c.avgLikes = randInt(80,1200);
-  c.avgComments = randInt(5,80);
-  c.avgShares = randInt(2,40);
-  c.engagementBreakdown = {likes:c.avgLikes * c.postsPer30, comments:c.avgComments * c.postsPer30, shares:c.avgShares * c.postsPer30};
-  c.totalEngagement = c.engagementBreakdown.likes + c.engagementBreakdown.comments + c.engagementBreakdown.shares;
-  c.engagementChange = rand(-0.8,1.5);
-  c.color = COLORS[i % COLORS.length];
-
-  // Generate posts
-  const postCount = randInt(3,6);
-  c.posts = [];
-  for(let p=0;p<postCount;p++){
-    const daysAgo = randInt(1,28);
-    const d = new Date(NOW); d.setDate(d.getDate()-daysAgo);
-    const likes = randInt(Math.round(c.avgLikes*0.5), Math.round(c.avgLikes*2));
-    const comments = randInt(Math.round(c.avgComments*0.3), Math.round(c.avgComments*3));
-    const shares = randInt(Math.round(c.avgShares*0.3), Math.round(c.avgShares*3));
-    c.posts.push({
-      title: POST_TOPICS[randInt(0, POST_TOPICS.length-1)],
-      date: d,
-      likes, comments, shares,
-      total: likes+comments+shares,
-    });
-  }
-  // Sort posts by total engagement descending
-  c.posts.sort((a,b)=>b.total-a.total);
-  allPosts = allPosts.concat(c.posts.map(p=>({...p, companyId:c.id, companyName:c.name, companyColor:c.color})));
-});
-
-// Sort all posts globally by date descending, take top 50
-allPosts.sort((a,b)=>b.date-a.date);
-allPosts = allPosts.slice(0,50);
-
-// ════════════════════════════════════════════════════════════════
-// STATE
-// ════════════════════════════════════════════════════════════════
-let selectedCompanies = COMPANIES.slice(0,8).map(c=>c.id);
-let activeCompany = COMPANIES[0].id;
-let mainChart = null;
-let contentChart = null;
-let followerRankChart = null;
-let engagementRankChart = null;
-
-// ════════════════════════════════════════════════════════════════
-// HELPERS
-// ════════════════════════════════════════════════════════════════
-function formatNum(n){
-  if(n>=1e6) return (n/1e6).toFixed(1)+'M';
-  if(n>=1e3) return (n/1e3).toFixed(1)+'K';
-  return n.toLocaleString();
-}
-
-function timeAgo(date){
-  const diff = Math.floor((NOW - date) / 1000);
-  if(diff<3600) return Math.floor(diff/60)+'m ago';
-  if(diff<86400) return Math.floor(diff/3600)+'h ago';
-  return Math.floor(diff/86400)+'d ago';
-}
-
-function getSelected(){
-  const region = document.getElementById('regionSelect').value;
-  const query = document.getElementById('searchInput').value.toLowerCase();
+// ═══════ RENDER ═══════
+function getDisplayCompanies(){
+  const market = document.getElementById('marketSelect').value;
+  const q = document.getElementById('searchInput').value.toLowerCase();
   return COMPANIES.filter(c=>{
-    if(region!=='all' && c.market!==region) return false;
-    if(query && !c.name.toLowerCase().includes(query)) return false;
+    if(market!=='all' && c.market!==market) return false;
+    if(q && !c.name.toLowerCase().includes(q)) return false;
     return true;
   });
 }
 
-// ════════════════════════════════════════════════════════════════
-// RENDER
-// ════════════════════════════════════════════════════════════════
 function renderSidebar(){
-  const filtered = getSelected();
-  const list = document.getElementById('companyList');
+  const filtered = getDisplayCompanies();
   document.getElementById('companyCount').textContent = filtered.length;
-
+  const list = document.getElementById('companyList');
   list.innerHTML = filtered.map(c=>{
-    const checked = selectedCompanies.includes(c.id) ? 'checked' : '';
-    const active = c.id===activeCompany ? 'active' : '';
-    return `<div class="company-item ${active}" data-id="${c.id}" onclick="selectCompany('${c.id}')">
+    const active = c.id===focusId?'active':'';
+    return `<div class="company-item ${active}" onclick="setFocus('${c.id}')">
       <div class="left">
-        <div class="check ${checked}" data-id="${c.id}" onclick="event.stopPropagation();toggleCompany('${c.id}')"></div>
+        <span class="rank-badge ${c.rank_followers<=3?'top3':''}">${'#'+c.rank_followers}</span>
         <div>
           <div class="name">${c.name}</div>
-          <div class="region">${c.market} &middot; ${c.aum}</div>
+          <div class="region">${c.market}</div>
         </div>
       </div>
-      <div class="right">
-        <span class="followers">${formatNum(c.followers)}</span>
-      </div>
+      <div class="right"><span class="followers">${formatNum(c.follower_count)}</span></div>
     </div>`;
   }).join('');
 }
 
 function renderStats(){
-  const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id));
   document.getElementById('statCompanies').textContent = COMPANIES.length;
-  const totalF = selected.reduce((s,c)=>s+c.followers,0);
-  document.getElementById('statFollowers').textContent = formatNum(totalF);
-  const avgEng = selected.reduce((s,c)=>s+c.engagement,0)/selected.length;
-  document.getElementById('statEngagement').textContent = avgEng.toFixed(2)+'%';
-  const totalPosts = selected.reduce((s,c)=>s+c.postsPer30,0);
-  document.getElementById('statPosts').textContent = Math.round(totalPosts);
-  const avgLikes = Math.round(selected.reduce((s,c)=>s+c.avgLikes,0)/selected.length);
-  document.getElementById('statAvgLikes').textContent = formatNum(avgLikes);
-  document.getElementById('statFollowerChange').textContent = '&minus; &plusmn;0%';
-  document.getElementById('statEngagementChange').textContent = '&minus; &plusmn;0%';
-  document.getElementById('statAvgLikesChange').textContent = '&minus; &plusmn;0';
+  const totalF = COMPANIES.reduce((s,c)=>s+c.follower_count,0);
+  document.getElementById('statTotalFollowers').textContent = formatNum(totalF);
+  const avgEng = +(COMPANIES.reduce((s,c)=>s+(c.engagement_rate||0),0)/COMPANIES.length).toFixed(2);
+  document.getElementById('statAvgEng').textContent = avgEng+'%';
+  const totalP = COMPANIES.reduce((s,c)=>s+(c.posts_per_30||0),0);
+  document.getElementById('statTotalPosts').textContent = totalP;
+  const avgL = Math.round(COMPANIES.reduce((s,c)=>s+(c.avg_likes||0),0)/COMPANIES.length);
+  document.getElementById('statAvgLikes').textContent = formatNum(avgL);
+  // Focus stats
+  const f = COMPANIES.find(c=>c.id===focusId);
+  if(f){
+    document.getElementById('statEngRank').textContent = 'Eng: #'+f.rank_engagement;
+    document.getElementById('statPostsRank').textContent = 'Posts: #'+f.rank_posts;
+    document.getElementById('statLikesRank').textContent = 'Likes: #'+f.rank_followers;
+  }
+}
+
+function renderRankBar(){
+  const f = COMPANIES.find(c=>c.id===focusId);
+  if(!f) return;
+  document.getElementById('focusName').textContent = f.name;
+  document.getElementById('focusFollowersRank').textContent = '#'+f.rank_followers;
+  document.getElementById('focusFollowersDetail').textContent = 'of '+COMPANIES.length;
+  document.getElementById('focusEngagementRank').textContent = '#'+f.rank_engagement;
+  document.getElementById('focusEngagementDetail').textContent = 'of '+COMPANIES.length;
+  document.getElementById('focusPostsRank').textContent = '#'+f.rank_posts;
+  document.getElementById('focusPostsDetail').textContent = 'of '+COMPANIES.length;
+}
+
+function renderFocusSelect(){
+  const sel = document.getElementById('focusSelect');
+  sel.innerHTML = COMPANIES.map(c=>`<option value="${c.id}" ${c.id===focusId?'selected':''}>${c.name}</option>`).join('');
+}
+
+function setFocus(id){
+  focusId = id;
+  renderAll();
 }
 
 function renderTable(){
-  const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id));
+  // Sorted by followers
+  const sorted = [...getDisplayCompanies()].sort((a,b)=>b.follower_count - a.follower_count);
   const tbody = document.getElementById('tableBody');
-  tbody.innerHTML = selected.map(c=>`
-    <tr class="tr-expand" onclick="toggleRow(this)">
-      <td><span class="expand-icon">&#x25B6;</span></td>
-      <td><span class="company-cell">${c.name}</span></td>
-      <td class="num">${formatNum(c.followers)}</td>
-      <td class="num ${+c.followerChange>=0?'up':'down'}">${+c.followerChange>=0?'+':''}${c.followerChange}%</td>
-      <td class="num">${c.engagement}%</td>
-      <td class="num">${c.postsPer30}</td>
-      <td class="num">${formatNum(c.avgLikes)}</td>
+  tbody.innerHTML = sorted.map((c,i)=>{
+    const isJpm = c.id==='jpmorgan';
+    const cls = isJpm?'jpm':'';
+    const te = c.total_engagement ? c.total_engagement.likes + c.total_engagement.comments + c.total_engagement.shares : 0;
+    return `<tr class="tr-expand ${cls}" onclick="toggleRow(this)">
+      <td class="rnum ${i<3?'t3':''}">${i+1}</td>
+      <td><span class="name-cell">${c.name}</span></td>
+      <td class="num">${formatNum(c.follower_count)}</td>
+      <td class="num">${(c.engagement_rate||0).toFixed(1)}%</td>
+      <td class="num">${formatNum(c.avg_likes||0)}</td>
+      <td class="num">${c.posts_per_30||0}</td>
+      <td class="num">${formatNum(te)}</td>
       <td class="num" style="color:var(--text-3)">${c.aum}</td>
+      <td class="num" style="color:var(--text-3);font-size:10px">${c.market}</td>
     </tr>
     <tr class="expand-row">
-      <td colspan="8">
+      <td colspan="9">
         <div class="expand-content" id="expand_${c.id}">
-          <strong>LinkedIn:</strong> ${c.linkedin}<br/>
-          <strong>HQ:</strong> ${c.hq} &middot; <strong>Region:</strong> ${c.market}<br/>
-          <strong>Engagement Change:</strong> <span class="${c.engagementChange>=0?'up':'down'}">${c.engagementChange>=0?'+':''}${c.engagementChange}pp</span><br/>
-          <strong>Avg Comments/Post:</strong> ${formatNum(c.avgComments)} &middot; <strong>Avg Shares/Post:</strong> ${formatNum(c.avgShares)}
+          <strong>LinkedIn:</strong> <a href="${c.url}" target="_blank" style="color:var(--accent)">${c.url}</a><br/>
+          <strong>HQ:</strong> ${c.hq} · <strong>Industry:</strong> ${c.industry||'Asset Management'}<br/>
+          <strong>Rankings:</strong> Followers #${c.rank_followers} · Engagement #${c.rank_engagement} · Posts #${c.rank_posts}<br/>
+          <strong>Avg Comments/Post:</strong> ${c.avg_comments||0} · <strong>Avg Shares/Post:</strong> ${c.avg_shares||0}
         </div>
       </td>
-    </tr>
-  `).join('');
+    </tr>`;
+  }).join('');
 }
 
 function toggleRow(el){
   el.classList.toggle('open');
-  const expand = el.nextElementSibling;
-  if(expand){
-    const content = expand.querySelector('.expand-content');
-    if(content) content.classList.toggle('show');
-  }
+  const ex = el.nextElementSibling;
+  if(ex){const c=ex.querySelector('.expand-content');if(c)c.classList.toggle('show')}
 }
 
 function renderPosts(){
-  const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id));
-  const selectedIds = new Set(selected.map(c=>c.id));
+  const sel = getDisplayCompanies();
+  const selIds = new Set(sel.map(c=>c.id));
   const feed = document.getElementById('postFeed');
-
-  // Get top posts from selected companies
-  const topPosts = [];
-  selected.forEach(c=>{
-    if(c.posts && c.posts.length>0){
-      c.posts.slice(0,2).forEach(p=>{
-        topPosts.push({...p, companyId:c.id, companyName:c.name, companyColor:c.color});
-      });
-    }
+  // Collect top posts from focus company + others
+  let topPosts = [];
+  // Focus company posts first
+  const focus = COMPANIES.find(c=>c.id===focusId);
+  if(focus && focus.posts) topPosts = topPosts.concat(focus.posts.slice(0,3).map(p=>({...p,coId:focus.id,coName:focus.name,coColor:COLORS[COMPANIES.indexOf(focus)%COLORS.length]})));
+  // Then other selected companies
+  COMPANIES.filter(c=>c.id!==focusId && selIds.has(c.id)).forEach(c=>{
+    if(c.posts) topPosts = topPosts.concat(c.posts.slice(0,1).map(p=>({...p,coId:c.id,coName:c.name,coColor:COLORS[COMPANIES.indexOf(c)%COLORS.length]})));
   });
-  topPosts.sort((a,b)=>b.total - a.total);
-  const display = topPosts.slice(0,8);
+  topPosts.sort((a,b)=>b.likes - a.likes);
+  topPosts = topPosts.slice(0,10);
 
-  if(display.length===0){
-    feed.innerHTML = '<div class="post-empty">Select companies to see their top posts</div>';
+  if(topPosts.length===0){
+    feed.innerHTML = '<div class="post-empty">Select companies to see their top LinkedIn posts</div>';
     return;
   }
-
-  feed.innerHTML = display.map(p=>`
+  feed.innerHTML = topPosts.map(p=>`
+    <a href="${p.post_url||'#'}" target="_blank" class="plink">
     <div class="post-item">
-      <div class="post-avatar" style="background:${p.companyColor}">${p.companyName.charAt(0)}</div>
-      <div class="post-body">
-        <div class="post-company">${p.companyName}</div>
-        <div class="post-title">${p.title}</div>
-        <div class="post-stats">
+      <div class="pa" style="background:${p.coColor}">${p.coName.charAt(0)}</div>
+      <div class="pb">
+        <div class="pc">${p.coName}</div>
+        <div class="pt">${p.title}</div>
+        <div class="ps">
           <span>&#x2764; ${formatNum(p.likes)}</span>
-          <span>&#x1F4AC; ${p.comments}</span>
-          <span>&#x1F504; ${p.shares}</span>
+          <span>&#x1F4AC; ${p.comments||0}</span>
+          <span>&#x1F504; ${p.shares||0}</span>
         </div>
       </div>
-      <div class="post-time">${timeAgo(p.date)}</div>
-    </div>
+      <div class="ptime">${p.date?timeAgo(new Date(p.date)):''}</div>
+    </div></a>
   `).join('');
 }
 
-function renderBottom(){
-  // Content type chart
-  const ctx = document.getElementById('contentChart');
-  if(contentChart) contentChart.destroy();
-  contentChart = new Chart(ctx, {
-    type:'doughnut',
-    data:{
-      labels:['Video','Carousel','Text','Image','Document'],
-      datasets:[{
-        data:[32,28,22,12,6],
-        backgroundColor:['#2962ff','#089981','#ab47bc','#ff9800','#787b86'],
-        borderWidth:0
-      }]
-    },
-    options:{
-      responsive:true,
-      maintainAspectRatio:false,
-      plugins:{legend:{display:false}}
-    }
-  });
-
-  // Hashtags
-  const tags = ['#APAC','#AssetManagement','#ESG','#FixedIncome','#PrivateMarkets','#China','#Japan','#India','#NetZero','#AI'];
-  document.getElementById('hashtagsContainer').innerHTML = `
-    <div class="tag-bar">${tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
-    <div style="margin-top:8px">
-      ${tags.slice(0,5).map(t=>`
-        <div class="tag-stats"><span class="label">${t}</span><span class="val">${randInt(120,890)}</span></div>
-      `).join('')}
-    </div>
-  `;
-}
-
-function renderChart(){
-  const metric = document.getElementById('metricSelect').value;
+function renderCharts(){
   const period = document.getElementById('periodSelect').value;
-  const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id)).slice(0,6);
+  const days = period==='90d'?90:period==='180d'?180:30;
+  // Show top 6 by followers for trend
+  const top6 = [...COMPANIES].sort((a,b)=>b.follower_count-a.follower_count).slice(0,6);
+  const f = COMPANIES.find(c=>c.id===focusId);
+  if(f && !top6.find(c=>c.id===focusId)) top6[top6.length-1] = f;
+
+  // ── Main Trend Chart ──
   const ctx = document.getElementById('mainChart');
   if(mainChart) mainChart.destroy();
+  document.getElementById('trendTitle').textContent = 'Follower Growth Trend ('+days+' days)';
+  document.getElementById('chartLegend').innerHTML = top6.map(c=>`<span><span class="dot" style="background:${COLORS[COMPANIES.indexOf(c)%COLORS.length]}"></span>${c.id===focusId?'<b>'+c.name+'</b>':c.name}</span>`).join('');
 
-  const days = period==='7d'?7:period==='90d'?90:30;
-  const dates = days===7?DAYS7:days===90?genTimeseries(90):DAYS30;
-
-  const titles = {
-    followers:'Follower Growth Trend ('+days+' days)',
-    engagement:'Engagement Rate Trend ('+days+' days)',
-    posts:'Post Frequency Trend ('+days+' days)'
-  };
-  document.querySelector('.chart-box .chart-title span').textContent = titles[metric];
-
-  document.getElementById('chartLegend').innerHTML = selected.map(c=>
-    `<span><span class="dot" style="background:${c.color}"></span>${c.name}</span>`
-  ).join('');
-
-  const datasets = selected.map(c=>{
+  const datasets = top6.map(c=>{
+    const h = c.follower_history || [];
     let data;
-    if(metric==='followers'){
-      if(days===7) data = c.followerHistory.slice(-8);
-      else if(days===90){
-        data = genTimeseries(90).map(()=> Math.round(c.followers * (1 + (Math.random()-0.5)*0.04)));
-      } else data = c.followerHistory;
-    } else if(metric==='engagement'){
-      data = dates.map(()=> +(c.engagement + (Math.random()-0.5)*0.8).toFixed(2));
-    } else {
-      data = dates.map(()=> randInt(0,3));
+    if(h.length>0){
+      const slice = h.slice(-days);
+      data = slice.map(d=>({x:d.date,y:d.count}));
+    }else{
+      data = Array.from({length:days},(_,i)=>({x:new Date(Date.now()-i*86400000).toISOString().slice(0,10),y:c.follower_count}));
     }
-
     return {
-      label:c.name,
-      data:data.map((v,i)=>({x:dates[i],y:v})),
-      borderColor:c.color,
-      backgroundColor:c.color+'22',
-      fill:false,
-      tension:0.3,
-      pointRadius:0,
-      borderWidth:2
+      label:c.name, data,
+      borderColor:COLORS[COMPANIES.indexOf(c)%COLORS.length],
+      backgroundColor:COLORS[COMPANIES.indexOf(c)%COLORS.length]+'22',
+      fill:false, tension:0.3, pointRadius:0, borderWidth: c.id===focusId?3:1.5,
+      borderDash: c.id===focusId?[]:[3,3]
     };
   });
-
-  mainChart = new Chart(ctx, {
-    type:'line',
-    data:{datasets},
+  mainChart = new Chart(ctx,{
+    type:'line', data:{datasets},
     options:{
-      responsive:true,
-      maintainAspectRatio:false,
+      responsive:true, maintainAspectRatio:false,
       interaction:{mode:'index',intersect:false},
       plugins:{
         legend:{display:false},
         tooltip:{
-          backgroundColor:'var(--surface-3)',
-          titleColor:'var(--text)',
-          bodyColor:'var(--text-2)',
-          borderColor:'var(--border)',
-          borderWidth:1,
-          cornerRadius:4,
-          padding:10
+          backgroundColor:'var(--surface-3)', titleColor:'var(--text)',
+          bodyColor:'var(--text-2)', borderColor:'var(--border)',
+          borderWidth:1, cornerRadius:4, padding:8,
+          callbacks:{label:ctx=>ctx.dataset.label+': '+formatNum(ctx.parsed.y)}
         }
       },
       scales:{
-        x:{
-          type:'time',
-          time:{unit:'day',displayFormats:{day:'MMM d'}},
-          ticks:{color:'var(--text-3)',font:{size:10},maxTicksLimit:8},
-          grid:{color:'var(--border)',display:true},
-          border:{display:false}
-        },
-        y:{
-          ticks:{color:'var(--text-3)',font:{size:10},callback:v=>typeof v==='number'?formatNum(v):v},
-          grid:{color:'var(--border)',display:true},
-          border:{display:false}
-        }
+        x:{type:'time',time:{unit:'day',displayFormats:{day:'MMM d'}},ticks:{color:'var(--text-3)',font:{size:9},maxTicksLimit:6},grid:{color:'var(--border)'},border:{display:false}},
+        y:{ticks:{color:'var(--text-3)',font:{size:9},callback:v=>formatNum(v)},grid:{color:'var(--border)'},border:{display:false}}
       }
     }
   });
-}
 
-function renderFollowerRank(){
-  const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id));
-  const sorted = [...selected].sort((a,b)=>b.followers - a.followers);
-  const ctx = document.getElementById('followerRankChart');
+  // ── Follower Rank ──
+  const ctxF = document.getElementById('followerRankChart');
   if(followerRankChart) followerRankChart.destroy();
-
-  followerRankChart = new Chart(ctx, {
-    type:'bar',
-    data:{
-      labels: sorted.map(c=>c.name),
+  const sortedF = [...getDisplayCompanies()].sort((a,b)=>b.follower_count-a.follower_count);
+  followerRankChart = new Chart(ctxF,{
+    type:'bar', data:{
+      labels:sortedF.map(c=>c.name),
       datasets:[{
-        data: sorted.map(c=>c.followers),
-        backgroundColor: sorted.map(c=>c.color),
-        borderRadius:3,
-        borderSkipped:false
+        data:sortedF.map(c=>c.follower_count),
+        backgroundColor:sortedF.map(c=>c.id===focusId?'#2962ff':COLORS[COMPANIES.indexOf(c)%COLORS.length]+'66'),
+        borderRadius:2, borderSkipped:false
       }]
     },
     options:{
-      indexAxis:'y',
-      responsive:true,
-      maintainAspectRatio:false,
+      indexAxis:'y', responsive:true, maintainAspectRatio:false,
       plugins:{
         legend:{display:false},
         tooltip:{
-          backgroundColor:'var(--surface-3)',
-          titleColor:'var(--text)',
-          bodyColor:'var(--text-2)',
-          borderColor:'var(--border)',
-          borderWidth:1,
-          cornerRadius:4,
-          padding:10,
+          backgroundColor:'var(--surface-3)', titleColor:'var(--text)',
+          bodyColor:'var(--text-2)', borderColor:'var(--border)',
+          borderWidth:1, cornerRadius:4, padding:8,
           callbacks:{label:ctx=>formatNum(ctx.parsed.x)}
         }
       },
       scales:{
-        x:{
-          ticks:{color:'var(--text-3)',font:{size:10},callback:v=>formatNum(v)},
-          grid:{color:'var(--border)',display:true},
-          border:{display:false}
-        },
-        y:{
-          ticks:{color:'var(--text-2)',font:{size:10}},
-          grid:{display:false},
-          border:{display:false}
-        }
+        x:{ticks:{color:'var(--text-3)',font:{size:9},callback:v=>formatNum(v)},grid:{color:'var(--border)'},border:{display:false}},
+        y:{ticks:{color:'var(--text-2)',font:{size:9}},grid:{display:false},border:{display:false}}
       }
     }
   });
-}
 
-function renderEngagementRank(){
-  const selected = COMPANIES.filter(c=>selectedCompanies.includes(c.id));
-  const sorted = [...selected].sort((a,b)=>b.totalEngagement - a.totalEngagement);
-  const ctx = document.getElementById('engagementRankChart');
+  // ── Engagement Rank (stacked) ──
+  const ctxE = document.getElementById('engagementRankChart');
   if(engagementRankChart) engagementRankChart.destroy();
-
-  engagementRankChart = new Chart(ctx, {
-    type:'bar',
-    data:{
-      labels: sorted.map(c=>c.name),
+  const sortedE = [...getDisplayCompanies()].sort((a,b)=>(b.total_engagement?.likes||0)+(b.total_engagement?.comments||0)+(b.total_engagement?.shares||0)-((a.total_engagement?.likes||0)+(a.total_engagement?.comments||0)+(a.total_engagement?.shares||0)));
+  engagementRankChart = new Chart(ctxE,{
+    type:'bar', data:{
+      labels:sortedE.map(c=>c.name),
       datasets:[
-        {
-          label:'Likes',
-          data: sorted.map(c=>c.engagementBreakdown.likes),
-          backgroundColor:'#2962ff',
-          borderRadius:3
-        },
-        {
-          label:'Comments',
-          data: sorted.map(c=>c.engagementBreakdown.comments),
-          backgroundColor:'#089981',
-          borderRadius:3
-        },
-        {
-          label:'Shares',
-          data: sorted.map(c=>c.engagementBreakdown.shares),
-          backgroundColor:'#ff9800',
-          borderRadius:3
-        }
+        {label:'Likes',data:sortedE.map(c=>c.total_engagement?.likes||0),backgroundColor:'#2962ff',borderRadius:2},
+        {label:'Comments',data:sortedE.map(c=>c.total_engagement?.comments||0),backgroundColor:'#089981',borderRadius:2},
+        {label:'Shares',data:sortedE.map(c=>c.total_engagement?.shares||0),backgroundColor:'#ff9800',borderRadius:2}
       ]
     },
     options:{
-      indexAxis:'y',
-      responsive:true,
-      maintainAspectRatio:false,
+      indexAxis:'y', responsive:true, maintainAspectRatio:false,
       interaction:{mode:'index',intersect:false},
       plugins:{
-        legend:{
-          display:true,
-          position:'top',
-          labels:{
-            color:'var(--text-2)',
-            font:{size:10},
-            boxWidth:10,
-            padding:8
-          }
-        },
+        legend:{display:true,position:'top',labels:{color:'var(--text-2)',font:{size:9},boxWidth:8,padding:6}},
         tooltip:{
-          backgroundColor:'var(--surface-3)',
-          titleColor:'var(--text)',
-          bodyColor:'var(--text-2)',
-          borderColor:'var(--border)',
-          borderWidth:1,
-          cornerRadius:4,
-          padding:10,
+          backgroundColor:'var(--surface-3)', titleColor:'var(--text)',
+          bodyColor:'var(--text-2)', borderColor:'var(--border)',
+          borderWidth:1, cornerRadius:4, padding:8,
           callbacks:{label:ctx=>ctx.dataset.label+': '+formatNum(ctx.parsed.x)}
         }
       },
       scales:{
-        x:{
-          stacked:true,
-          ticks:{color:'var(--text-3)',font:{size:10},callback:v=>formatNum(v)},
-          grid:{color:'var(--border)',display:true},
-          border:{display:false}
-        },
-        y:{
-          stacked:true,
-          ticks:{color:'var(--text-2)',font:{size:10}},
-          grid:{display:false},
-          border:{display:false}
-        }
+        x:{stacked:true,ticks:{color:'var(--text-3)',font:{size:9},callback:v=>formatNum(v)},grid:{color:'var(--border)'},border:{display:false}},
+        y:{stacked:true,ticks:{color:'var(--text-2)',font:{size:9}},grid:{display:false},border:{display:false}}
       }
     }
   });
-}
 
-// ════════════════════════════════════════════════════════════════
-// INTERACTIONS
-// ════════════════════════════════════════════════════════════════
-function toggleCompany(id){
-  const idx = selectedCompanies.indexOf(id);
-  if(idx>=0) selectedCompanies.splice(idx,1);
-  else selectedCompanies.push(id);
-  if(selectedCompanies.length===0) selectedCompanies.push(id);
-  renderAll();
-}
+  // ── Post Frequency Rank ──
+  const ctxP = document.getElementById('postFreqRankChart');
+  if(postFreqRankChart) postFreqRankChart.destroy();
+  const sortedP = [...getDisplayCompanies()].sort((a,b)=>(b.posts_per_30||0)-(a.posts_per_30||0));
+  postFreqRankChart = new Chart(ctxP,{
+    type:'bar', data:{
+      labels:sortedP.map(c=>c.name),
+      datasets:[{
+        data:sortedP.map(c=>c.posts_per_30||0),
+        backgroundColor:sortedP.map(c=>c.id===focusId?'#2962ff':'#089981'+'66'),
+        borderRadius:2, borderSkipped:false
+      }]
+    },
+    options:{
+      indexAxis:'y', responsive:true, maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          backgroundColor:'var(--surface-3)', titleColor:'var(--text)',
+          bodyColor:'var(--text-2)', borderColor:'var(--border)',
+          borderWidth:1, cornerRadius:4, padding:8,
+          callbacks:{label:ctx=>ctx.parsed.x+' posts'}
+        }
+      },
+      scales:{
+        x:{ticks:{color:'var(--text-3)',font:{size:9}},grid:{color:'var(--border)'},border:{display:false}},
+        y:{ticks:{color:'var(--text-2)',font:{size:9}},grid:{display:false},border:{display:false}}
+      }
+    }
+  });
 
-function selectCompany(id){
-  activeCompany = id;
-  renderSidebar();
+  // ── Content Type ──
+  const ctxC = document.getElementById('contentChart');
+  if(contentChart) contentChart.destroy();
+  contentChart = new Chart(ctxC,{
+    type:'doughnut', data:{
+      labels:['Video','Carousel','Text','Image','Doc'],
+      datasets:[{data:[32,28,22,12,6],backgroundColor:['#2962ff','#089981','#ab47bc','#ff9800','#787b86'],borderWidth:0}]
+    },
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}}}
+  });
+
+  // ── Hashtags ──
+  const tags = ['#APAC','#AssetManagement','#ESG','#FixedIncome','#PrivateMarkets','#China','#Japan','#India','#NetZero','#AI'];
+  document.getElementById('hashtagsContainer').innerHTML = `
+    <div class="tag-bar">${tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+    <div style="margin-top:6px">${tags.slice(0,5).map(t=>`<div class="tag-stats"><span>${t}</span><span class="val">${Math.floor(100+Math.random()*800)}</span></div>`).join('')}</div>`;
 }
 
 function renderAll(){
+  if(COMPANIES.length===0) return;
   renderSidebar();
   renderStats();
+  renderRankBar();
+  renderFocusSelect();
   renderTable();
   renderPosts();
-  renderChart();
-  renderFollowerRank();
-  renderEngagementRank();
+  renderCharts();
 }
 
-// ════════════════════════════════════════════════════════════════
-// EVENTS
-// ════════════════════════════════════════════════════════════════
-document.getElementById('metricSelect').addEventListener('change',renderChart);
-document.getElementById('periodSelect').addEventListener('change',renderChart);
-document.getElementById('regionSelect').addEventListener('change',renderAll);
+// ═══════ EVENTS ═══════
+document.getElementById('focusSelect').addEventListener('change',e=>{focusId=e.target.value;renderAll()});
+document.getElementById('periodSelect').addEventListener('change',renderCharts);
+document.getElementById('marketSelect').addEventListener('change',renderAll);
 document.getElementById('searchInput').addEventListener('input',renderAll);
 
-// ════════════════════════════════════════════════════════════════
-// INIT
-// ════════════════════════════════════════════════════════════════
-document.getElementById('lastUpdate').textContent = 'Last update: '+new Date().toLocaleString('en-US',{month:'short',day:'numeric',year:'numeric',hour:'2-digit',minute:'2-digit'});
-
-renderAll();
-renderBottom();
+// ═══════ INIT ═══════
+async function init(){
+  const ok = await loadData();
+  if(!ok){
+    document.querySelector('.main-content').innerHTML = '<div class="error">Failed to load data. Make sure <code>data/companies.json</code> exists.</div>';
+    return;
+  }
+  // Populate market select
+  const markets = [...new Set(COMPANIES.map(c=>c.market))].sort();
+  const ms = document.getElementById('marketSelect');
+  markets.forEach(m=>{const o=document.createElement('option');o.value=m;o.textContent=m;ms.appendChild(o)});
+  renderAll();
+}
+init();
 </script>
 </body>
 </html>
