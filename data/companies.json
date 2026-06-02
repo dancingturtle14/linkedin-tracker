@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T02:36:20Z",
+  "last_updated": "2026-06-02T08:35:52Z",
   "total_companies": 20,
   "companies": [
     {
@@ -10,16 +10,8 @@
       "aum": "$800B+",
       "hq": "UK",
       "industry": "Asset Management",
-      "follower_count": 3058344,
+      "follower_count": 276933,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 636335
-        },
-        {
-          "date": "2026-03-05",
-          "count": 633785
-        },
         {
           "date": "2026-03-06",
           "count": 631706
@@ -375,6 +367,10 @@
         {
           "date": "2026-06-02",
           "count": 532037
+        },
+        {
+          "date": "2026-06-02",
+          "count": 276933
         }
       ],
       "engagement_rate": 2.82,
@@ -466,16 +462,8 @@
       "aum": "$11.5T",
       "hq": "USA",
       "industry": "Asset Management",
-      "follower_count": 1747457,
+      "follower_count": 3058759,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 1925586
-        },
-        {
-          "date": "2026-03-05",
-          "count": 1914963
-        },
         {
           "date": "2026-03-06",
           "count": 1916696
@@ -831,6 +819,10 @@
         {
           "date": "2026-06-02",
           "count": 1747440
+        },
+        {
+          "date": "2026-06-02",
+          "count": 3058759
         }
       ],
       "engagement_rate": 3.97,
@@ -922,16 +914,8 @@
       "aum": "$4.0T",
       "hq": "USA",
       "industry": "Asset Management",
-      "follower_count": 1411880,
+      "follower_count": 5936617,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 858289
-        },
-        {
-          "date": "2026-03-05",
-          "count": 861405
-        },
         {
           "date": "2026-03-06",
           "count": 859287
@@ -1287,6 +1271,10 @@
         {
           "date": "2026-06-02",
           "count": 1411880
+        },
+        {
+          "date": "2026-06-02",
+          "count": 5936617
         }
       ],
       "engagement_rate": 5.22,
@@ -1378,16 +1366,8 @@
       "aum": "$5.5T",
       "hq": "USA",
       "industry": "Asset Management",
-      "follower_count": 727969,
+      "follower_count": 1371682,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 786307
-        },
-        {
-          "date": "2026-03-05",
-          "count": 787994
-        },
         {
           "date": "2026-03-06",
           "count": 783564
@@ -1743,6 +1723,10 @@
         {
           "date": "2026-06-02",
           "count": 727953
+        },
+        {
+          "date": "2026-06-02",
+          "count": 1371682
         }
       ],
       "engagement_rate": 1.61,
@@ -1818,16 +1802,8 @@
       "aum": "$500B+",
       "hq": "Japan",
       "industry": "Asset Management",
-      "follower_count": 675450,
+      "follower_count": 49273,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 702206
-        },
-        {
-          "date": "2026-03-05",
-          "count": 702803
-        },
         {
           "date": "2026-03-06",
           "count": 704644
@@ -2183,6 +2159,10 @@
         {
           "date": "2026-06-02",
           "count": 675447
+        },
+        {
+          "date": "2026-06-02",
+          "count": 49273
         }
       ],
       "engagement_rate": 2.4,
@@ -2258,16 +2238,8 @@
       "aum": "$600B+",
       "hq": "HK",
       "industry": "Asset Management",
-      "follower_count": 257277,
+      "follower_count": 48760,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 275047
-        },
-        {
-          "date": "2026-03-05",
-          "count": 273682
-        },
         {
           "date": "2026-03-06",
           "count": 273661
@@ -2623,6 +2595,10 @@
         {
           "date": "2026-06-02",
           "count": 257277
+        },
+        {
+          "date": "2026-06-02",
+          "count": 48760
         }
       ],
       "engagement_rate": 4.63,
@@ -2698,16 +2674,8 @@
       "aum": "$450B+",
       "hq": "Australia",
       "industry": "Asset Management",
-      "follower_count": 257277,
+      "follower_count": 104496,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 271678
-        },
-        {
-          "date": "2026-03-05",
-          "count": 271973
-        },
         {
           "date": "2026-03-06",
           "count": 271627
@@ -3063,6 +3031,10 @@
         {
           "date": "2026-06-02",
           "count": 257272
+        },
+        {
+          "date": "2026-06-02",
+          "count": 104496
         }
       ],
       "engagement_rate": 5.46,
@@ -3154,16 +3126,8 @@
       "aum": "$150B+",
       "hq": "Australia",
       "industry": "Asset Management",
-      "follower_count": 65482,
+      "follower_count": 45296,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 74817
-        },
-        {
-          "date": "2026-03-05",
-          "count": 74550
-        },
         {
           "date": "2026-03-06",
           "count": 74322
@@ -3519,6 +3483,10 @@
         {
           "date": "2026-06-02",
           "count": 65482
+        },
+        {
+          "date": "2026-06-02",
+          "count": 45296
         }
       ],
       "engagement_rate": 1.56,
@@ -3610,16 +3578,8 @@
       "aum": "$200B+",
       "hq": "Singapore",
       "industry": "Asset Management",
-      "follower_count": 32166,
+      "follower_count": 71214,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 37608
-        },
-        {
-          "date": "2026-03-05",
-          "count": 37427
-        },
         {
           "date": "2026-03-06",
           "count": 37494
@@ -3975,6 +3935,10 @@
         {
           "date": "2026-06-02",
           "count": 32165
+        },
+        {
+          "date": "2026-06-02",
+          "count": 71214
         }
       ],
       "engagement_rate": 5.44,
@@ -4069,21 +4033,13 @@
     {
       "id": "nikko",
       "name": "Nikko AM",
-      "url": "https://www.linkedin.com/company/nikko-am/",
+      "url": "https://www.linkedin.com/company/nikko-asset-management/",
       "market": "Japan",
       "aum": "$200B+",
       "hq": "Japan",
       "industry": "Asset Management",
-      "follower_count": 15277,
+      "follower_count": 131665,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 83749
-        },
-        {
-          "date": "2026-03-05",
-          "count": 83687
-        },
         {
           "date": "2026-03-06",
           "count": 83311
@@ -4439,6 +4395,10 @@
         {
           "date": "2026-06-02",
           "count": 15277
+        },
+        {
+          "date": "2026-06-02",
+          "count": 131665
         }
       ],
       "engagement_rate": 4.67,
@@ -4514,16 +4474,8 @@
       "aum": "$150B+",
       "hq": "Japan",
       "industry": "Asset Management",
-      "follower_count": 7153,
+      "follower_count": 10228,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 55122
-        },
-        {
-          "date": "2026-03-05",
-          "count": 55333
-        },
         {
           "date": "2026-03-06",
           "count": 55332
@@ -4879,6 +4831,10 @@
         {
           "date": "2026-06-02",
           "count": 7153
+        },
+        {
+          "date": "2026-06-02",
+          "count": 10228
         }
       ],
       "engagement_rate": 2.27,
@@ -4946,16 +4902,8 @@
       "aum": "$200B+",
       "hq": "China",
       "industry": "Asset Management",
-      "follower_count": 7095,
+      "follower_count": 17336,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 56909
-        },
-        {
-          "date": "2026-03-05",
-          "count": 56754
-        },
         {
           "date": "2026-03-06",
           "count": 56634
@@ -5311,6 +5259,10 @@
         {
           "date": "2026-06-02",
           "count": 7095
+        },
+        {
+          "date": "2026-06-02",
+          "count": 17336
         }
       ],
       "engagement_rate": 3.42,
@@ -5410,16 +5362,8 @@
       "aum": "$500B+",
       "hq": "China",
       "industry": "Asset Management",
-      "follower_count": 5975,
+      "follower_count": 91235,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 84186
-        },
-        {
-          "date": "2026-03-05",
-          "count": 83950
-        },
         {
           "date": "2026-03-06",
           "count": 83789
@@ -5775,6 +5719,10 @@
         {
           "date": "2026-06-02",
           "count": 5975
+        },
+        {
+          "date": "2026-06-02",
+          "count": 91235
         }
       ],
       "engagement_rate": 1.64,
@@ -5866,16 +5814,8 @@
       "aum": "$150B+",
       "hq": "China",
       "industry": "Asset Management",
-      "follower_count": 5343,
+      "follower_count": 68623,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 43223
-        },
-        {
-          "date": "2026-03-05",
-          "count": 43066
-        },
         {
           "date": "2026-03-06",
           "count": 43063
@@ -6231,6 +6171,10 @@
         {
           "date": "2026-06-02",
           "count": 5343
+        },
+        {
+          "date": "2026-06-02",
+          "count": 68623
         }
       ],
       "engagement_rate": 5.13,
@@ -6322,16 +6266,8 @@
       "aum": "$250B+",
       "hq": "China",
       "industry": "Asset Management",
-      "follower_count": 4697,
+      "follower_count": 1526,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 4942
-        },
-        {
-          "date": "2026-03-05",
-          "count": 4921
-        },
         {
           "date": "2026-03-06",
           "count": 4921
@@ -6687,6 +6623,10 @@
         {
           "date": "2026-06-02",
           "count": 4697
+        },
+        {
+          "date": "2026-06-02",
+          "count": 1526
         }
       ],
       "engagement_rate": 1.99,
@@ -6754,16 +6694,8 @@
       "aum": "$100B+",
       "hq": "Japan",
       "industry": "Asset Management",
-      "follower_count": 4209,
+      "follower_count": 405503,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 61175
-        },
-        {
-          "date": "2026-03-05",
-          "count": 61340
-        },
         {
           "date": "2026-03-06",
           "count": 61129
@@ -7119,6 +7051,10 @@
         {
           "date": "2026-06-02",
           "count": 4209
+        },
+        {
+          "date": "2026-06-02",
+          "count": 405503
         }
       ],
       "engagement_rate": 4.54,
@@ -7218,16 +7154,8 @@
       "aum": "$150B+",
       "hq": "Australia",
       "industry": "Asset Management",
-      "follower_count": 3496,
+      "follower_count": 37131,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 3955
-        },
-        {
-          "date": "2026-03-05",
-          "count": 3961
-        },
         {
           "date": "2026-03-06",
           "count": 3942
@@ -7583,6 +7511,10 @@
         {
           "date": "2026-06-02",
           "count": 3496
+        },
+        {
+          "date": "2026-06-02",
+          "count": 37131
         }
       ],
       "engagement_rate": 2.43,
@@ -7645,21 +7577,13 @@
     {
       "id": "amundi",
       "name": "Amundi",
-      "url": "https://www.linkedin.com/company/amundi_asset_management/",
+      "url": "https://www.linkedin.com/company/amundi/",
       "market": "Global",
       "aum": "$2.3T",
       "hq": "France",
       "industry": "Asset Management",
-      "follower_count": 2412,
+      "follower_count": 310015,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 277629
-        },
-        {
-          "date": "2026-03-05",
-          "count": 277056
-        },
         {
           "date": "2026-03-06",
           "count": 277314
@@ -8015,6 +7939,10 @@
         {
           "date": "2026-06-02",
           "count": 2412
+        },
+        {
+          "date": "2026-06-02",
+          "count": 310015
         }
       ],
       "engagement_rate": 2.81,
@@ -8082,16 +8010,8 @@
       "aum": "$200B+",
       "hq": "China",
       "industry": "Asset Management",
-      "follower_count": 1821,
+      "follower_count": 3,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 1946
-        },
-        {
-          "date": "2026-03-05",
-          "count": 1941
-        },
         {
           "date": "2026-03-06",
           "count": 1936
@@ -8447,6 +8367,10 @@
         {
           "date": "2026-06-02",
           "count": 1821
+        },
+        {
+          "date": "2026-06-02",
+          "count": 3
         }
       ],
       "engagement_rate": 2.8,
@@ -8522,16 +8446,8 @@
       "aum": "$200B+",
       "hq": "Japan",
       "industry": "Asset Management",
-      "follower_count": 1298,
+      "follower_count": 866,
       "follower_history": [
-        {
-          "date": "2026-03-04",
-          "count": 1536
-        },
-        {
-          "date": "2026-03-05",
-          "count": 1539
-        },
         {
           "date": "2026-03-06",
           "count": 1537
@@ -8887,6 +8803,10 @@
         {
           "date": "2026-06-02",
           "count": 1298
+        },
+        {
+          "date": "2026-06-02",
+          "count": 866
         }
       ],
       "engagement_rate": 3.32,

@@ -1,0 +1,25 @@
+name: Daily LinkedIn Data Update
+on:
+  schedule:
+    - cron: '0 1 * * *'  # Daily at 1AM UTC
+  workflow_dispatch:      # Manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run LinkedIn data scraper
+        run: python scraper/daily_update.py
+        env:
+          LI_COOKIE: ${{ secrets.LI_COOKIE }}
